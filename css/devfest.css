@@ -1,0 +1,384 @@
+html, body {
+  font-family: 'RobotoLight', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #777;
+}
+
+header {
+  color: #777;
+  /*background-image: url(../images/devfest/background2.png); 
+  background-repeat: repeat;*/
+  background-color: #DDD;
+  -moz-box-shadow: 0px 2px 5px grey;
+  -webkit-box-shadow: 0px 2px 5px grey;
+  box-shadow: 0px 2px 5px grey;
+}
+
+footer {
+  color: white;
+  line-height: 50px;
+  height: 50px;
+  /*background-image: url(../images/devfest/background2.png); 
+  background-repeat: repeat;*/
+  background-color: #333;
+}
+
+.bkg-nav {
+  background-color: #333;
+}
+
+.bkg-header-bottom {
+  width: 100%;
+  height: 33px;
+  background-image: url(../images/devfest/background_bottom.png);
+  background-repeat: repeat-x;
+}
+
+/* icon links */
+a.white, a.white:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+a.icons, a.icons:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'RobotoThin', Arial, sans-serif;
+  font-size: 3.5em;
+  margin: 5px;
+}
+
+h1 small {
+  font-size: 0.4em;
+}
+
+h3 {
+  font-family: 'RobotoBoldCondensedItalic', Arial, sans-serif;
+  letter-spacing: 2px;
+  margin: 0px;
+  color: #777;
+}
+
+h3.border {
+  border-bottom: 1px solid  #777;
+}
+
+h4 {
+  font-family: 'RobotoCondensed', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+h5 {
+  font-family: 'RobotoCondensed', Arial, sans-serif;
+  letter-spacing: 1px;
+  margin: 0px;
+  color: #777;
+}
+
+hr {
+  margin: 0px;
+}
+
+.green {
+  color: #99cc00;
+}
+
+.robotoblack {
+  font-family: 'RobotoBold', Arial, sans-serif;
+}
+
+/* links */
+a, a:visited {
+  text-decoration: none;
+  color: #0099CC;
+  -ms-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+  text-decoration: none;
+  color: #198d98;
+  cursor: pointer;
+}
+
+/* Ground work menu override */
+nav ul li a, nav ul li a:visited {
+  background: transparent;
+  border-top: none;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:visited:hover, nav ul li a:visited:focus {
+  background: transparent;
+  text-decoration: none;
+}
+
+nav ul li a.active:hover, nav ul li a.active:focus, nav ul li a:visited.active:hover, nav ul li a:visited.active:focus {
+  background: transparent;
+}
+
+nav ul li:first-child a, nav ul li:first-child a:visited {
+  border-top: none;
+}
+
+nav ul li.menu.on > a, nav ul li.menu.on > a:visited {
+  background: transparent;
+  text-decoration: none;
+}
+
+/* Ground work mobile menu override */
+nav.menu {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+nav.menu > ul li a, nav.menu > ul li a:visited, nav.menu > ul.row li a, nav.menu > ul.row li a:visited {
+  border: none;
+}
+
+nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:hover, nav.menu > ul li a:visited:focus, nav.menu > ul.row li a:hover, nav.menu > ul.row li a:focus, nav.menu > ul.row li a:visited:hover, nav.menu > ul.row li a:visited:focus {
+  border: none;
+}
+
+/* Menu stick height */
+@media only screen and (min-width: 1025px) {
+  .stickheight {
+    height: 160px;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+  .stickheight {
+    height: 140px;
+  }
+}
+/* Menu stick height */
+@media only screen and (max-width: 770px) {
+  .stickheight {
+    height: 0px;
+  }
+
+  .stick {
+    position: relative;
+  }
+}
+/* Sponsors styles */
+.sponsors div {
+  color: white;
+}
+
+.sponsors div span {
+  font-variant: small-caps;
+  font-family: 'RobotoCondensed', Arial, sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 1.7em;
+}
+
+.sponsors img {
+  padding: 3px;
+  line-height: 150px;
+}
+
+.premium {
+  border: 1px solid #a40400;
+  border-left: 7px solid #a40400;
+}
+
+.premium span {
+  color: #a40400;
+}
+
+.gold {
+  border: 1px solid #FF8800;
+  border-left: 7px solid #FF8800;
+}
+
+.gold span {
+  color: #FF8800;
+}
+
+.silver {
+  border: 1px solid #AAA;
+  border-left: 7px solid #AAA;
+}
+
+.silver span {
+  color: #AAA;
+}
+
+.partner {
+  border: 1px solid #0099CC;
+  border-left: 7px solid #0099CC;
+}
+
+.partner span {
+  color: #0099CC;
+}
+
+p.sponsor-empty {
+  background-color: #EEE;
+  width: 300px;
+  height: 120px;
+  line-height: 110px;
+  display: inline-block;
+}
+
+p.sponsor-empty span {
+  color: #AAA;
+  font-variant: normal;
+  letter-spacing: normal;
+  font-size: 2em;
+}
+
+/* Block info */
+.block {
+  color: #777;
+  margin: 0px;
+  /*background-color: #EEE;*/
+  border-left: 7px solid #0099CC;
+}
+
+div.block {
+  padding: 5px;
+  border-top: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+/* Session styles */
+.sessions {
+  color: #777;
+  margin: 0px;
+  /*background-color: #EEE;*/
+  border-left: 7px solid #0099CC;
+  border-top: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  padding: 5px;
+}
+
+/* Couleurs : http://developer.android.com/design/style/color.html */
+/* Grey tracker */
+.grey-tracker, .speaker-tracker {
+  border: 1px solid #DDD;
+  border-left: 7px solid #CCC;
+}
+
+.grey-tracker h3, .speaker-tracker h3 {
+  color: #777;
+}
+
+/* Android tracker */
+.android-tracker {
+  border-left: 7px solid #99cc00;
+}
+
+.android-tracker h3 {
+  color: #99cc00;
+}
+
+/* HTML5 tracker */
+.html5-tracker {
+  border-left: 7px solid #ffbb33;
+}
+
+.html5-tracker h3 {
+  color: #ffbb33;
+}
+
+/* Cloud tracker */
+.cloud-tracker {
+  border-left: 7px solid #33b5e5;
+}
+
+.cloud-tracker h3 {
+  color: #33b5e5;
+}
+
+img.speaker {
+  border: 5px solid #FFF;
+  margin-right: 10px;
+  -moz-box-shadow: 1px 1px 1px grey;
+  -webkit-box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px grey;
+}
+
+/* Agenda */
+.calendar-time {
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+}
+
+.calendar-time h5 {
+  font-family: 'RobotoThin', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+.calendar h5 {
+  font-family: 'RobotoLight', Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+.calendar a {
+  text-decoration: none;
+  color: black;
+}
+
+.calendar a:hover {
+  text-decoration: none;
+  color: #710300;
+  cursor: pointer;
+}
+
+.calendar small {
+  font-size: 1em;
+}
+
+.calendar-android {
+  background-color: #99cc00;
+  padding-left: 10px;
+  border: 1px solid #669900;
+  color: black;
+}
+
+.calendar-html5 {
+  background-color: #ffbb33;
+  padding-left: 10px;
+  border: 1px solid #FF8800;
+  color: black;
+}
+
+.calendar-cloud {
+  background-color: #33b5e5;
+  padding-left: 10px;
+  border: 1px solid #0099CC;
+  color: black;
+}
+
+.calendar-codelab {
+  background-color: #aa66cc;
+  padding-left: 10px;
+  border: 1px solid #9933CC;
+  color: black;
+}
+
+.calendar-break {
+  background-color: #a40400;
+  padding-left: 10px;
+  border: 1px solid #710300;
+  color: #FFF;
+}
+
+.calendar-break h5 {
+  font-family: 'RobotoThin', Arial, sans-serif;
+  font-size: 1.2em;
+}

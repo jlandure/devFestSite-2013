@@ -1,0 +1,80 @@
+
+<!-- CALL FOR PAPER -->
+<div class="row pad-top">
+	<div class="two centered mobile third callout justify">	
+		<h3><i class="icon-bullhorn icon-3x pull-left"></i>Call For Paper</h3>
+		<p>
+			Nous sommes à la recherche de speakers pour le Devfest Nantes 2013. Le Call For Paper est lancé ! </br>
+			Si vous voulez réaliser une présentation de 50-55 minutes ou bien animer un barcamp de 1-2h,
+			<a href="https://docs.google.com/forms/d/1z_0IwGq5W531jJvhX-9Q9tmwj7IhkIW_UwgknplI0rA/viewform" target="_NEW" class="white">proposez votre sujet ici</a></br></br>
+			Le Call For Paper s'arrêtera le 31 Août 2013 à 23h59!
+		</p>
+	</div>
+</div>
+
+<!-- FILTERS -->
+<div class="row" >
+	<div class="one fifth padded skip-one">
+		Tracker
+        <select class="unselected" ng-model="trackers">
+            <option selected value="">Tous</option>
+            <option value="android">Android</option>
+            <option value="html5">HTML5</option>
+            <option value="cloud">Cloud</option>
+            <option value="codelabs">Code labs</option>
+        </select>
+    </div>
+    <div class="one fifth padded">
+    	Technos
+        <select class="unselected" ng-model="technos">
+            <option selected value="">Toutes</option>
+            <option value="android">Android</option>
+            <option value="appengine">AppEngine</option>
+            <option value="html5">HTML5</option>
+            <option value="angular">Angular JS</option>
+        </select>
+    </div>
+    <div class="one fifth padded">
+    	Difficulté
+        <select class="unselected" ng-model="levels">
+            <option selected value="">Toutes</option>
+            <option value="101">101 (débutant)</option>
+            <option value="201">201 (Intermédiaire)</option>
+            <option value="301">301 (Confirmé)</option>
+        </select>
+    </div>
+</div>
+
+<!-- Session list builder -->
+<div class="row pad-bottom" ng-repeat="session in sessions | filter:trackers | filter:technos | filter:levels">	
+	<div class="four sixths skip-one sessions {{ session.track }}-tracker" ng-controller="SessionDetailCtrl" >
+		<!-- Session header -->
+		<div class="row pad-left pad-top pad-right">
+			<div class="two thirds mobile ">
+				<a name="{{ session.label }}"></a>
+				<h3><img ng-src="{{ session.icon }}" width="20px" height="20px"> {{ session.label }}</h3>
+			</div>
+			<div class="one third mobile align-right">
+				<b>{{ session.time }}, salle {{ session.room }}</b><br>
+				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
+			</div>
+			<hr>
+			<small>Présenté par {{ speaker.displayName }}</small>
+		</div>
+		<!-- Session content -->
+		<div class="row padded justify">
+			<!-- Speaker photo -->
+			<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
+			<!-- Session description -->
+			<p>{{ session.description }}</p>
+			<!-- Speaker biography -->
+			<!--
+			<p><em>{{ speaker.bio }}</em></p>-->
+			<!-- Speaker links description -->
+			<!--
+			<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-left"></i></a>
+			<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-left"></i></a>
+			<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-left"></i></a>-->
+		</div>
+	</div>
+</div>

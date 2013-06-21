@@ -1,0 +1,126 @@
+{
+	"sessions" : [
+		{
+			"label" : "Android ",
+			"track" : "android",
+			"icon" : "./images/technos/android.png",
+			"speaker" : "elezmy",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"		
+		},
+		{
+			"label" : "Android tips",
+			"track" : "android",
+			"icon" : "./images/technos/android.png",
+			"speaker" : "cmottier",
+			"lang" : "fr",
+			"level" : "301",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "Google +",
+			"track" : "html5",
+			"icon" : "./images/technos/google-plus.png",
+			"speaker" : "ashineye",
+			"lang" : "en",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "HTML5",
+			"track" : "html5",
+			"icon" : "./images/technos/html5.png",
+			"speaker" : "fbeaufort",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "WebGL",
+			"track" : "html5",
+			"icon" : "./images/technos/html5.png",
+			"speaker" : "cpinson",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		}
+	],
+
+	"speakers" : [
+		{
+			"id" : "cmottier",
+			"displayName" : "Cyril mottier",
+			"bio" : "Cyril mottier est un Google Developer Expert dédié aux technologies Google (voir https://developers.google.com/experts/). Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+			"urlPhoto" : "./images/speakers/cyrilmottier.jpeg",
+			"urlGooglePlus" : "http://plus.google.com",
+			"urlTwitter" : "http://www.twitter.com",
+			"urlWebsite" : "http://www.cyrilmottier.com"
+		},
+		{
+			"id" : "jgarreau",
+			"displayName" : "Jean-François Garreau",
+			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
+			"urlPhoto" : "http://devfest.gdgnantes.com/_/rsrc/1348310841331/speakers/jef.jpeg",
+			"urlGooglePlus" : "http://plus.google.com",
+			"urlTwitter" : "http://www.twitter.com",
+			"urlWebsite" : "http://www.binomed.com"
+		},
+		{
+			"id" : "elezmy",
+			"displayName" : "Eyal Lezmy",
+			"bio" : "<ul><li>Software Engineer chez GenyMobile, spécialisé dans Android et le développement web http://www.genymobile.com</li> <li>Trésorier du Paris Android User Group http://paug.fr</li><li>Créateur du podcast Android Devcast le podcast Android pour les professionnels et les développeurs http://android-devcast.com</li><li>Google Developer Expert Android https://developers.google.com/experts/members/</li>",
+			"urlPhoto" : "./images/speakers/eyal.gif",
+			"urlGooglePlus" : "#",
+			"urlTwitter" : "#",
+			"urlWebsite" : "#"
+		},
+		{
+			"id" : "ashineye",
+			"displayName" : "Ade Oshineye",
+			"bio" : "Ade is a Developer advocate in Google for the Google + team.",
+			"urlPhoto" : "./images/speakers/ade.jpg",
+			"urlGooglePlus" : "#",
+			"urlTwitter" : "#",
+			"urlWebsite" : "#"
+		},
+		{
+			"id" : "ngarnier",
+			"displayName" : "Nicolas Garnier",
+			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
+			"urlPhoto" : "./images/speakers/nicolasgarnier2.png",
+			"urlGooglePlus" : "#",
+			"urlTwitter" : "#",
+			"urlWebsite" : "#"
+		},
+		{
+			"id" : "fbeaufort",
+			"displayName" : "François Beaufort",
+			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
+			"urlPhoto" : "./images/speakers/francois_beaufort.jpg",
+			"urlGooglePlus" : "#",
+			"urlTwitter" : "#",
+			"urlWebsite" : "#"
+		},
+		{
+			"id" : "cpinson",
+			"displayName" : "Cédric Pison",
+			"bio" : "Cédric Pinson est aujourdhui un des acteurs français incontournable de la scène WebGL. Il travaille pour SketchFab un site web dont l'objectif est d'afficher n'importe quel modèle 3D dans votre navigateur grâce à la technologie WebGL.",
+			"urlPhoto" : "./images/speakers/cedric-pinson.jpg",
+			"urlGooglePlus" : "#",
+			"urlTwitter" : "#",
+			"urlWebsite" : "#"
+		}
+
+	]
+}
