@@ -11,6 +11,7 @@ angular.module('devfest', []).
       when('/contacts', {templateUrl: 'partials/contacts.html', controller: EmptyCtrl}).
       when('/credits', {templateUrl: 'partials/credits.html', controller: EmptyCtrl}).
       when('/presse', {templateUrl: 'partials/presse.html', controller: EmptyCtrl}).
+      when('/cfp', {templateUrl: 'partials/cfp.html', controller: EmptyCtrl}).
       otherwise({redirectTo: '/homepage'});
 }]);
 
