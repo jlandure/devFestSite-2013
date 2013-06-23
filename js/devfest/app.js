@@ -3,38 +3,59 @@
 angular.module('devfest', []).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-      when('/homepage', {templateUrl: 'partials/homepage.html',   controller: HomepageCtrl}).
+      when('/homepage', {templateUrl: 'partials/homepage.html',   controller: EmptyCtrl}).
       when('/sessions', {templateUrl: 'partials/sessions.html', controller: SessionsCtrl}).
       when('/speakers', {templateUrl: 'partials/speakers.html', controller: SessionsCtrl}).
       when('/agenda', {templateUrl: 'partials/agenda.html', controller: AgendaCtrl}).
       when('/sponsors', {templateUrl: 'partials/sponsors.html', controller: SponsorsCtrl}).
-      when('/contacts', {templateUrl: 'partials/contacts.html', controller: ContactsCtrl}).
+      when('/contacts', {templateUrl: 'partials/contacts.html', controller: EmptyCtrl}).
+      when('/credits', {templateUrl: 'partials/credits.html', controller: EmptyCtrl}).
+      when('/presse', {templateUrl: 'partials/presse.html', controller: EmptyCtrl}).
       otherwise({redirectTo: '/homepage'});
 }]);
 
-/* Homepage controller */
-function HomepageCtrl($scope, $routeParams) {
+/* Root controller */
+RootCtrl.DEFAULT = null;
+RootCtrl.ACTIVE = 'active';
+
+function RootCtrl($scope) {
+  $scope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {'class' : 'active'} }, 
+                      {'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
+                      {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
+                      {'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
+                      {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {} },
+                      {'label' : 'Pratique', 'url' : '/contacts', 'style': {} },
+                      {'label' : 'Presse', 'url' : '/presse', 'style': {}} ];
+  $scope.selected = $scope.navItems[0];
+  
+  $scope.select = function( item ) {
+    if( $scope.selected )
+        $scope.selected.style.class = RootCtrl.DEFAULT;
+    $scope.selected = item;
+    $scope.selected.style.class = RootCtrl.ACTIVE;
+  };
 
 }
-//HomepageCtrl.$inject = ['$scope', '$routeParams'];
-
+//RootCtrl.$inject = ['$scope'];
 
 /* Sessions controller */
-function SessionsCtrl($scope, $routeParams, $http) {
+function SessionsCtrl($scope, $rootScope, $routeParams, $http) {
 	$http.get('json/sessions.json').success(function(data) {
     	$scope.sessions = data.sessions;
     	$scope.speakers = data.speakers;
   	});
+   $rootScope.sponsorpage = false;
 }
 
-//SessionsCtrl.$inject = ['$scope', '$routeParams' '$http'];
+//SessionsCtrl.$inject = ['$scope', '$rootScope', '$routeParams' '$http'];
 
-function SessionDetailCtrl($scope) {
+function SessionDetailCtrl($scope, $rootScope) {
 	var speakerId = $scope.session.speaker;
 	$scope.speaker = getSpeaker($scope, speakerId);
+   $rootScope.sponsorpage = false;
 }
 
-//SessionDetailCtrl.$inject = ['$scope'];
+//SessionDetailCtrl.$inject = ['$scope', '$rootScope'];
 
 function getSpeaker(scope, speakerId) {
  	for (var i=0; i<scope.speakers.length; i++) {
@@ -45,21 +66,22 @@ function getSpeaker(scope, speakerId) {
 };
 
 /* Agenda controller */
-function AgendaCtrl($scope, $routeParams) {
-
+function AgendaCtrl($scope, $rootScope, $routeParams) {
+  $rootScope.sponsorpage = false;
 }
-//AgendaCtrl.$inject = ['$scope', '$routeParams'];
+//AgendaCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];
 
 
 /* Sponsors controller */
-function SponsorsCtrl($scope, $routeParams) {
-	$scope.sponsorpage = true;
+function SponsorsCtrl($scope, $rootScope, $routeParams) {
+	$rootScope.sponsorpage = true;
 }
-//SponsorsCtrl.$inject = ['$scope', '$routeParams'];
+//SponsorsCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];
 
 
-/* Contacts controller */
-function ContactsCtrl($scope, $routeParams) {
-
+/* Empty controller */
+function EmptyCtrl($scope, $rootScope, $routeParams) {
+  // Always nothing to do
+  $rootScope.sponsorpage = false;
 }
-//ContactsCtrl.$inject = ['$scope', '$routeParams'];
+//EmptyCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];

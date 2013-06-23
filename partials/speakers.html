@@ -1,24 +1,26 @@
 
 <!-- Session list builder -->
-<div class="row pad-bottom" ng-repeat="speaker in speakers">	
-	<div class="four sixths skip-one sessions speaker-tracker" >
-		<!-- Session header -->
-		<div class="row pad-left pad-top pad-right">
-			<div class="two thirds mobile ">
-				<h3>{{ speaker.displayName }}</h3>
+<div class="row padded">
+	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
+		<div class="four sixths skip-one sessions speaker-tracker" >
+			<!-- Session header -->
+			<div class="row pad-left pad-top pad-right">
+				<div class="two thirds mobile ">
+					<h3>{{ speaker.displayName }}</h3>
+				</div>
+				<hr>			
 			</div>
-			<hr>			
-		</div>
-		<!-- Session content -->
-		<div class="row padded justify">
-			<!-- Speaker photo -->
-			<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
-			<!-- Speaker biography -->
-			<p><em>{{ speaker.bio }}</em></p>
-			<!-- Speaker links description -->
-			<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-left"></i></a>
-			<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-left"></i></a>
-			<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-left"></i></a>
+			<!-- Session content -->
+			<div class="row padded justify">
+				<!-- Speaker photo -->
+				<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
+				<!-- Speaker biography -->
+				<p><em>{{ speaker.bio }}</em></p>
+				<!-- Speaker links description -->
+				<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-left"></i></a>
+				<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-left"></i></a>
+				<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-left"></i></a>
+			</div>
 		</div>
 	</div>
 </div>

@@ -60,16 +60,13 @@
 				</div>
 			</div>
 			<div class="bkg-header-bottom">&nbsp;</div>
-			<div class="row padded bkg-nav">
+			<div class="row bkg-nav" ng-controller="RootCtrl">
 				<nav class="inline menu nav" data-label="Devfest Nantes 2013">
-					<!-- MENU -->
+					<!-- MENU (configured in the ./js/devfest/app.js file) -->
 		          	<ul class="row">
-						<li><a href="./index.html#/homepage">Accueil</a></li>
-						<li><a href="./index.html#/sessions">Sessions</a></li>
-						<li><a href="./index.html#/speakers">Speakers</a></li>
-						<!-- <li><a href="./index.html#/agenda">Agenda</a></li> -->
-						<li><a href="./index.html#/sponsors">Sponsors</a></li>
-						<li><a href="./index.html#/contacts">Pratique</a></li>
+		          		<li ng-repeat="item in navItems" ng-click="select( item )" ng-class="item.style.class">
+		          			<a href="./index.html#{{ item.url }}">{{ item.label }}</a>
+		          		</li>
 					</ul>
 				</nav>
 			</div>
@@ -83,43 +80,40 @@
 		</div>
 
 		<!-- SPONSORS -->	
-		<div class="row sponsors padded">
-			<div class="row align-center padded">
-				<div class="premium">
-					<span>sponsor premium</span><br>
-					<br/><br/>
-					<div class="row">
-						<div class="one half">
-							<img src="./images/sponsors/google.png" width="300px">
-						</div>
-						<div class="one half">
-							<p class="sponsor-empty">
-								<span>Votre logo ici</span>
-							</p>
-						</div>
+		<div class="row sponsors padded" ng-hide="sponsorpage">
+			<div class="row premium align-center padded">
+				<span>sponsor premium</span><br>
+				<br/><br/>
+				<div class="row">
+					<div class="one half">
+						<img src="./images/sponsors/google.png" width="300px">
+					</div>
+					<div class="one half">
+						<p class="sponsor-empty">
+							<span>Votre logo ici</span>
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row align-center padded">
-				<div class="gold">
-					<span>sponsor gold</span><br>
-					<br/><br/>
-					<div class="row">
-						<div class="one third">
-							<p class="sponsor-empty">
-								<span>Votre logo ici</span>
-							</p>
-						</div>
-						<div class="one third">
-							<p class="sponsor-empty">
-								<span>Votre logo ici</span>
-							</p>
-						</div>
-						<div class="one third">
-							<p class="sponsor-empty">
-								<span>Votre logo ici</span>
-							</p>
-						</div>
+			<br/>
+			<div class="row gold align-center padded">
+				<span>sponsor gold</span><br>
+				<br/><br/>
+				<div class="row">
+					<div class="one third">
+						<p class="sponsor-empty">
+							<span>Votre logo ici</span>
+						</p>
+					</div>
+					<div class="one third">
+						<p class="sponsor-empty">
+							<span>Votre logo ici</span>
+						</p>
+					</div>
+					<div class="one third">
+						<p class="sponsor-empty">
+							<span>Votre logo ici</span>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -127,7 +121,9 @@
 
 		<!-- FOOTER -->
 		<footer class="pad-left pad-bottom">
+			<img class="pad-top pad-right pull-left" src="./images/devfest/google_dev_small.png" />
 			&copy; 	Devfest Nantes 2013 - Organisé par le <a href="http://www.gdgnantes.com" target="_NEW" class="white">GDG Nantes</a> en partenariat avec <a href="http://nantes.epitech.eu" target="_NEW" class="white">Epitech Nantes</a>
+			<a href="./index.html#/credits" class="white pull-right pad-right">Equipe / Crédits</a>
 		</footer>
 	</body>
 	<!-- scripts-->
