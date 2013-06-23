@@ -131,13 +131,6 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:visited:hover, nav ul li a:vis
   text-decoration: none;
 }
 
-/* Toggle menu in mobile resolution */ 
-nav.menu .menu-toggle, a.button, nav.menu a.menu-toggle, a.button:visited, nav.menu a.menu-toggle:visited {
-  background: #DDD;
-  border: 1px solid #333;
-  color: black;
-}
-
 /* Active navigation indicator */
 nav ul li.active {
   background: url(../images/devfest/menu_select.png) no-repeat center bottom;
@@ -166,9 +159,25 @@ nav ul li.menu.on > a, nav ul li.menu.on > a:visited {
 /* Ground work mobile menu override */
 nav.menu {
   text-align: right;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   background-color: transparent;
+  background: url(../images/devfest/chevron_small.png) no-repeat 5px 7px;
+}
+
+nav.menu:before {
+  content: attr(data-label);
+  float: left;
+  color: white;
+  padding-left: 30px;
+  line-height: 2.1;
+}
+
+/* Toggle menu in mobile resolution */ 
+nav.menu .menu-toggle, a.button, nav.menu a.menu-toggle, a.button:visited, nav.menu a.menu-toggle:visited {
+  background: #DDD;
+  border: 1px solid #333;
+  color: black;
 }
 
 nav.menu > ul li a, nav.menu > ul li a:visited, nav.menu > ul.row li a, nav.menu > ul.row li a:visited {
