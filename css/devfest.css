@@ -157,20 +157,22 @@ nav ul li.menu.on > a, nav ul li.menu.on > a:visited {
 }
 
 /* Ground work mobile menu override */
-nav.menu {
-  text-align: right;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: transparent;
-  background: url(../images/devfest/chevron_small.png) no-repeat 5px 7px;
-}
+@media only screen and (max-width: 768px) {
+  nav.menu {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    background: url(../images/devfest/chevron_small.png) no-repeat 5px 7px;
+  }
 
-nav.menu:before {
-  content: attr(data-label);
-  float: left;
-  color: white;
-  padding-left: 30px;
-  line-height: 2.1;
+  nav.menu:before {
+    content: attr(data-label);
+    float: left;
+    color: white;
+    padding-left: 30px;
+    line-height: 2.1;
+  }
 }
 
 /* Toggle menu in mobile resolution */ 
