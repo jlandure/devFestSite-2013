@@ -1,26 +1,33 @@
 
+<!-- CALL FOR PAPER -->
+<div class="row pad-top">
+	<div class="two centered mobile third callout justify">	
+		<h3><i class="icon-bullhorn icon-3x pull-left"></i>Call For Paper</h3>
+		<p>
+			Nous sommes à la recherche de speakers pour le Devfest Nantes 2013. Le Call For Paper est lancé ! </br>
+			Si vous voulez réaliser une présentation de 50-55 minutes ou bien animer un barcamp de 1-2h,
+			<a href="https://docs.google.com/forms/d/1z_0IwGq5W531jJvhX-9Q9tmwj7IhkIW_UwgknplI0rA/viewform" target="_NEW" class="white">proposez votre sujet ici</a></br></br>
+			Le Call For Paper s'arrêtera le 31 Août 2013 à 23h59!
+		</p>
+	</div>
+</div>
+
 <!-- Session list builder -->
 <div class="row padded">
 	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
-		<div class="four sixths skip-one sessions speaker-tracker" >
-			<!-- Session header -->
-			<div class="row pad-left pad-top pad-right">
-				<div class="two thirds mobile ">
-					<h3>{{ speaker.displayName }}</h3>
-				</div>
-				<hr>			
-			</div>
-			<!-- Session content -->
-			<div class="row padded justify">
+		<div class="four sixths skip-one sessions speaker-tracker padded" >
 				<!-- Speaker photo -->
 				<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
-				<!-- Speaker biography -->
-				<p><em>{{ speaker.bio }}</em></p>
+				
 				<!-- Speaker links description -->
-				<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-left"></i></a>
-				<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-left"></i></a>
-				<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-left"></i></a>
-			</div>
+				<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-right"></i></a>
+
+				<!-- Speaker name & biography -->
+				<a name="{{ speaker.id }}"></a>
+				<h3 class=" padded" style="width:70%">{{ speaker.displayName }}</h3>
+				<p><em>{{ speaker.bio }}</em></p>
 		</div>
 	</div>
 </div>

@@ -13,18 +13,19 @@
 </div>
 
 <!-- FILTERS -->
-<div class="row" >
-	<div class="one fifth padded skip-one">
+<div class="row pad-bottom" >
+	<div class="one fifth pad-right skip-one">
 		Tracker
         <select class="unselected" ng-model="trackers">
             <option selected value="">Tous</option>
             <option value="android">Android</option>
             <option value="html5">HTML5</option>
             <option value="cloud">Cloud</option>
+            <option value="ux">UX</option>
             <option value="codelabs">Code labs</option>
         </select>
     </div>
-    <div class="one fifth padded">
+    <div class="one fifth pad-right">
     	Technos
         <select class="unselected" ng-model="technos">
             <option selected value="">Toutes</option>
@@ -34,7 +35,7 @@
             <option value="angular">Angular JS</option>
         </select>
     </div>
-    <div class="one fifth padded">
+    <div class="one fifth">
     	Difficulté
         <select class="unselected" ng-model="levels">
             <option selected value="">Toutes</option>
@@ -59,7 +60,7 @@
 				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
 			<hr>
-			<small>Présenté par {{ speaker.displayName }}</small>
+			<small>Présenté par <a href="index.html#/speakers">{{ speaker.displayName }}</a></small>
 		</div>
 		<!-- Session content -->
 		<div class="row padded justify">

@@ -66,22 +66,22 @@ function getSpeaker(scope, speakerId) {
 };
 
 /* Agenda controller */
-function AgendaCtrl($scope, $rootScope, $routeParams) {
+function AgendaCtrl($scope, $rootScope) {
   $rootScope.sponsorpage = false;
 }
-//AgendaCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];
+//AgendaCtrl.$inject = ['$scope', '$rootScope'];
 
 
 /* Sponsors controller */
-function SponsorsCtrl($scope, $rootScope, $routeParams) {
+function SponsorsCtrl($scope, $rootScope) {
 	$rootScope.sponsorpage = true;
 }
-//SponsorsCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];
+//SponsorsCtrl.$inject = ['$scope', '$rootScope'];
 
 
 /* Empty controller */
-function EmptyCtrl($scope, $rootScope, $routeParams) {
+function EmptyCtrl($scope, $rootScope) {
   // Always nothing to do
   $rootScope.sponsorpage = false;
 }
-//EmptyCtrl.$inject = ['$scope', '$rootScope', '$routeParams'];
+//EmptyCtrl.$inject = ['$scope', '$rootScope'];
