@@ -25,9 +25,11 @@
 				<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-right"></i></a>
 
 				<!-- Speaker name & biography -->
-				<a name="{{ speaker.id }}"></a>
-				<h3 class=" padded" style="width:70%">{{ speaker.displayName }}</h3>
-				<p><em>{{ speaker.bio }}</em></p>
+				<div>
+					<a name="{{ speaker.id }}"></a>
+					<h3 class=" padded" style="width:70%">{{ speaker.displayName }}</h3>
+					<div style="padding-left:110px;word-wrap: break-word;" ng-bind-html-unsafe="speaker.bio"></div>
+				</div>
 		</div>
 	</div>
 </div>

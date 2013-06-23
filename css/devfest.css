@@ -131,8 +131,27 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:visited:hover, nav ul li a:vis
   text-decoration: none;
 }
 
+/* Toggle menu in mobile resolution */ 
+nav.menu .menu-toggle, a.button, nav.menu a.menu-toggle, a.button:visited, nav.menu a.menu-toggle:visited {
+  background: #DDD;
+  border: 1px solid #333;
+  color: black;
+}
+
+/* Active navigation indicator */
 nav ul li.active {
   background: url(../images/devfest/menu_select.png) no-repeat center bottom;
+}
+
+/* Active navigation indicator on mobile */
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    height: 25px;
+    padding-top: 0px;
+  }
+  nav ul li.active {
+    background: #888;
+  }
 }
 
 nav ul li:first-child a, nav ul li:first-child a:visited {

@@ -66,8 +66,8 @@
 				<nav class="inline menu nav" data-label="Devfest Nantes 2013">
 					<!-- MENU (configured in the ./js/devfest/app.js file) -->
 		          	<ul class="row">
-		          		<li ng-repeat="item in navItems" ng-click="select( item )" ng-class="item.style.class">
-		          			<a href="./index.html#{{ item.url }}">{{ item.label }}</a>
+		          		<li ng-repeat="item in navItems" ng-class="item.style.class">
+		          			<a href="./index.html#{{ item.url }}" ng-click="select( item )">{{ item.label }}</a>
 		          		</li>
 					</ul>
 				</nav>
