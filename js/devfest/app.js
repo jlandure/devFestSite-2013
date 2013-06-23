@@ -12,6 +12,7 @@ angular.module('devfest', []).
       when('/credits', {templateUrl: 'partials/credits.html', controller: EmptyCtrl}).
       when('/presse', {templateUrl: 'partials/presse.html', controller: EmptyCtrl}).
       when('/cfp', {templateUrl: 'partials/cfp.html', controller: EmptyCtrl}).
+       when('/subscribe', {templateUrl: 'partials/subscribe.html', controller: EmptyCtrl}).
       otherwise({redirectTo: '/homepage'});
 }]);
 
@@ -21,6 +22,7 @@ NavigationCtrl.ACTIVE = 'active';
 
 function NavigationCtrl($scope, $rootScope, $location) {
   $scope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
+                      {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
                       {'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
                       {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
                       {'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
