@@ -161,18 +161,14 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
 }
 
 /* Menu stick height */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .stickheight {
     height: 160px;
   }
 }
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
-  .stickheight {
-    height: 140px;
-  }
-}
+
 /* Menu stick height */
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
   .stickheight {
     height: 0px;
   }
@@ -181,6 +177,7 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
     position: relative;
   }
 }
+
 /* Sponsors styles */
 .sponsors div {
   color: white;
@@ -320,10 +317,6 @@ img.speaker {
 }
 
 /* Agenda */
-.calendar  {
-  
-}
-
 .calendar-time {
   text-align: right;
   padding-right: 10px;
@@ -396,6 +389,15 @@ img.speaker {
   height : 210px;
   padding-left: 10px;
   color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  .calendar-two-blocks {
+    background-color: #F8F8F8;
+    height : 845px;
+    padding-left: 10px;
+    color: #333;
+  }
 }
 
 .calendar-android {

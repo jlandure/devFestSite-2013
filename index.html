@@ -28,39 +28,41 @@
 		<header  class="row stick stick.top">
 			<div class="row hide-on-small-tablet">
 				<!-- LOGO -->
-				<div class="four fifth gap-top pad-left">
-					<h1>
+				<div class="row gap-top pad-left">
+					<h1 style="display:inline-block;">
 						<img src="./images/devfest/chevron.png" style="vertical-align:-10px;" height="50px">
 						<span class="robotoblack" style="marging-top:10px">Devfest</span> Nantes 2013 <small>by GDG Nantes</small>
 					</h1>
+
+					<!-- SOCIAL LINKS -->
+					<div class="pull-right align-right padded">
+						<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
+						<div class="g-plusone" data-size="medium"></div>
+						<!-- Placez cette ballise après la dernière balise Bouton +1. -->
+						<script type="text/javascript">
+						  window.___gcfg = {lang: 'fr'};
+
+						  (function() {
+						    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						    po.src = 'https://apis.google.com/js/plusone.js';
+						    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						  })();
+						</script>	
+						<a href="http://www.facebook.com/gdgnantes" target="_NEW" class="icons"><i class="icon-facebook-sign icon-3x"></i></a>
+						&nbsp;
+						<a href="https://plus.google.com/u/0/b/104080355394243371522/104080355394243371522/posts" target="_NEW" class="icons"><i class="icon-google-plus-sign icon-3x"></i></a>
+						&nbsp;
+						<a href="http://twitter.com/gdgnantes" target="_NEW" class="icons"><i class="icon-twitter-sign icon-3x"></i></a>
+						<br/>
+						<small>#devfest #devfest2013 #gdg #gdgnantes</small>
+					</div>
 					
 				</div>
 
-				<!-- SOCIAL LINKS -->
-				<div class="pull-right align-right desktop-only padded">
-					<!-- Placez cette balise où vous souhaitez faire apparaître le gadget Bouton +1. -->
-					<div class="g-plusone" data-size="medium"></div>
-					<!-- Placez cette ballise après la dernière balise Bouton +1. -->
-					<script type="text/javascript">
-					  window.___gcfg = {lang: 'fr'};
-
-					  (function() {
-					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-					    po.src = 'https://apis.google.com/js/plusone.js';
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>	
-					<a href="http://www.facebook.com/gdgnantes" target="_NEW" class="icons"><i class="icon-facebook-sign icon-3x"></i></a>
-					&nbsp;
-					<a href="https://plus.google.com/u/0/b/104080355394243371522/104080355394243371522/posts" target="_NEW" class="icons"><i class="icon-google-plus-sign icon-3x"></i></a>
-					&nbsp;
-					<a href="http://twitter.com/gdgnantes" target="_NEW" class="icons"><i class="icon-twitter-sign icon-3x"></i></a>
-					<br/>
-					<small>#devfest #devfest2013 #gdg #gdgnantes</small>
-				</div>
+				
 			</div>
 			<div class="bkg-header-bottom">&nbsp;</div>
-			<div class="row bkg-nav" ng-controller="RootCtrl">
+			<div class="row bkg-nav" ng-controller="NavigationCtrl">
 				<nav class="inline menu nav" data-label="Devfest Nantes 2013">
 					<!-- MENU (configured in the ./js/devfest/app.js file) -->
 		          	<ul class="row">
