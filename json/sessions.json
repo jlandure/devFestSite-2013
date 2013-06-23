@@ -61,7 +61,7 @@
 		{
 			"id" : "cmottier",
 			"displayName" : "Cyril mottier",
-			"bio" : "Cyril mottier est un Google Developer Expert dédié aux technologies Google (voir https://developers.google.com/experts/). Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
 			"urlPhoto" : "./images/speakers/cyrilmottier.jpeg",
 			"urlGooglePlus" : "http://plus.google.com",
 			"urlTwitter" : "http://www.twitter.com",
@@ -79,7 +79,7 @@
 		{
 			"id" : "elezmy",
 			"displayName" : "Eyal Lezmy",
-			"bio" : "<ul><li>Software Engineer chez GenyMobile, spécialisé dans Android et le développement web http://www.genymobile.com</li> <li>Trésorier du Paris Android User Group http://paug.fr</li><li>Créateur du podcast Android Devcast le podcast Android pour les professionnels et les développeurs http://android-devcast.com</li><li>Google Developer Expert Android https://developers.google.com/experts/members/</li>",
+			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
 			"urlPhoto" : "./images/speakers/eyal.gif",
 			"urlGooglePlus" : "#",
 			"urlTwitter" : "#",
