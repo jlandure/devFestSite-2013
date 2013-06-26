@@ -71,7 +71,7 @@
 			"id" : "jgarreau",
 			"displayName" : "Jean-François Garreau",
 			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
-			"urlPhoto" : "http://devfest.gdgnantes.com/_/rsrc/1348310841331/speakers/jef.jpeg",
+			"urlPhoto" : "./images/speakers/jef.jpeg",
 			"urlGooglePlus" : "http://plus.google.com",
 			"urlTwitter" : "http://www.twitter.com",
 			"urlWebsite" : "http://www.binomed.com"

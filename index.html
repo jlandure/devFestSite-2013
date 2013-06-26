@@ -2,7 +2,10 @@
   <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="devfest"> <![endif]-->
   <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  ng-app="devfest"> <![endif]-->
   <!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="devfest"> <![endif]-->
-  <!--[if gt IE 8]><!--> <html class="no-js" ng-app="devfest"> <!--<![endif]-->
+  <!--[if gt IE 8]> --><html class="no-js" ng-app="devfest"> <!--<![endif]-->
+
+  <!-- A mettre à la place de la balise html en PROD
+  <html class="no-js" ng-app="devfest" manifest="devfest_appcache.manifest">-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,6 +17,9 @@
 		<!-- Angular.js -->
 		<script src="./js/libs/angular.min.js"></script>
 		<script src="./js/devfest/app.js"></script>
+		<!-- scripts-->
+		<script type="text/javascript" src="./js/plugins/jquery.cycle2.js"></script>
+		<script type="text/javascript" src="./js/groundwork.all.js"></script>
 		<!-- Groundwork css -->
 		<link type="text/css" rel="stylesheet" href="./css/groundwork.css"><!--[if IE]>
 		<link type="text/css" rel="stylesheet" href="./css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
@@ -128,7 +134,5 @@
 			<a href="./index.html#/credits" class="white pull-right pad-right">Equipe / Crédits</a>
 		</footer>
 	</body>
-	<!-- scripts-->
-	<script type="text/javascript" src="./js/plugins/jquery.cycle2.js"></script>
-	<script type="text/javascript" src="./js/groundwork.all.js"></script>
+	
 </html>
