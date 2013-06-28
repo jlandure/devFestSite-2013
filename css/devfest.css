@@ -234,6 +234,11 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
   color: #a40400;
 }
 
+.premium img{
+  max-width: 300px;
+  max-height: 150px;
+}
+
 .gold {
    border: 1px solid #FF8800;
   border-left: 7px solid #FF8800; 
@@ -243,6 +248,11 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
   color: #FF8800;
 }
 
+.gold img{
+  max-width: 250px;
+  max-height: 130px; 
+}
+
 .silver {
   border: 1px solid #AAA;
   border-left: 7px solid #AAA;
@@ -250,6 +260,11 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
 
 .silver span {
   color: #AAA;
+}
+
+.silver img{
+  max-width: 200px;
+  max-height: 100px;
 }
 
 .partner {
