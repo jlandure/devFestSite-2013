@@ -19,7 +19,7 @@ devfestApp.config(['$routeProvider', function($routeProvider) {
       when('/credits', {templateUrl: 'partials/credits.html', controller: 'EmptyCtrl'}).
       when('/presse', {templateUrl: 'partials/presse.html', controller: 'EmptyCtrl'}).
       when('/cfp', {templateUrl: 'partials/cfp.html', controller: 'EmptyCtrl'}).
-      when('/subscribe', {templateUrl: 'partials/subscribe.html', controller: 'EmptyCtrl'}).
+      when('/subscribe', {templateUrl: 'partials/subscribe.html', controller: 'NavigationCtrl'}).
       //when('/afterparty', {templateUrl: 'partials/afterparty.html', controller: 'EmptyCtrl'}).
       otherwise({redirectTo: '/homepage'});
 }]);
@@ -45,7 +45,7 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   $rootScope.urlPartenariat = "https://docs.google.com/file/d/0Bx5mRU2mXdx0WnBhOFVVTk90cGs/edit?usp=sharing";
   
   // Manage the navigation
-  $scope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
+  $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
                       {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
                       //{'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
                       {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
@@ -55,14 +55,14 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
                       //{'label' : 'After Party', 'url' : '/afterparty', 'style': {} },
                       {'label' : 'Presse', 'url' : '/presse', 'style': {}} ];
   
-  $scope.selected = getLocationItem($scope.navItems, $location.path());
+  $rootScope.selected = getLocationItem($rootScope.navItems, $location.path());
 
-  $scope.select = function( item ) {
+  $rootScope.select = function( item ) {
     // Select the navigation item for the selected page
-    if( $scope.selected )
-        $scope.selected.style.class = DEFAULT;
-    $scope.selected = item;
-    $scope.selected.style.class = ACTIVE;
+    if( $rootScope.selected )
+        $rootScope.selected.style.class = DEFAULT;
+    $rootScope.selected = item;
+    $rootScope.selected.style.class = ACTIVE;
     // Hide the sponsor div in the sponsor page
     if (item.url == '/sponsors') {
         $rootScope.sponsorpage = true;
@@ -72,7 +72,7 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   };
   
   // Select the current page to the navigation bar
-  $scope.select($scope.selected );
+  $rootScope.select($rootScope.selected );
 }]);
 
 
