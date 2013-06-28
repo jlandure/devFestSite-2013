@@ -63,63 +63,64 @@
 			"displayName" : "Cyril mottier",
 			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
 			"urlPhoto" : "./images/speakers/cyrilmottier.jpeg",
-			"urlGooglePlus" : "http://plus.google.com",
-			"urlTwitter" : "http://www.twitter.com",
-			"urlWebsite" : "http://www.cyrilmottier.com"
+			"urlGooglePlus" : "https://plus.google.com/u/0/118417777153109946393/posts",
+			"urlTwitter" : "http://www.twitter.com/cyrilmottier",
+			"urlWebsite" : "http://www.cyrilmottier.com",
+			"urlGithub"  : "https://github.com/cyrilmottier"
 		},
 		{
 			"id" : "jgarreau",
 			"displayName" : "Jean-François Garreau",
 			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
 			"urlPhoto" : "./images/speakers/jef.jpeg",
-			"urlGooglePlus" : "http://plus.google.com",
-			"urlTwitter" : "http://www.twitter.com",
-			"urlWebsite" : "http://www.binomed.com"
+			"urlGooglePlus" : "https://plus.google.com/114772056028520115043/posts",
+			"urlTwitter" : "http://www.twitter.com/binomed",
+			"urlWebsite" : "http://blog.binomed.fr",
+			"urlGithub"  : "https://github.com/binomed"
 		},
 		{
 			"id" : "elezmy",
 			"displayName" : "Eyal Lezmy",
 			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
 			"urlPhoto" : "./images/speakers/eyal.gif",
-			"urlGooglePlus" : "#",
-			"urlTwitter" : "#",
-			"urlWebsite" : "#"
+			"urlGooglePlus" : "https://plus.google.com/109290164663410811176/posts",
+			"urlTwitter" : "https://twitter.com/eyal_lezmy",
+			"urlGithub"  : "https://github.com/eyal-lezmy"
 		},
 		{
 			"id" : "ashineye",
 			"displayName" : "Ade Oshineye",
 			"bio" : "Ade is a Developer advocate in Google for the Google + team.",
 			"urlPhoto" : "./images/speakers/ade.jpg",
-			"urlGooglePlus" : "#",
-			"urlTwitter" : "#",
-			"urlWebsite" : "#"
+			"urlGooglePlus" : "https://plus.google.com/+AdeOshineye/posts",
+			"urlTwitter" : "https://twitter.com/ade_oshineye",
+			"urlWebsite" : "http://www.oshineye.com/",
+			"urlGithub"  : "https://github.com/adewale"
 		},
 		{
 			"id" : "ngarnier",
 			"displayName" : "Nicolas Garnier",
 			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
 			"urlPhoto" : "./images/speakers/nicolasgarnier2.png",
-			"urlGooglePlus" : "#",
-			"urlTwitter" : "#",
-			"urlWebsite" : "#"
+			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
+			"urlTwitter" : "https://twitter.com/nivco"
 		},
 		{
 			"id" : "fbeaufort",
 			"displayName" : "François Beaufort",
 			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
 			"urlPhoto" : "./images/speakers/francois_beaufort.jpg",
-			"urlGooglePlus" : "#",
-			"urlTwitter" : "#",
-			"urlWebsite" : "#"
+			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
 		},
 		{
 			"id" : "cpinson",
-			"displayName" : "Cédric Pison",
+			"displayName" : "Cédric Pinson",
 			"bio" : "Cédric Pinson est aujourdhui un des acteurs français incontournable de la scène WebGL. Il travaille pour SketchFab un site web dont l'objectif est d'afficher n'importe quel modèle 3D dans votre navigateur grâce à la technologie WebGL.",
 			"urlPhoto" : "./images/speakers/cedric-pinson.jpg",
-			"urlGooglePlus" : "#",
-			"urlTwitter" : "#",
-			"urlWebsite" : "#"
+			"urlGooglePlus" : "https://plus.google.com/u/0/104934084596438389147/posts",
+			"urlTwitter" : "https://twitter.com/trigrou/",
+			"urlWebsite" : "http://plopbyte.com/",
+			"urlGithub"  : "https://github.com/cedricpinson"
 		}
 
 	]

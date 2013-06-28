@@ -20,9 +20,10 @@
 				<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
 				
 				<!-- Speaker links description -->
-				<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-right"></i></a>
-				<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-right"></i></a>
-				<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlGooglePlus }}" ng-show="speaker.urlGooglePlus" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlTwitter }}" ng-show="speaker.urlTwitter" target="_NEW"><i class="icon-twitter-sign icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlWebsite }}" ng-show="speaker.urlWebsite" target="_NEW"><i class="icon-globe icon-2x pull-right"></i></a>
+				<a href="{{ speaker.urlGithub }}" ng-show="speaker.urlGithub" target="_NEW"><i class="icon-github icon-2x pull-right"></i></a>
 
 				<!-- Speaker name & biography -->
 				<div>
