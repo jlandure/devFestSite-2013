@@ -7,47 +7,57 @@ module.exports = function (grunt) {
 
     src: {
       html: {
-        index:'',
-        partials:'partials',
-        all :"**/*.html"
+        index:    'index.html',
+        partials: 'partials',
+        all :     "**/*.html"
       },
       js:   ['js/**/*.js'],
       css: {
         all :'css/**/*.css',
         dir: 'css/',
         app: 'css/devfest.css'
+      },
+      assets: {
+        font:     'font',
+        images:   'images',
+        json:     'json',
+        manifest: 'devfest_appcache.manifest'
       }
     },
     
     dest: {
-      root:       'target',
+      root:       'prod',
       html: {
-        index:    'target/index.html',
-        partials: 'target/partials'
+        index:    'prod/index.html',
+        partials: 'prod/partials'
       },
-      res:        'src/main/webapp/resources',
-      js:         'target/javascript',
-      css:        'target/css'
+      assets: {
+        font:     'prod/font',
+        images:   'prod/images',
+        json:     'prod/json',
+        manifest: 'prod/devfest_appcache.manifest'
+      }
     },
 
     // Configuration des taches
 
     clean: {
-      html:  ['<%= dest.html.index %>', '<%= dest.html.partials %>'],
-      res:   ['<%= dest.res %>'],
-      js:    ['<%= dest.js %>'],
-      css:   ['<%= dest.css %>']
+      prod:   '<%= dest.root %>'
     },
 
     copy: {
       html: {
         files: [
-          { expand: true, cwd: '<%= src.html %>', src: ['**'], dest: '<%= dest.root %>' }
+          { src: '<%= src.html.index %>', dest: '<%= dest.html.index %>' },
+          { expand: true, cwd: '<%= src.html.partials %>', src: ['**/*.html'], dest: '<%= dest.html.partials %>' }
         ]
       },
-      res: {
+      assets: {
         files: [
-          { expand: true, cwd: '<%= src.res %>', src: ['**'], dest: '<%= dest.res %>' }
+          { expand: true, cwd: '<%= src.assets.font %>', src: ['**'], dest: '<%= dest.assets.font %>' },
+          { expand: true, cwd: '<%= src.assets.images %>', src: ['**'], dest: '<%= dest.assets.images %>' },
+          { expand: true, cwd: '<%= src.assets.json %>', src: ['**/*.json'], dest: '<%= dest.assets.json %>' },
+          { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' }
         ]
       }
     },
@@ -63,7 +73,7 @@ module.exports = function (grunt) {
         dirs: ['<%= dest.root %>']
       }
     },
-
+/*
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -76,7 +86,7 @@ module.exports = function (grunt) {
         csslintrc: '.csslintrc'
       },
       src: '<%= src.css.app %>'
-    },
+    },*/
 
     // Configuration du watch
 
@@ -110,15 +120,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-usemin');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  /*grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');*/
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  /*grunt.loadNpmTasks('grunt-contrib-compass');**/
 
   // Déclaration des taches
-  grunt.registerTask('lint',    ['jshint', 'csslint']);
-  grunt.registerTask('dist',    ['clean', 'copy:html', 'copy:res', 'compass', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
-  grunt.registerTask('release', ['lint', 'dist']);
-  grunt.registerTask('default', ['release']);
+  /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
+  grunt.registerTask('default', ['prod']);
 
 };
