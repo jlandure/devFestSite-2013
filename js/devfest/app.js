@@ -42,7 +42,7 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   }
 
   // Url of the sponsor document
-  $rootScope.urlPartenariat = "https://docs.google.com/file/d/0Bx5mRU2mXdx0WnBhOFVVTk90cGs/edit?usp=sharing";
+  $rootScope.urlPartenariat = "https://docs.google.com/file/d/0Bx5mRU2mXdx0ZkdUWFlRWFFRcWs/edit?usp=sharing";
   
   // Manage the navigation
   $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
