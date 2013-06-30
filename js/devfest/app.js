@@ -12,7 +12,7 @@ devfestApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/homepage', {templateUrl: 'partials/homepage.html',   controller: 'EmptyCtrl'}).
       //when('/sessions', {templateUrl: 'partials/sessions.html', controller: 'SessionsCtrl'}).
-      when('/speakers', {templateUrl: 'partials/speakers.html', controller: 'SessionsCtrl'}).
+      when('/speakers', {templateUrl: 'partials/speakers.html', controller: 'SpeakersCtrl'}).
       //when('/agenda', {templateUrl: 'partials/agenda.html', controller: 'AgendaCtrl'}).
       when('/sponsors', {templateUrl: 'partials/sponsors.html', controller: 'EmptyCtrl'}).
       when('/contacts', {templateUrl: 'partials/contacts.html', controller: 'EmptyCtrl'}).
@@ -75,15 +75,24 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   $rootScope.select($rootScope.selected );
 }]);
 
+/** 
+ * Speakers controller 
+ */
+devfestApp.controller('SpeakersCtrl', ['$scope', '$http', function ($scope, $http) {
+  $http.get('json/sessions.json').success(function(data) {
+    $scope.speakers = data.speakers;
+  });
+}]);
 
 /** 
  * Sessions controller 
  */
-devfestApp.controller('SessionsCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
+devfestApp.controller('SessionsCtrl', ['$scope', '$http', function ($scope, $http) {
 	$http.get('json/sessions.json').success(function(data) {
-    	$scope.sessions = data.sessions;
-    	$scope.speakers = data.speakers;
-  	});
+    $scope.sessions = data.sessions;
+    $scope.speakers = data.speakers;
+    $scope.agendaTimes = data.agendaTimes;
+  });
 }]);
 
 /** 
@@ -97,18 +106,100 @@ devfestApp.controller('SessionDetailCtrl',['$scope', function ($scope) {
    			return scope.speakers[i];
    		}
    	}
+    return "TBD";
+  };
+
+  function getAgendaTime(scope, timeId) {
+    for (var i=0; i<scope.agendaTimes.length; i++) {
+      var line = scope.agendaTimes[i];
+      if (line.name == timeId) {
+        return line.start + " - " + line.end;
+      }
+    }
+    return "TBD";
   };
   
   var speakerId = $scope.session.speaker;
   $scope.speaker = getSpeaker($scope, speakerId);
 
+  var timeId = $scope.session.time;
+  $scope.time = getAgendaTime($scope, timeId);
 }]);
 
 /** 
  * Agenda controller 
  */
-devfestApp.controller('AgendaCtrl',['$scope', function ($scope) {
+devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) {
   
+  function getSpeaker(speakers, speakerId) {
+    for (var i=0; i<speakers.length; i++) {
+      if (speakers[i].id == speakerId) {
+        return speakers[i].displayName;
+      }
+    }
+  };
+
+  $http.get('json/sessions.json').success(function(data) {
+    var agendaTimes = data.agendaTimes;
+    var sessions =  data.sessions;
+    var speakers =  data.speakers;
+
+    for (var i=0; i<sessions.length; i++) {
+      // Get the session
+      var session = sessions[i];
+      for (var j=0; j<agendaTimes.length; j++) {
+        // Get the timeline
+        var line = agendaTimes[j];
+        // Add session to the corresponding timeline
+        if (session.time && line.name === session.time) {
+          // Get speaker name of the session
+          session.speakername = getSpeaker(speakers, session.speaker);
+          // Add the session to the corresponding track line
+          switch (session.track) {
+            case "android" :
+              line.android = session;
+              break;
+            case "html5" :
+              line.html5 = session;
+              break;
+            case "cloud" :
+              line.cloud = session;
+              break;
+            case "decouverte" :
+              line.decouverte = session;
+              break;
+            case "codelabs" :
+              line.codelabs = session;
+              break;
+          }
+          break;
+        }
+      }
+    }
+    // Add TBD times
+    var tbd = {"label":"[A définir]", "speakername" : "XXX", "room" : "A définir"};
+    for (var j=0; j<agendaTimes.length; j++) {
+      // Get the timeline
+      var line = agendaTimes[j];
+      if (!line.android) {
+        line.android = tbd;
+      }
+      if (!line.html5) {
+        line.html5 = tbd;
+      }
+      if (!line.cloud) {
+        line.cloud = tbd;
+      }
+      if (!line.decouverte) {
+        line.decouverte = tbd;
+      }
+      if (!line.codelabs) {
+        line.codelabs = tbd;
+      }
+    }
+    // Add agenda times & sessions to the scope view
+    $scope.times = agendaTimes;
+  });
 }]);
 
 /** 

@@ -1,19 +1,5 @@
-
-<!-- CALL FOR PAPER -->
-<div class="row pad-top">
-	<div class="two centered mobile third callout justify">	
-		<h3><i class="icon-bullhorn icon-3x pull-left"></i>Call For Paper</h3>
-		<p>
-			Nous sommes à la recherche de speakers pour le Devfest Nantes 2013. Le Call For Paper est lancé ! </br>
-			Si vous voulez réaliser une présentation de 50-55 minutes ou bien animer un barcamp de 1-2h,
-			<a href="./index.html#/cfp" class="white">proposez votre sujet ici</a></br></br>
-			Le Call For Paper s'arrêtera le 31 Août 2013 à 23h59!
-		</p>
-	</div>
-</div>
-
 <!-- FILTERS -->
-<div class="row pad-bottom" >
+<div class="row padded" >
 	<div class="one fifth pad-right pad-left skip-one">
 		Tracker
         <select class="unselected" ng-model="trackers">
@@ -56,7 +42,7 @@
 				<h3><img ng-src="{{ session.icon }}" width="20px" height="20px"> {{ session.label }}</h3>
 			</div>
 			<div class="one third mobile align-right">
-				<b>{{ session.time }}, salle {{ session.room }}</b><br>
+				{{ time }}, salle {{ session.room }}<br>
 				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
 			<hr>

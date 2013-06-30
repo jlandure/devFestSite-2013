@@ -1,4 +1,18 @@
 {
+	"agendaTimes" : [
+		{ "name" : "openning", "start" : "8h30", "end": "8h45" },
+		{ "name" : "keynote", "start" : "8h45", "end": "9h30" },
+		{ "name" : "S1", "start" : "9h45", "end": "10h45" },
+		{ "name" : "S2", "start" : "10h55", "end": "11h55" },
+		{ "name" : "lunch", "start" : "12h00", "end": "13h20" },
+		{ "name" : "S3", "start" : "13h30", "end": "14h30" },
+		{ "name" : "S4", "start" : "14h40", "end": "15h40" },
+		{ "name" : "break", "start" : "15h40", "end": "16h10" },
+		{ "name" : "S5", "start" : "16h10", "end": "17h10" },
+		{ "name" : "S6", "start" : "17h20", "end": "18h20" },
+		{ "name" : "afterparty", "start" : "19h00", "end": "Minuit" }
+	],
+
 	"sessions" : [
 		{
 			"label" : "Android ",
