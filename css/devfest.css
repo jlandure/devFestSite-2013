@@ -1,6 +1,6 @@
 html, body {
   font-family: 'RobotoLight', Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
   color: #444;
 }
@@ -43,10 +43,32 @@ footer {
   background-repeat: repeat-x;
 }
 
+/* links */
+a, a:visited {
+  text-decoration: none;
+  color: #0099CC;
+  -ms-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+  text-decoration: none;
+  color: #198d98;
+  cursor: pointer;
+}
+
 /* icon links */
 a.white, a.white:visited {
   color: white;
   text-decoration: underline;
+}
+
+a.white:hover, a.white:focus, a.white:visited:hover, a.white:visited:focus {
+  color: #222;
+  cursor: pointer;
 }
 
 a.icons, a.icons:visited {
@@ -98,22 +120,7 @@ hr {
   font-family: 'RobotoBold', Arial, sans-serif;
 }
 
-/* links */
-a, a:visited {
-  text-decoration: none;
-  color: #0099CC;
-  -ms-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  -moz-transition: color 0.25s;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-}
 
-a:hover, a:focus, a:visited:hover, a:visited:focus {
-  text-decoration: none;
-  color: #198d98;
-  cursor: pointer;
-}
 
 /* Ground work menu override */
 nav ul li {
@@ -193,7 +200,7 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
 /* Menu stick height */
 @media only screen and (min-width: 768px) {
   .stickheight {
-    height: 160px;
+    height: 170px;
   }
 }
 

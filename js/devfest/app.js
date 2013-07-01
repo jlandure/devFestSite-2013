@@ -42,8 +42,9 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   }
 
   // Url of the sponsor document
-  $rootScope.urlPartenariat = "https://docs.google.com/file/d/0Bx5mRU2mXdx0ZkdUWFlRWFFRcWs/edit?usp=sharing";
-  
+  $rootScope.urlPartenariat = "http://drive.google.com/uc?export=download&id=0Bx5mRU2mXdx0ZkdUWFlRWFFRcWs";
+  $rootScope.urlDocPresse = "http://drive.google.com/uc?export=download&id=0Bx5mRU2mXdx0YWRRUkVOb3o1Tk0";
+
   // Manage the navigation
   $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
                       {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
