@@ -58,5 +58,30 @@
   <loc>http://devfest.gdgnantes.com/index.html#/presse</loc>
   <changefreq>weekly</changefreq>
   <priority>0.6</priority>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/2013_11_08_devfest.png</image:loc>
+    <image:title>Affiche DevFest Nantes 2013</image:title>
+    <image:caption>Affiche DevFest Nantes 2013</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_468x60.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 468x60 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 468x60 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_160x400.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 160x400 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 160x400 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_300x250.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 300x250 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 300x250 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_300x125.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 300x125 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 300x125 px</image:caption>
+  </image:image>
 </url>
 </urlset>
