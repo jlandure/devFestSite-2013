@@ -21,7 +21,9 @@ module.exports = function (grunt) {
         font:     'font',
         images:   'images',
         json:     'json',
-        manifest: 'devfest_appcache.manifest'
+        manifest: 'devfest_appcache.manifest',
+        sitemap:  'sitemap.xml',
+        robots:   'robots.txt'
       }
     },
     
@@ -35,7 +37,9 @@ module.exports = function (grunt) {
         font:     'prod/font',
         images:   'prod/images',
         json:     'prod/json',
-        manifest: 'prod/devfest_appcache.manifest'
+        manifest: 'prod/devfest_appcache.manifest',
+        sitemap:  'prod/sitemap.xml',
+        robots:   'prod/robots.txt'
       }
     },
 
@@ -57,7 +61,9 @@ module.exports = function (grunt) {
           { expand: true, cwd: '<%= src.assets.font %>', src: ['**'], dest: '<%= dest.assets.font %>' },
           { expand: true, cwd: '<%= src.assets.images %>', src: ['**'], dest: '<%= dest.assets.images %>' },
           { expand: true, cwd: '<%= src.assets.json %>', src: ['**/*.json'], dest: '<%= dest.assets.json %>' },
-          { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' }
+          { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
+          { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
+          { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' }
         ]
       }
     },
