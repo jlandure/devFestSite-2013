@@ -4,10 +4,71 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
-default_expiration: "7d 5h"
+default_expiration: "30d"
 
 handlers:
+# css files
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: /\1
+  upload: /(.*\.css)
+  
+#c ss files in directory (sublevel1)
+- url: /(.+)/(.*\.css)
+  mime_type: text/css
+  static_files: /\1/\2
+  upload: /(.+)/(.*\.css)
+  
+# js files
+- url: /(.*\.js)
+  mime_type: text/javascript
+  static_files: /\1
+  upload: (.*\.js)
+
+# js files in directory (sublevel1)
+- url: /(.+)/(.*\.js)
+  mime_type: text/javascript
+  static_files: /\1/\2
+  upload: /(.+)/(.*\.js)
+
+# image files
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: /\1
+  upload: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  
+# image files in directory (sublevel1)
+- url: /(.+)/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: /\1/\2
+  upload: /(.+)/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  
+# compressed files
+- url: /(.*\.(bz2|gz|rar|tar|tgz|zip))
+  static_files: /\1
+  upload: /(.*\.(bz2|gz|rar|tar|tgz|zip))
+  
+# PDF files
+- url: /(.*\.(pdf))
+  static_files: /\1
+  upload: /(.*\.(pdf))
+  
+# PDF files in directory (sublevel1)
+- url: /(.+)/(.*\.(pdf))
+  static_files: /\1/\2
+  upload: /(.+)/(.*\.(pdf))
+ 
+# index files
+- url: /(.+)/
+  static_files: /\1/index.html
+  upload: /(.+)/index.html
+  expiration: "15m"
+ 
+- url: /(.+)
+  static_files: /\1/index.html
+  upload: /(.+)/index.html
+  expiration: "15m"
+ 
 # site root
 - url: /
   static_files: /index.html
-  upload: /(.*)
+  upload: /index.html
+  expiration: "15m"
