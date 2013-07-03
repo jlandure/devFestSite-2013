@@ -55,6 +55,11 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>http://devfest.gdgnantes.com/index.html#/cfp</loc>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
   <loc>http://devfest.gdgnantes.com/index.html#/presse</loc>
   <changefreq>weekly</changefreq>
   <priority>0.6</priority>

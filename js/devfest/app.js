@@ -10,15 +10,15 @@ var devfestApp = angular.module('devfest', []);
  */
 devfestApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-      when('/homepage', {templateUrl: 'partials/homepage.html',   controller: 'EmptyCtrl'}).
+      when('/homepage', {templateUrl: 'partials/homepage.html',   controller: 'NavigationCtrl'}).
       //when('/sessions', {templateUrl: 'partials/sessions.html', controller: 'SessionsCtrl'}).
       when('/speakers', {templateUrl: 'partials/speakers.html', controller: 'SpeakersCtrl'}).
       //when('/agenda', {templateUrl: 'partials/agenda.html', controller: 'AgendaCtrl'}).
-      when('/sponsors', {templateUrl: 'partials/sponsors.html', controller: 'EmptyCtrl'}).
-      when('/contacts', {templateUrl: 'partials/contacts.html', controller: 'EmptyCtrl'}).
+      when('/sponsors', {templateUrl: 'partials/sponsors.html', controller: 'NavigationCtrl'}).
+      when('/contacts', {templateUrl: 'partials/contacts.html', controller: 'NavigationCtrl'}).
       when('/credits', {templateUrl: 'partials/credits.html', controller: 'EmptyCtrl'}).
       when('/presse', {templateUrl: 'partials/presse.html', controller: 'EmptyCtrl'}).
-      when('/cfp', {templateUrl: 'partials/cfp.html', controller: 'EmptyCtrl'}).
+      when('/cfp', {templateUrl: 'partials/cfp.html', controller: 'NavigationCtrl'}).
       when('/subscribe', {templateUrl: 'partials/subscribe.html', controller: 'NavigationCtrl'}).
       //when('/afterparty', {templateUrl: 'partials/afterparty.html', controller: 'EmptyCtrl'}).
       otherwise({redirectTo: '/homepage'});
@@ -50,6 +50,7 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
                       {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
                       //{'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
                       {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
+                      {'label' : 'CFP', 'url' : '/cfp', 'style': {} },
                       //{'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
                       {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {} },
                       {'label' : 'Pratique', 'url' : '/contacts', 'style': {} },
