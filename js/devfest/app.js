@@ -62,9 +62,9 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   $rootScope.select = function( item ) {
     // Select the navigation item for the selected page
     if( $rootScope.selected )
-        $rootScope.selected.style.class = DEFAULT;
+      $rootScope.selected.style['class'] = DEFAULT; //$rootScope.selected.style.class = DEFAULT;//$rootScope.select.setAttribute("class",DEFAULT);
     $rootScope.selected = item;
-    $rootScope.selected.style.class = ACTIVE;
+    $rootScope.selected.style['class'] = ACTIVE;//$rootScope.selected.style.class = ACTIVE;//$rootScope.select.setAttribute("class",ACTIVE);
     // Hide the sponsor div in the sponsor page
     if (item.url == '/sponsors') {
         $rootScope.sponsorpage = true;

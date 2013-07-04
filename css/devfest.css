@@ -1,3 +1,7 @@
+.devfestngview{
+  padding-top: 250px;
+}
+
 html, body {
   font-family: 'RobotoLight', Arial, sans-serif;
   font-size: 13px;
@@ -5,7 +9,7 @@ html, body {
   color: #444;
 }
 
-header {
+header, div.devfestheader {
   color: #777;
   background-color: #DDD;
 /*  -moz-box-shadow: 0px 2px 5px grey;
@@ -80,9 +84,10 @@ h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
   margin: 5px;
+  white-space: nowrap;
 }
 
-h1 small {
+h1 small{
   font-size: 0.4em;
 }
 
@@ -203,12 +208,15 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
 }
 
 /* Menu stick height */
-@media only screen and (min-width: 768px) {
-  .stickheight {
-    height: 170px;
-  }
+.stickheight {
+  height: 170px;
 }
 
+@media only screen and (min-width: 769px)  and (max-width: 850px) {
+  .stickheight {
+    height: 245px;
+  }
+}
 /* Menu stick height */
 @media only screen and (max-width: 768px) {
   .stickheight {
