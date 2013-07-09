@@ -104,12 +104,21 @@
 		{
 			"id" : "ashineye",
 			"displayName" : "Ade Oshineye",
-			"bio" : "Ade is a Developer advocate in Google for the Google + team.",
+			"bio" : "Ade is a Senior Developer Advocate in Google's London office and works on the Google+ project. Over the last decade he's worked on trading systems for a variety of investment banks as well as on Google's advertising and mobile search systems. He's also the co-author of 'Apprenticeship Patterns': a book that teaches you how to learn to be a great programmer.",
 			"urlPhoto" : "./images/speakers/ade.png",
 			"urlGooglePlus" : "https://plus.google.com/+AdeOshineye/posts",
 			"urlTwitter" : "https://twitter.com/ade_oshineye",
 			"urlWebsite" : "http://www.oshineye.com/",
 			"urlGithub"  : "https://github.com/adewale"
+		},
+		{
+			"id" : "ibarber",
+			"displayName" : "Ian Barber",
+			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
+			"urlPhoto" : "./images/speakers/ian_barber.png",
+			"urlGooglePlus" : "https://plus.google.com/+IanBarber/posts",
+			"urlTwitter" : "https://twitter.com/ianbarber",
+			"urlGithub"  : "https://github.com/ianbarber"
 		},
 		{
 			"id" : "ngarnier",
@@ -135,6 +144,23 @@
 			"urlTwitter" : "https://twitter.com/trigrou/",
 			"urlWebsite" : "http://plopbyte.com/",
 			"urlGithub"  : "https://github.com/cedricpinson"
+		},
+		{
+			"id" : "amoussine",
+			"displayName" : "Alexis Moussine Pouchkine",
+			"bio" : "Après plus de dix années passées dans les équipes Java de Sun Microsystems et d’Oracle, Alexis est désormais responsable des relations développeur chez Google France.",
+			"urlPhoto" : "./images/speakers/AlexisMoussine.png",
+			"urlGooglePlus" : "https://plus.google.com/+AlexisMP/posts",
+			"urlTwitter" : "https://twitter.com/alexismp/",
+			"urlWebsite" : "http://alexismp.wordpress.com/"
+		},
+		{
+			"id" : "tchatel",
+			"displayName" : "Thierry Chatel",
+			"bio" : "Je suis consultant en architecture logicielle, et formateur AngularJS. J'enseigne les bonnes pratiques de conception, d’architecture et de modélisation qui permettent de bien structurer une application, pour en faciliter la maintenance et les évolutions. <br><br>Ayant découvert AngularJS au cours de l'été 2011, j'ai tout de suite été persuadé que ce framework constitue une véritable révolution dans la création d'applications web, et la plus grande avancée qu'ait connu ce secteur depuis les débuts du web. En fervent enthousiaste, je m'y suis investi à fond, d'abord en simple pratiquant, puis rapidement en animant des conférences, en créant le blog technique francophone FrAngular, et la communauté AngularJS France sur Google+. Et j'anime maintenant en entreprise des sessions de formation à AngularJS.",
+			"urlPhoto" : "./images/speakers/Thierry-Chatel.png",
+			"urlGooglePlus" : "https://plus.google.com/u/0/113505929077720042958//posts",
+			"urlTwitter" : "https://twitter.com/thierrychatel/"
 		}
 
 	]
