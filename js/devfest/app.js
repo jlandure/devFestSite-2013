@@ -211,3 +211,50 @@ devfestApp.controller('EmptyCtrl', ['$scope', function ($scope) {
   // Always nothing to do
 }]);
 
+
+/** 
+ * Directive FAQ
+ */
+devfestApp.directive('faq', function () {
+   var directiveDefinitionObject = {
+    templateUrl: 'partials/faq.html',
+    replace: true,
+    transclude: true,
+    restrict: 'E',
+    scope: {
+        title : '@title'
+    },    
+    link: function postLink(scope, iElement, iAttrs) { 
+        var faq_title = iElement.find(".faq_title");
+        var content = iElement.find(".faq_content");
+        var icon = iElement.find("i");
+        content.css('height','0');
+        content.css('opacity','0');
+        var click = false;
+        
+        var prefix = Modernizr.prefixed('transition');
+        
+        
+        content.css(prefix+'-duration','1s');
+        content.css(prefix+'-property','opacity');
+        
+        
+        faq_title[0].addEventListener('click', function(){
+            click = !click;
+            content.css('opacity',click ? '1' : '0');
+            if (!click){
+                setTimeout(function(){
+                    content.css('height','0');
+                },1000);
+            }else{
+                content.css('height','auto');
+                
+            }
+            icon.toggleClass('icon-arrow-down');
+            icon.toggleClass('icon-arrow-right');
+        });
+        
+    }
+  };
+  return directiveDefinitionObject;
+});
