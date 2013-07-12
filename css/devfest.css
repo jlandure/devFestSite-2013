@@ -296,6 +296,12 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
   color: #0099CC;
 }
 
+.partner img{
+  max-width: 200px;
+  max-height: 100px; 
+}
+
+
 p.sponsor-empty {
   background-color: #EEE;
   width: 300px;
@@ -390,12 +396,12 @@ Tentative 2 colonnes
   color: #33b5e5;
 }
 
-img.speaker {
+.speaker {
   border: 5px solid #FFF;
   margin-right: 10px;
-  -moz-box-shadow: 1px 1px 1px grey;
-  -webkit-box-shadow: 1px 1px 1px grey;
-  box-shadow: 1px 1px 1px grey;
+  -moz-box-shadow: 1px 1px 1px gray;
+  -webkit-box-shadow: 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px gray;
 }
 
 /* Agenda */
@@ -523,3 +529,24 @@ img.speaker {
     height: 475px;
   } 
 }
+
+
+/**
+* Team
+*/
+
+.team {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-origin: 0 0;
+}
+
+.jef {
+  background-image: url('../images/team/sprite/jef.png');
+}
+
+.ju {
+  background-image: url('../images/team/sprite/ju.png');
+}
+

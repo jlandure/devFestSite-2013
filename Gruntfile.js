@@ -59,7 +59,7 @@ module.exports = function (grunt) {
       assets: {
         files: [
           { expand: true, cwd: '<%= src.assets.font %>', src: ['**'], dest: '<%= dest.assets.font %>' },
-          { expand: true, cwd: '<%= src.assets.images %>', src: ['**'], dest: '<%= dest.assets.images %>' },
+          { expand: true, cwd: '<%= src.assets.images %>', src: ['**'], dest: '<%= dest.assets.images %>' }, // (ne copier que les images non spritees)
           { expand: true, cwd: '<%= src.assets.json %>', src: ['**/*.json'], dest: '<%= dest.assets.json %>' },
           { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
           { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
@@ -115,7 +115,42 @@ module.exports = function (grunt) {
           livereload: true
         }
       }
+    },
+
+    oversprite: {
+        all: {
+            spritelist: [
+                {
+                    // List of images to add to sprite
+                    'src': ['images/team/sprite/*.png'],
+                    // Address of target image
+                    'dest': 'prod/images/sprites/team-sprite.png',
+                    // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
+                    'algorithm': 'top-down',
+                    // OPTIONAL: Rendering engine: auto, canvas, gm
+                    'engine': 'gm',
+                    // OPTIONAL: Preferences for resulting image
+                    'exportOpts': {
+                        // Image formst (buy default will try to use dest extension)
+                        'format': 'png',
+                        // Quality of image (gm only)
+                        'quality': 90
+                    }
+                }
+            ],
+            csslist: [
+                {
+                    'src':  'prod/css/app.css',
+                    // Target css file, can be the same as source
+                    'dest': 'prod/css/app-x.css'
+                    // OPTIONAL: Normalization string. Will be added to css dir path, before paths in css. 
+                    // Use if you move the css and paths to images aren't resolving correctly now.
+                    //'base': ''
+                }
+            ]
+        }
     }
+
 
   });
 
@@ -130,10 +165,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');*/
   grunt.loadNpmTasks('grunt-contrib-watch');
   /*grunt.loadNpmTasks('grunt-contrib-compass');**/
+  grunt.loadNpmTasks('grunt-oversprite');
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'oversprite', 'usemin']);
   grunt.registerTask('default', ['prod']);
 
 };
