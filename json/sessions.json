@@ -136,16 +136,6 @@
 			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
 		},
 		{
-			"id" : "cpinson",
-			"displayName" : "Cédric Pinson",
-			"bio" : "Cédric Pinson est aujourdhui un des acteurs français incontournable de la scène WebGL. Il travaille pour SketchFab un site web dont l'objectif est d'afficher n'importe quel modèle 3D dans votre navigateur grâce à la technologie WebGL.",
-			"urlPhoto" : "./images/speakers/cedric-pinson.png",
-			"urlGooglePlus" : "https://plus.google.com/u/0/104934084596438389147/posts",
-			"urlTwitter" : "https://twitter.com/trigrou/",
-			"urlWebsite" : "http://plopbyte.com/",
-			"urlGithub"  : "https://github.com/cedricpinson"
-		},
-		{
 			"id" : "amoussine",
 			"displayName" : "Alexis Moussine Pouchkine",
 			"bio" : "Après plus de dix années passées dans les équipes Java de Sun Microsystems et d’Oracle, Alexis est désormais responsable des relations développeur chez Google France.",
