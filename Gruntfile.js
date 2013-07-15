@@ -23,7 +23,9 @@ module.exports = function (grunt) {
         json:     'json',
         manifest: 'devfest_appcache.manifest',
         sitemap:  'sitemap.xml',
-        robots:   'robots.txt'
+        robots:   'robots.txt',
+        yaml:     'prod/app.yaml',
+        googlewm: 'prod/google9413d1b674d8b9fa.html'
       }
     },
     
@@ -39,7 +41,9 @@ module.exports = function (grunt) {
         json:     'prod/json',
         manifest: 'prod/devfest_appcache.manifest',
         sitemap:  'prod/sitemap.xml',
-        robots:   'prod/robots.txt'
+        robots:   'prod/robots.txt',
+        yaml:     'prod/app.yaml',
+        googlewm: 'prod/google9413d1b674d8b9fa.html'
       }
     },
 
@@ -63,7 +67,9 @@ module.exports = function (grunt) {
           { expand: true, cwd: '<%= src.assets.json %>', src: ['**/*.json'], dest: '<%= dest.assets.json %>' },
           { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
           { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
-          { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' }
+          { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' },
+          { src: '<%= src.assets.yaml %>', dest: '<%= dest.assets.yaml %>' },
+          { src: '<%= src.assets.googlewm %>', dest: '<%= dest.assets.googlewm %>' }
         ]
       }
     },
@@ -120,11 +126,99 @@ module.exports = function (grunt) {
     oversprite: {
         all: {
             spritelist: [
+                //
+                // TEAM Sprite
+                //
                 {
+                    // Have to be the path to final destination
                     // List of images to add to sprite
-                    'src': ['images/team/sprite/*.png'],
+                    'src': ['prod/images/team/*.png'],
                     // Address of target image
                     'dest': 'prod/images/sprites/team-sprite.png',
+                    // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
+                    'algorithm': 'top-down',
+                    // OPTIONAL: Rendering engine: auto, canvas, gm
+                    'engine': 'gm',
+                    // OPTIONAL: Preferences for resulting image
+                    'exportOpts': {
+                        // Image formst (buy default will try to use dest extension)
+                        'format': 'png',
+                        // Quality of image (gm only)
+                        'quality': 90
+                    }
+                },
+                //
+                // SPEAKERS Sprite
+                //
+                {
+                    // Have to be the path to final destination
+                    // List of images to add to sprite
+                    'src': ['prod/images/speakers/*.png'],
+                    // Address of target image
+                    'dest': 'prod/images/sprites/speakers-sprite.png',
+                    // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
+                    'algorithm': 'top-down',
+                    // OPTIONAL: Rendering engine: auto, canvas, gm
+                    'engine': 'gm',
+                    // OPTIONAL: Preferences for resulting image
+                    'exportOpts': {
+                        // Image formst (buy default will try to use dest extension)
+                        'format': 'png',
+                        // Quality of image (gm only)
+                        'quality': 90
+                    }
+                },
+                //
+                // TECHNOS Sprite
+                //
+                {
+                    // Have to be the path to final destination
+                    // List of images to add to sprite
+                    'src': ['prod/images/technos/*.png'],
+                    // Address of target image
+                    'dest': 'prod/images/sprites/technos-sprite.png',
+                    // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
+                    'algorithm': 'top-down',
+                    // OPTIONAL: Rendering engine: auto, canvas, gm
+                    'engine': 'gm',
+                    // OPTIONAL: Preferences for resulting image
+                    'exportOpts': {
+                        // Image formst (buy default will try to use dest extension)
+                        'format': 'png',
+                        // Quality of image (gm only)
+                        'quality': 90
+                    }
+                },
+                //
+                // SPONSORS Sprite
+                //
+                {
+                    // Have to be the path to final destination
+                    // List of images to add to sprite
+                    'src': ['prod/images/sponsors/*.png'],
+                    // Address of target image
+                    'dest': 'prod/images/sprites/sponsors-sprite.png',
+                    // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
+                    'algorithm': 'top-down',
+                    // OPTIONAL: Rendering engine: auto, canvas, gm
+                    'engine': 'gm',
+                    // OPTIONAL: Preferences for resulting image
+                    'exportOpts': {
+                        // Image formst (buy default will try to use dest extension)
+                        'format': 'png',
+                        // Quality of image (gm only)
+                        'quality': 90
+                    }
+                },
+                //
+                // DEVFEST Sprite
+                //
+                {
+                    // Have to be the path to final destination
+                    // List of images to add to sprite
+                    'src': ['prod/images/devfest/*.png'],
+                    // Address of target image
+                    'dest': 'prod/images/sprites/devfest-sprite.png',
                     // OPTIONAL: Image placing algorithm: top-down, left-right, diagonal, alt-diagonal
                     'algorithm': 'top-down',
                     // OPTIONAL: Rendering engine: auto, canvas, gm
@@ -142,10 +236,10 @@ module.exports = function (grunt) {
                 {
                     'src':  'prod/css/app.css',
                     // Target css file, can be the same as source
-                    'dest': 'prod/css/app-x.css'
+                    'dest': 'prod/css/app.css'
                     // OPTIONAL: Normalization string. Will be added to css dir path, before paths in css. 
                     // Use if you move the css and paths to images aren't resolving correctly now.
-                    //'base': ''
+                    //'base': './'
                 }
             ]
         }
@@ -169,7 +263,7 @@ module.exports = function (grunt) {
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'oversprite', 'usemin']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'cssmin', 'usemin']);
   grunt.registerTask('default', ['prod']);
 
 };

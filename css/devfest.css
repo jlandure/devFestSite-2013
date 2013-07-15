@@ -543,10 +543,26 @@ Tentative 2 colonnes
 }
 
 .jef {
-  background-image: url('../images/team/sprite/jef.png');
+  background-image: url('../images/team/jef.png');
 }
 
 .ju {
-  background-image: url('../images/team/sprite/ju.png');
+  background-image: url('../images/team/ju.png');
+}
+
+.xav {
+  background-image: url('../images/team/xav.png');
+}
+
+.ben {
+  background-image: url('../images/team/ben.png');
+}
+
+.aymeric {
+  background-image: url('../images/team/aymeric.png');
+}
+
+.unknown {
+  background-image: url('../images/team/Unknown-person.png');
 }
 

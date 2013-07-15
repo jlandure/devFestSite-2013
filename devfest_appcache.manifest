@@ -8,42 +8,20 @@ CACHE:
 ####################
 
 #images
+#images/favicon.ico
 images/devfest/2013_11_08_devFest.png
 images/devfest/banniere_160x400.png
 images/devfest/banniere_300x125.png
 images/devfest/banniere_300x250.png
 images/devfest/banniere_468x60.png
-images/devfest/chevron.png
 images/devfest/devfest-img1.jpg
 images/devfest/devfest-img2.jpg
 images/devfest/devfest-img3.jpg
-images/devfest/gdg.png
-images/devfest/google_dev_small.png
-images/speakers/AlexisMoussine.png
-images/speakers/ian_barber.png
-images/speakers/Thierry-Chatel.png
-images/speakers/jef.png
-images/speakers/ade.png
-images/speakers/cedric-pinson.png
-images/speakers/cyrilmottier.png
-images/speakers/eyal.png
-images/speakers/francois_beaufort.png
-images/speakers/nicolasgarnier2.png
-images/sponsors/google.png
-images/sponsors/epitech.png
-images/technos/android.png
-images/technos/angularjs.png
-images/technos/appengine.png
-images/technos/chrome.png
-images/technos/google-plus.png
-images/technos/gwt.png
-images/technos/html5.png
-images/team/aymeric.png
-images/team/ben.png
-images/team/jef.png
-images/team/ju.png
-images/team/Unknown-person.png
-images/team/xav.png
+images/sprites/devfest-sprite.png
+images/sprites/speakers-sprite.png
+images/sprites/team-sprite.png
+images/sprites/technos-sprite.png
+images/sprites/sponsors-sprite.png
 
 
 #internal HTML documents
@@ -61,8 +39,7 @@ partials/sponsors.html
 partials/subscribe.html
 
 #style sheets
-css/devfest.css
-css/groundwork.css
+css/app.css
 font/roboto/stylesheet.css
 font/roboto/Roboto-Light-webfont.woff
 font/roboto/Roboto-Condensed-webfont.woff
@@ -152,24 +129,8 @@ images/social-icons/youversion.svg
 images/social-icons/zerply.svg
 
 #javascript files
-js/libs/modernizr-2.6.2.min.js
-js/libs/jquery-1.8.2.min.js
-js/libs/angular.min.js
-js/devfest/app.js
-js/plugins/jquery.cycle2.js
-js/groundwork.all.js
+js/app.js
 
-##########################################
-####################
-# PROD à décommenter
-####################
-# CSS
-#css/devfest.css
-# Javascript
-#js/devfest.js
-# Images
-#images/sprite.png
-#images/favicon.ico
 
 NETWORK:
 *
