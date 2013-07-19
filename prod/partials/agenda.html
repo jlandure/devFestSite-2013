@@ -1,0 +1,258 @@
+
+<!-- AGENDA -->
+<div class="row padded calendar">
+	<!-- Accueil -->
+	<div class="row pad-bottom  hide-on-small-tablet">
+		<div class="one sixth calendar-time">
+			<h5>Trackers</h5>
+		</div>
+		<div class="one sixth calendar-header-android">
+			<h5>Android</h5>
+		</div>
+		<div class="one sixth calendar-header-html5">
+			<h5>HTML5</h5>
+		</div>
+		<div class="one sixth calendar-header-cloud">
+			<h5>Cloud</h5>
+		</div>
+		<div class="one sixth calendar-header-ux">
+			<h5>Découvertes</h5>
+		</div>
+		<div class="one sixth calendar-header-codelab">
+			<h5>Code labs</h5>
+		</div>
+	</div>
+	<!-- Accueil -->
+	<div class="row pad-bottom">
+		<div class="one sixth calendar-time">
+			<h5>A partir de {{ times[0].start }}</h5>
+		</div>
+		<div class="five sixths calendar-break pad-left">
+			<h5><i class="icon-group"></i> Ouverture des portes et accueil des participants - Café & croissants</h5>
+		</div>
+	</div>
+	<!-- keynote -->
+	<div class="row pad-bottom">
+		<div class="one sixth calendar-time">
+			<h5>{{ times[1].start }} -  {{ times[1].end }}</h5>
+		</div>
+		<div class="five sixths calendar-break pad-left">
+			<h5><i class="icon-key"></i> Keynote - Salle "Amphi Keynote"</h5>
+		</div>
+	</div>
+	<!-- Matin -->
+	<div class="row pad-bottom">
+		<div class="five sixths mobile ">
+			<div class="row pad-bottom">
+				<!-- Horaire -->
+				<div class="one fifth calendar-time">
+					<h5>{{ times[2].start }} -  {{ times[2].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[2].android.label }}</a></h5>
+					<small>Par {{ times[2].android.speakername }}</small><br>
+					<small>Salle "{{ times[2].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[2].html5.label }}</a></h5>
+					<small>Par {{ times[2].html5.speakername }}</small><br>
+					<small>Salle "{{ times[2].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[2].cloud.label }}</a></h5>
+					<small>Par {{ times[2].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[2].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[2].decouverte.label }}</a></h5>
+					<small>Par {{ times[2].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[2].decouverte.room }}"</small>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Horaire -->
+				<div class="one fifth calendar-time">
+					<h5>{{ times[3].start }} -  {{ times[3].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[3].android.label }}</a></h5>
+					<small>Par {{ times[3].android.speakername }}</small><br>
+					<small>Salle "{{ times[3].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[3].html5.label }}</a></h5>
+					<small>Par {{ times[3].html5.speakername }}</small><br>
+					<small>Salle "{{ times[3].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[3].cloud.label }}</a></h5>
+					<small>Par {{ times[3].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[3].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[3].decouverte.label }}</a></h5>
+					<small>Par {{ times[3].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[3].decouverte.room }}"</small>
+				</div>
+			</div>
+		</div>
+		<div class="one sixth mobile calendar-codelab calendar-two-blocks">
+			<h5><a href="#">{{ times[3].codelabs.label }}</a></h5>
+			<small>Par {{ times[3].codelabs.speakername }}</small><br>
+			<small>Salle "{{ times[3].codelabs.room }}"</small>
+		</div>
+	</div>
+	<!-- lunch -->
+	<div class="row pad-bottom">
+		<div class="one sixth calendar-time">
+			<h5>{{ times[4].start }} -  {{ times[4].end }}</h5>
+		</div>
+		<div class="five sixths calendar-break pad-left">
+			<h5><i class="icon-food"></i> Repas du midi (offert) - Salle "Tour LU"</h5>
+		</div>
+	</div>
+	<!-- apres midi (part1)-->
+	<div class="row pad-bottom">
+		<div class="five sixths mobile">
+			<div class="row pad-bottom">
+				<div class="one fifth calendar-time">
+					<h5>{{ times[5].start }} -  {{ times[5].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[5].android.label }}</a></h5>
+					<small>Par {{ times[5].android.speakername }}</small><br>
+					<small>Salle "{{ times[5].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[5].html5.label }}</a></h5>
+					<small>Par {{ times[5].html5.speakername }}</small><br>
+					<small>Salle "{{ times[5].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[5].cloud.label }}</a></h5>
+					<small>Par {{ times[5].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[5].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[5].decouverte.label }}</a></h5>
+					<small>Par {{ times[5].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[5].decouverte.room }}"</small>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Horaire -->
+				<div class="one fifth calendar-time">
+					<h5>{{ times[6].start }} -  {{ times[6].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[6].android.label }}</a></h5>
+					<small>Par {{ times[6].android.speakername }}</small><br>
+					<small>Salle "{{ times[6].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[6].html5.label }}</a></h5>
+					<small>Par {{ times[6].html5.speakername }}</small><br>
+					<small>Salle "{{ times[6].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[6].cloud.label }}</a></h5>
+					<small>Par {{ times[6].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[6].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[6].decouverte.label }}</a></h5>
+					<small>Par {{ times[6].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[6].decouverte.room }}"</small>
+				</div>
+			</div>
+		</div>
+		<div class="one sixth calendar-codelab mobile calendar-two-blocks">
+			<h5><a href="#">{{ times[6].codelabs.label }}</a></h5>
+			<small>Par {{ times[6].codelabs.speakername }}</small><br>
+			<small>Salle "{{ times[6].codelabs.room }}"</small>
+		</div>
+	</div>
+	<!-- break -->
+	<div class="row pad-bottom">
+		<div class="one sixth calendar-time">
+			<h5>{{ times[7].start }} -  {{ times[7].end }}</h5>
+		</div>
+		<div class="five sixths calendar-break pad-left">
+			<h5><i class="icon-coffee"></i> Break - Salle "Tour LU"</h5>
+		</div>
+	</div>
+	<!-- Apres midi (part1) -->
+	<div class="row pad-bottom">
+		<div class="five sixths mobile">
+			<div class="row pad-bottom">
+				<div class="one fifth calendar-time">
+					<h5>{{ times[8].start }} -  {{ times[8].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[8].android.label }}</a></h5>
+					<small>Par {{ times[8].android.speakername }}</small><br>
+					<small>Salle "{{ times[8].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[8].html5.label }}</a></h5>
+					<small>Par {{ times[8].html5.speakername }}</small><br>
+					<small>Salle "{{ times[8].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[8].cloud.label }}</a></h5>
+					<small>Par {{ times[8].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[8].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[8].decouverte.label }}</a></h5>
+					<small>Par {{ times[8].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[8].decouverte.room }}"</small>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Horaire -->
+				<div class="one fifth calendar-time">
+					<h5>{{ times[9].start }} -  {{ times[9].end }}</h5>
+				</div>
+				<div class="one fifth calendar-android calendar-one-block">
+					<h5><a href="#">{{ times[9].android.label }}</a></h5>
+					<small>Par {{ times[9].android.speakername }}</small><br>
+					<small>Salle "{{ times[9].android.room }}"</small>
+				</div>
+				<div class="one fifth calendar-html5 calendar-one-block">
+					<h5><a href="#">{{ times[9].html5.label }}</a></h5>
+					<small>Par {{ times[9].html5.speakername }}</small><br>
+					<small>Salle "{{ times[9].html5.room }}"</small>
+				</div>
+				<div class="one fifth calendar-cloud calendar-one-block">
+					<h5><a href="#">{{ times[9].cloud.label }}</a></h5>
+					<small>Par {{ times[9].cloud.speakername }}</small><br>
+					<small>Salle "{{ times[9].cloud.room }}"</small>
+				</div>
+				<div class="one fifth calendar-ux calendar-one-block">
+					<h5><a href="#">{{ times[9].decouverte.label }}</a></h5>
+					<small>Par {{ times[9].decouverte.speakername }}</small><br>
+					<small>Salle "{{ times[9].decouverte.room }}"</small>
+				</div>
+			</div>
+		</div>
+		<div class="one sixth calendar-codelab mobile calendar-two-blocks">
+			<h5><a href="#">{{ times[9].codelabs.label }}</a></h5>
+			<small>Par {{ times[9].codelabs.speakername }}</small><br>
+			<small>Salle "{{ times[9].codelabs.room }}"</small>
+		</div>
+	</div>
+
+	<!-- After party -->
+	<div class="row pad-bottom">
+		<div class="one sixth calendar-time">
+			<h5>{{ times[10].start }} -  {{ times[10].end }}</h5>
+		</div>
+		<div class="five sixths calendar-break pad-left">
+			<h5><i class="icon-glass"></i> After Party !</h5>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,157 @@
+{
+	"agendaTimes" : [
+		{ "name" : "openning", "start" : "8h30", "end": "8h45" },
+		{ "name" : "keynote", "start" : "8h45", "end": "9h30" },
+		{ "name" : "S1", "start" : "9h45", "end": "10h45" },
+		{ "name" : "S2", "start" : "10h55", "end": "11h55" },
+		{ "name" : "lunch", "start" : "12h00", "end": "13h20" },
+		{ "name" : "S3", "start" : "13h30", "end": "14h30" },
+		{ "name" : "S4", "start" : "14h40", "end": "15h40" },
+		{ "name" : "break", "start" : "15h40", "end": "16h10" },
+		{ "name" : "S5", "start" : "16h10", "end": "17h10" },
+		{ "name" : "S6", "start" : "17h20", "end": "18h20" },
+		{ "name" : "afterparty", "start" : "19h00", "end": "Minuit" }
+	],
+
+	"sessions" : [
+		{
+			"label" : "Android ",
+			"track" : "android",
+			"icon" : "./images/technos/android.png",
+			"speaker" : "elezmy",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"		
+		},
+		{
+			"label" : "Android tips",
+			"track" : "android",
+			"icon" : "./images/technos/android.png",
+			"speaker" : "cmottier",
+			"lang" : "fr",
+			"level" : "301",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "Google +",
+			"track" : "html5",
+			"icon" : "./images/technos/google-plus.png",
+			"speaker" : "ashineye",
+			"lang" : "en",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "HTML5",
+			"track" : "html5",
+			"icon" : "./images/technos/html5.png",
+			"speaker" : "fbeaufort",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "WebGL",
+			"track" : "html5",
+			"icon" : "./images/technos/html5.png",
+			"speaker" : "cpinson",
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		}
+	],
+
+	"speakers" : [
+		{
+			"id" : "cmottier",
+			"displayName" : "Cyril mottier",
+			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+			"urlPhoto" : "./images/speakers/cyrilmottier.png",
+			"urlGooglePlus" : "https://plus.google.com/u/0/118417777153109946393/posts",
+			"urlTwitter" : "http://www.twitter.com/cyrilmottier",
+			"urlWebsite" : "http://www.cyrilmottier.com",
+			"urlGithub"  : "https://github.com/cyrilmottier"
+		},
+		{
+			"id" : "jgarreau",
+			"displayName" : "Jean-François Garreau",
+			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
+			"urlPhoto" : "./images/speakers/jef.png",
+			"urlGooglePlus" : "https://plus.google.com/114772056028520115043/posts",
+			"urlTwitter" : "http://www.twitter.com/binomed",
+			"urlWebsite" : "http://blog.binomed.fr",
+			"urlGithub"  : "https://github.com/binomed"
+		},
+		{
+			"id" : "elezmy",
+			"displayName" : "Eyal Lezmy",
+			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
+			"urlPhoto" : "./images/speakers/eyal.png",
+			"urlGooglePlus" : "https://plus.google.com/109290164663410811176/posts",
+			"urlTwitter" : "https://twitter.com/eyal_lezmy",
+			"urlGithub"  : "https://github.com/eyal-lezmy"
+		},
+		{
+			"id" : "ashineye",
+			"displayName" : "Ade Oshineye",
+			"bio" : "Ade is a Senior Developer Advocate in Google's London office and works on the Google+ project. Over the last decade he's worked on trading systems for a variety of investment banks as well as on Google's advertising and mobile search systems. He's also the co-author of 'Apprenticeship Patterns': a book that teaches you how to learn to be a great programmer.",
+			"urlPhoto" : "./images/speakers/ade.png",
+			"urlGooglePlus" : "https://plus.google.com/+AdeOshineye/posts",
+			"urlTwitter" : "https://twitter.com/ade_oshineye",
+			"urlWebsite" : "http://www.oshineye.com/",
+			"urlGithub"  : "https://github.com/adewale"
+		},
+		{
+			"id" : "ibarber",
+			"displayName" : "Ian Barber",
+			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
+			"urlPhoto" : "./images/speakers/ian_barber.png",
+			"urlGooglePlus" : "https://plus.google.com/+IanBarber/posts",
+			"urlTwitter" : "https://twitter.com/ianbarber",
+			"urlGithub"  : "https://github.com/ianbarber"
+		},
+		{
+			"id" : "ngarnier",
+			"displayName" : "Nicolas Garnier",
+			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
+			"urlPhoto" : "./images/speakers/nicolasgarnier2.png",
+			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
+			"urlTwitter" : "https://twitter.com/nivco"
+		},
+		{
+			"id" : "fbeaufort",
+			"displayName" : "François Beaufort",
+			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
+			"urlPhoto" : "./images/speakers/francois_beaufort.png",
+			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
+		},
+		{
+			"id" : "amoussine",
+			"displayName" : "Alexis Moussine Pouchkine",
+			"bio" : "Après plus de dix années passées dans les équipes Java de Sun Microsystems et d’Oracle, Alexis est désormais responsable des relations développeur chez Google France.",
+			"urlPhoto" : "./images/speakers/AlexisMoussine.png",
+			"urlGooglePlus" : "https://plus.google.com/+AlexisMP/posts",
+			"urlTwitter" : "https://twitter.com/alexismp/",
+			"urlWebsite" : "http://alexismp.wordpress.com/"
+		},
+		{
+			"id" : "tchatel",
+			"displayName" : "Thierry Chatel",
+			"bio" : "Je suis consultant en architecture logicielle, et formateur AngularJS. J'enseigne les bonnes pratiques de conception, d’architecture et de modélisation qui permettent de bien structurer une application, pour en faciliter la maintenance et les évolutions. <br><br>Ayant découvert AngularJS au cours de l'été 2011, j'ai tout de suite été persuadé que ce framework constitue une véritable révolution dans la création d'applications web, et la plus grande avancée qu'ait connu ce secteur depuis les débuts du web. En fervent enthousiaste, je m'y suis investi à fond, d'abord en simple pratiquant, puis rapidement en animant des conférences, en créant le blog technique francophone FrAngular, et la communauté AngularJS France sur Google+. Et j'anime maintenant en entreprise des sessions de formation à AngularJS.",
+			"urlPhoto" : "./images/speakers/Thierry-Chatel.png",
+			"urlGooglePlus" : "https://plus.google.com/u/0/113505929077720042958//posts",
+			"urlTwitter" : "https://twitter.com/thierrychatel/"
+		}
+
+	]
+}

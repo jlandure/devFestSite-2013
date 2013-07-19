@@ -549,7 +549,7 @@ Tentative 2 colonnes
     width:30px;
     height:50px;
     background-repeat:no-repeat;
-    background: url(../images/devfest/chevron_small.png);
+    background-image: url(../images/devfest/chevron_small.png);
 }
 
 .gdg_bg{
@@ -557,16 +557,23 @@ Tentative 2 colonnes
     width:70px;
     height:70px;
     background-repeat:no-repeat;
-    background: url(../images/devfest/gdg.png);
+    background-image: url(../images/devfest/gdg.png);
 }
 
 .epitech_bg{
     width:150px;
     height:56px;
     background-repeat:no-repeat;
-    background: url(../images/devfest/epitech.png);
+    background-image: url(../images/devfest/epitech.png);
 }
 
+.devfest_footer_bg{
+    margin-right:10px;
+    margin-top:10px;
+    width:30px;
+    height:23px;
+    background-image:url(../images/devfest/google_dev_small.png);   
+}
 
 /**
 * Team
