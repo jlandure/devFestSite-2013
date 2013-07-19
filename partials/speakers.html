@@ -17,7 +17,7 @@
 	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
 		<div class="four sixths skip-one sessions speaker-tracker padded" >
 				<!-- Speaker photo -->
-				<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
+				<div class="speaker pull-left {{speaker.id}}" ></div>
 				
 				<!-- Speaker links description -->
 				<a href="{{ speaker.urlGooglePlus }}" ng-show="speaker.urlGooglePlus" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-right"></i></a>
