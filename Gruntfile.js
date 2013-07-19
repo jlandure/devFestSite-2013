@@ -24,8 +24,8 @@ module.exports = function (grunt) {
         manifest: 'devfest_appcache.manifest',
         sitemap:  'sitemap.xml',
         robots:   'robots.txt',
-        yaml:     'prod/app.yaml',
-        googlewm: 'prod/google9413d1b674d8b9fa.html'
+        yaml:     'app.yaml',
+        googlewm: 'google9413d1b674d8b9fa.html'
       }
     },
     
