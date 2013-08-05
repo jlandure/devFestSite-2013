@@ -25,7 +25,9 @@ module.exports = function (grunt) {
         sitemap:  'sitemap.xml',
         robots:   'robots.txt',
         yaml:     'app.yaml',
-        googlewm: 'google9413d1b674d8b9fa.html'
+        googlewm: 'google9413d1b674d8b9fa.html',
+        groundwork_css_ie: 'css/groundwork-ie.css',
+        fontawesome_css_ie: 'css/font-awesome-ie7.min.css'
       }
     },
     
@@ -43,7 +45,9 @@ module.exports = function (grunt) {
         sitemap:  'prod/sitemap.xml',
         robots:   'prod/robots.txt',
         yaml:     'prod/app.yaml',
-        googlewm: 'prod/google9413d1b674d8b9fa.html'
+        googlewm: 'prod/google9413d1b674d8b9fa.html',
+        groundwork_css_ie: 'prod/css/groundwork-ie.css',
+        fontawesome_css_ie: 'prod/css/font-awesome-ie7.min.css'
       }
     },
 
@@ -65,6 +69,8 @@ module.exports = function (grunt) {
           { expand: true, cwd: '<%= src.assets.font %>', src: ['**'], dest: '<%= dest.assets.font %>' },
           { expand: true, cwd: '<%= src.assets.images %>', src: ['**'], dest: '<%= dest.assets.images %>' }, // (ne copier que les images non spritees)
           { expand: true, cwd: '<%= src.assets.json %>', src: ['**/*.json'], dest: '<%= dest.assets.json %>' },
+          { src: '<%= src.assets.groundwork_css_ie %>', dest: '<%= dest.assets.groundwork_css_ie %>' },
+          { src: '<%= src.assets.fontawesome_css_ie %>', dest: '<%= dest.assets.fontawesome_css_ie %>' },
           { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
           { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
           { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' },
