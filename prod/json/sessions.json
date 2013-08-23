@@ -102,16 +102,6 @@
 			"urlGithub"  : "https://github.com/eyal-lezmy"
 		},
 		{
-			"id" : "ashineye",
-			"displayName" : "Ade Oshineye",
-			"bio" : "Ade is a Senior Developer Advocate in Google's London office and works on the Google+ project. Over the last decade he's worked on trading systems for a variety of investment banks as well as on Google's advertising and mobile search systems. He's also the co-author of 'Apprenticeship Patterns': a book that teaches you how to learn to be a great programmer.",
-			"urlPhoto" : "./images/speakers/ade.png",
-			"urlGooglePlus" : "https://plus.google.com/+AdeOshineye/posts",
-			"urlTwitter" : "https://twitter.com/ade_oshineye",
-			"urlWebsite" : "http://www.oshineye.com/",
-			"urlGithub"  : "https://github.com/adewale"
-		},
-		{
 			"id" : "ibarber",
 			"displayName" : "Ian Barber",
 			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
