@@ -668,13 +668,15 @@ p.sponsor-empty span {
     height:74px;
 }
 
+.softeam{
+    background-image: url('../images/sponsors/softeam_logo.png');
+    margin-top: 15px;
+    width:200px;
+    height:69px;
+}
+
 
 /* Partners 200x100 */
-.eartsup{
-    background-image: url('../images/sponsors/eartsup_logo.png');
-    width:148px;
-    height:100px;
-}
 
 
 
