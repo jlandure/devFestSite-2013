@@ -678,7 +678,12 @@ p.sponsor-empty span {
 
 /* Partners 200x100 */
 
-
+.jetbrain{
+    background-image: url('../images/sponsors/logo_JB_tagline.png');
+    margin-top: 14px;
+    width:200px;
+    height:72px;
+}
 
 /**
 * Speakers
