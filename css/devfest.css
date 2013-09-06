@@ -228,94 +228,6 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
   }
 }
 
-/* Sponsors styles */
-.sponsors div {
-  color: white;
-}
-
-.sponsors div span {
-  font-variant: small-caps;
-  font-family: 'RobotoCondensed', Arial, sans-serif;
-  letter-spacing: 0.3em;
-  font-size: 2em;
-}
-
-.sponsors img, .sponsors div.sprite {
-  padding: 3px;
-  line-height: 150px;
-}
-
-.premium {
-   border: 1px solid #a40400;
-  border-left: 7px solid #a40400;
-}
-
-.premium span {
-  color: #a40400;
-}
-
-.premium img{
-  max-width: 300px;
-  max-height: 150px;
-}
-
-.gold {
-   border: 1px solid #FF8800;
-  border-left: 7px solid #FF8800; 
-}
-
-.gold span {
-  color: #FF8800;
-}
-
-.gold img{
-  max-width: 250px;
-  max-height: 130px; 
-}
-
-.silver {
-  border: 1px solid #AAA;
-  border-left: 7px solid #AAA;
-}
-
-.silver span {
-  color: #AAA;
-}
-
-.silver img{
-  max-width: 200px;
-  max-height: 100px;
-}
-
-.partner {
-  border: 1px solid #0099CC;
-  border-left: 7px solid #0099CC;
-}
-
-.partner span {
-  color: #0099CC;
-}
-
-.partner img{
-  max-width: 200px;
-  max-height: 100px; 
-}
-
-
-p.sponsor-empty {
-  background-color: #EEE;
-  width: 300px;
-  height: 120px;
-  line-height: 110px;
-  display: inline-block;
-}
-
-p.sponsor-empty span {
-  color: #AAA;
-  font-variant: normal;
-  letter-spacing: normal;
-  font-size: 2em;
-}
 
 /* Block info */
 .block-info {
@@ -614,25 +526,125 @@ Tentative 2 colonnes
 * Sponsors
 */
 
+/* Sponsors styles */
+.sponsors div {
+  color: white;
+}
+
+.sponsors div span {
+  font-variant: small-caps;
+  font-family: 'RobotoCondensed', Arial, sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+}
+
+.sponsors img, .sponsors div.sprite {
+  padding: 3px;
+  line-height: 150px;
+}
+
+.premium {
+   border: 1px solid #a40400;
+  border-left: 7px solid #a40400;
+}
+
+.premium span {
+  color: #a40400;
+}
+
+.premium img{
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.gold {
+   border: 1px solid #FF8800;
+  border-left: 7px solid #FF8800; 
+}
+
+.gold span {
+  color: #FF8800;
+}
+
+.gold img{
+  max-width: 250px;
+  max-height: 130px; 
+}
+
+.silver {
+  border: 1px solid #AAA;
+  border-left: 7px solid #AAA;
+}
+
+.silver span {
+  color: #AAA;
+}
+
+.silver img{
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.partner {
+  border: 1px solid #0099CC;
+  border-left: 7px solid #0099CC;
+}
+
+.partner span {
+  color: #0099CC;
+}
+
+.partner img{
+  max-width: 200px;
+  max-height: 100px; 
+}
+
+
+p.sponsor-empty {
+  background-color: #EEE;
+  width: 300px;
+  height: 120px;
+  line-height: 110px;
+  display: inline-block;
+}
+
+p.sponsor-empty span {
+  color: #AAA;
+  font-variant: normal;
+  letter-spacing: normal;
+  font-size: 2em;
+}
+
 .sprite_sponsors{
     margin:auto;
 }
 
+/* Prenmiums 300x150 */
 .google{
     background-image: url('../images/sponsors/google.png');
+    margin-top:25px;
     width:300px;
     height:100px;
 }
 
+.epitech{
+    background-image: url('../images/sponsors/epitech.png');
+    margin-top:19px;
+    width:300px;
+    height:111px;
+}
+
+/* Gold 250x130 */
 .zenika{
     background-image: url('../images/sponsors/zenika.png');
+    margin-top: 35px;
     width:250px;
     height:59px;
 }
 
-.sqli{
-    background-image: url('../images/sponsors/sqli.png');
-    width:184px;
+.visionobjects{
+    background-image: url('../images/sponsors/visionobjects.png');    
+    width:202px;
     height:130px;
 }
 
@@ -642,18 +654,36 @@ Tentative 2 colonnes
     height:130px;
 }
 
-.eartsup{
-    background-image: url('../images/sponsors/eartsup_logo.png');
-    width:148px;
-    height:100px;
+/* Silver 200x100 */
+.sqli{
+    background-image: url('../images/sponsors/sqli.png');
+    width:184px;
+    height:130px;
 }
 
-.epitech{
-    background-image: url('../images/sponsors/epitech.png');
-    width:300px;
-    height:111px;
+.serli{
+    background-image: url('../images/sponsors/serli.png');
+    margin-top: 13px;
+    width:200px;
+    height:74px;
 }
 
+.softeam{
+    background-image: url('../images/sponsors/softeam_logo.png');
+    margin-top: 15px;
+    width:200px;
+    height:69px;
+}
+
+
+/* Partners 200x100 */
+
+.jetbrain{
+    background-image: url('../images/sponsors/logo_JB_tagline.png');
+    margin-top: 14px;
+    width:200px;
+    height:72px;
+}
 
 /**
 * Speakers
@@ -669,10 +699,6 @@ Tentative 2 colonnes
 
 .elezmy{
     background-image: url('../images/speakers/elezmy.png');  
-}
-
-.ashineye{
-    background-image: url('../images/speakers/ashineye.png');  
 }
 
 .ibarber{
