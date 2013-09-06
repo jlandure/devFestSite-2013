@@ -634,6 +634,12 @@ p.sponsor-empty span {
     height:111px;
 }
 
+.intel{
+    background-image: url('../images/sponsors/intel.png');
+    width:227px;
+    height:150px;
+}
+
 /* Gold 250x130 */
 .zenika{
     background-image: url('../images/sponsors/zenika.png');
@@ -685,6 +691,13 @@ p.sponsor-empty span {
     height:72px;
 }
 
+.webelis{
+    background-image: url('../images/sponsors/webelis.png');
+    margin-top: 3px;
+    width:200px;
+    height:93px;
+}
+
 /**
 * Speakers
 */
@@ -719,4 +732,8 @@ p.sponsor-empty span {
 	
 .tchatel{
     background-image: url('../images/speakers/tchatel.png');  
+}
+ 
+.jmouton{
+    background-image: url('../images/speakers/jmouton.png');  
 }
