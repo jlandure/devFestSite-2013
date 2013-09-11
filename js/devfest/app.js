@@ -1,4 +1,3 @@
-
 /** 
  * Application 
  */
@@ -31,6 +30,8 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   
   var DEFAULT = null;
   var ACTIVE = 'active';
+    
+  $scope.isIE = navigator.userAgent && navigator.userAgent.indexOf('MSIE') != -1;
   
   function getLocationItem(navItems, location) {
     for (var i = 0; i < navItems.length; i++) {
