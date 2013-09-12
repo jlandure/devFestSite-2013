@@ -5,6 +5,10 @@ module.exports = function (grunt) {
 
     // Paramétrage
 
+    config:{
+      timestamp : '<%= new Date().getTime() %>'  
+    },
+      
     src: {
       html: {
         index:    'index.html',
@@ -128,7 +132,33 @@ module.exports = function (grunt) {
         }
       }
     },
-
+      
+    'string-replace': {
+          dist: {
+              files: {
+                  'prod/css/app.css': 'prod/css/app.css'
+              },
+              options: {
+                replacements: [{
+                    pattern: /\..\/images\/sprites\/team-sprite.png/g,
+                    replacement: '../images/sprites/team-sprite.png?ver=<%= config.timestamp %>'
+                },{
+                    pattern: /\..\/images\/sprites\/speakers-sprite.png/g,
+                    replacement: '../images/sprites/speakers-sprite.png?ver=<%= config.timestamp %>'
+                },{
+                    pattern: /\..\/images\/sprites\/technos-sprite.png/g,
+                    replacement: '../images/sprites/technos-sprite.png?ver=<%= config.timestamp %>'
+                },{
+                    pattern: /\..\/images\/sprites\/sponsors-sprite.png/g,
+                    replacement: '../images/sprites/sponsors-sprite.png?ver=<%= config.timestamp %>'
+                },{
+                    pattern: /\..\/images\/sprites\/devfest-sprite.png/g,
+                    replacement: '../images/sprites/devfest-sprite.png?ver=<%= config.timestamp %>'
+                }]
+              }
+          }
+    },
+      
     oversprite: {
         all: {
             spritelist: [
@@ -266,10 +296,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   /*grunt.loadNpmTasks('grunt-contrib-compass');**/
   grunt.loadNpmTasks('grunt-oversprite');
+  grunt.loadNpmTasks('grunt-string-replace');
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'cssmin', 'usemin']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace', 'cssmin', 'usemin']);
   grunt.registerTask('default', ['prod']);
 
 };
