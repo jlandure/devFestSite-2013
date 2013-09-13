@@ -300,7 +300,7 @@ module.exports = function (grunt) {
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace', 'cssmin', 'usemin']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', /*'oversprite', 'string-replace',*/ 'cssmin', 'usemin']);
   grunt.registerTask('default', ['prod']);
 
 };
