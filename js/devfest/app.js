@@ -51,7 +51,7 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
                       {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
                       //{'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
                       {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
-                      {'label' : 'CFP', 'url' : '/cfp', 'style': {} },
+                      //{'label' : 'CFP', 'url' : '/cfp', 'style': {} },
                       //{'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
                       {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {} },
                       {'label' : 'Pratique', 'url' : '/contacts', 'style': {} },
