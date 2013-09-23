@@ -134,7 +134,7 @@ module.exports = function (grunt) {
     },
       
     'string-replace': {
-          dist: {
+          sprites: {
               files: {
                   'prod/css/app.css': 'prod/css/app.css'
               },
@@ -154,6 +154,20 @@ module.exports = function (grunt) {
                 },{
                     pattern: /\..\/images\/sprites\/devfest-sprite.png/g,
                     replacement: '../images/sprites/devfest-sprite.png?ver=<%= config.timestamp %>'
+                }]
+              }
+          },
+          app: {
+              files: {
+                  'prod/index.html': 'prod/index.html'
+              },
+              options: {
+                replacements: [{
+                    pattern: 'css/app.css',
+                    replacement: 'css/app.css?ver=<%= config.timestamp %>'
+                },{
+                    pattern: 'js/app.js',
+                    replacement: 'js/app.js?ver=<%= config.timestamp %>'
                 }]
               }
           }
@@ -300,7 +314,7 @@ module.exports = function (grunt) {
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace', 'cssmin', 'usemin']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace:sprites', 'cssmin', 'usemin', 'string-replace:app']);
   grunt.registerTask('default', ['prod']);
 
 };
