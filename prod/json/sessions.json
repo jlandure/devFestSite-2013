@@ -195,8 +195,8 @@
 			"description" : "Nous explorerons dans cette cession les enjeux des API Web. Plus qu'un endpoint REST et qu'un point d'échange d'informations vers des applications mobiles, une API Web représente un enjeu stratégique qui permet de répondre aux enjeux du multi-canal et du cross device. Que vous soyez développeur d'une application, d'un site marchand, ou bien d'un service en ligne, une Web API accompagne ainsi votre stratégie commerciale et requiert une approche technique adaptée en terme de cycle de vie (versions, documentation, exploitation..). Bref, bien concevoir et gérer sa Web API c'est au moins aussi important et bien plus critique que choisir le CMS adapté à son site Web. <br>Les API Web c'est aussi une superbe opportunité pour se placer en tant que dev/ops et architecte, dans une nouvelle posture au sein de son organisation. Nous illustrerons notre propos avec les solutions proposées par la plateforme APISpark bâtie par les développeurs du framework Restlet.<br><br>Agenda :<br><ul><li>Rappels REST : Hébergements Restlet sur AppEngine et Android</li><li>Enjeux du Web et de la mobilité, du multi-canal, multi-device, Importance de l'API Web, Zoom sur APISpark</li></ul>"
 		},
 		{
-			"label" : "Google+ Sign In API",
-            "visible" : false,
+			"label" : "Why Google+ Sign-In?",
+            "visible" : true,
 			"track" : "_cloud",
 			"icon" : "./images/technos/google-plus.png",
 			"speaker" : ["ibarber"],
@@ -204,7 +204,7 @@
 			"level" : "201",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "TBD"
+			"description" : "In this session we'll look at why Google+ Sign-In is the best choice for adding identity to your application and gaining access to a huge range of Google services. We'll focus on Android and the web, and look at how to add sign-in, how to build a seamless cross-platform experience, and how to take advantage of services like Google Play Games, Google Drive or YouTube"
 		},
 		{
 			"label" : "Big Query",
