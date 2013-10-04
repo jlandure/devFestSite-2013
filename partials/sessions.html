@@ -4,21 +4,26 @@
 		Tracker
         <select class="unselected" ng-model="trackers">
             <option selected value="">Tous</option>
-            <option value="android">Android</option>
-            <option value="html5">HTML5</option>
-            <option value="cloud">Cloud</option>
-            <option value="ux">Découvertes</option>
-            <option value="codelabs">Code labs</option>
+            <option value="_mobile">mobile</option>
+            <option value="_web">Web</option>
+            <option value="_cloud">Cloud&amp;API</option>
+            <option value="_decouverte">Découvertes</option>
+            <option value="_codelab">Code labs</option>
         </select>
     </div>
     <div class="one fifth pad-right pad-left ">
     	Technos
         <select class="unselected" ng-model="technos">
             <option selected value="">Toutes</option>
-            <option value="android">Android</option>
+            <option value="mobile">Mobile</option>
             <option value="appengine">AppEngine</option>
             <option value="html5">HTML5</option>
             <option value="angular">Angular JS</option>
+            <option value="compute">Compute Engine</option>
+            <option value="webgl">WebGL</option>
+            <option value="tizen">Tizen</option>
+            <option value="chrome">Chrome API</option>
+            <option value="google+">Google +</option>
         </select>
     </div>
     <div class="one fifth pad-right pad-left ">
@@ -34,7 +39,7 @@
 
 <!-- Session list builder -->
 <div class="row pad-bottom" ng-repeat="session in sessions | filter:trackers | filter:technos | filter:levels">	
-	<div class="four sixths skip-one sessions {{ session.track }}-tracker" ng-controller="SessionDetailCtrl" >
+	<div class="four sixths skip-one sessions {{ session.track }}-tracker" ng-controller="SessionDetailCtrl" ng-show="session.visible" >
 		<!-- Session header -->
 		<div class="row pad-left pad-top pad-right">
 			<div class="two thirds mobile ">
@@ -45,23 +50,14 @@
 				{{ time }}, salle {{ session.room }}<br>
 				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
-			<hr>
-			<small>Présenté par <a href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}</a></small>
+			<hr>            
+			<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>
 		</div>
 		<!-- Session content -->
 		<div class="row padded justify">
-			<!-- Speaker photo -->
-			<img class="speaker pull-left" ng-src="{{ speaker.urlPhoto }}" height="110px" width="95px"></img>
-			<!-- Session description -->
-			<p>{{ session.description }}</p>
-			<!-- Speaker biography -->
-			<!--
-			<p><em>{{ speaker.bio }}</em></p>-->
-			<!-- Speaker links description -->
-			<!--
-			<a href="{{ speaker.urlGooglePlus }}" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-left"></i></a>
-			<a href="{{ speaker.urlTwitter }}" target="_NEW"><i class="icon-twitter-sign icon-2x pull-left"></i></a>
-			<a href="{{ speaker.urlWebsite }}" target="_NEW"><i class="icon-globe icon-2x pull-left"></i></a>-->
+            <!-- Speaker photo -->
+            <div ng-repeat="speaker in sessionSpeakers" class="speaker pull-left {{speaker.id}} pad-right" ></div>
+			<div ng-bind-html-unsafe="session.description" class="padded"></div>
 		</div>
 	</div>
 </div>

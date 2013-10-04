@@ -1,21 +1,19 @@
 
 <!-- CALL FOR PAPER -->
-<div class="row pad-top">
+<!--<div class="row pad-top">
 	<div class="two centered mobile third callout justify">	
-		<h3><i class="icon-bullhorn icon-3x pull-left"></i>Call For Paper</h3>
+		<h3><i class="icon-group icon-3x pull-left"></i>Ils ont déjà confirmé</h3>
 		<p>
-			Nous sommes à la recherche de speakers pour le Devfest Nantes 2013. Le Call For Paper est lancé ! </br>
-			Si vous voulez réaliser une présentation de 50-55 minutes ou bien animer un barcamp de 1-2h,
-			<a href="./index.html#/cfp" class="white">proposez votre sujet ici</a></br></br>
-			Le Call For Paper s'arrêtera le 15 Septembre 2013 à 23h59!
+			Voici une liste des speakers qui nous ont déjà confirmé leur présence.</br></br>
+			Le programme complet sera disponible fin septembre.
 		</p>
 	</div>
 </div>
-
+-->
 <!-- Session list builder -->
 <div class="row padded speaker-parent">
 	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
-		<div class="four sixths skip-one sessions speaker-tracker padded" >
+		<div class="four sixths skip-one sessions speaker-tracker padded" ng-show="speaker.visible">
 				<!-- Speaker photo -->
 				<div class="speaker pull-left {{speaker.id}}" ></div>
 				

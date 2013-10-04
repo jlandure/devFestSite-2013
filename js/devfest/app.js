@@ -10,7 +10,7 @@ var devfestApp = angular.module('devfest', []);
 devfestApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/homepage', {templateUrl: 'partials/homepage.html',   controller: 'NavigationCtrl'}).
-      //when('/sessions', {templateUrl: 'partials/sessions.html', controller: 'SessionsCtrl'}).
+      when('/sessions', {templateUrl: 'partials/sessions.html', controller: 'SessionsCtrl'}).
       when('/speakers', {templateUrl: 'partials/speakers.html', controller: 'SpeakersCtrl'}).
       //when('/agenda', {templateUrl: 'partials/agenda.html', controller: 'AgendaCtrl'}).
       when('/sponsors', {templateUrl: 'partials/sponsors.html', controller: 'NavigationCtrl'}).
@@ -49,9 +49,9 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   // Manage the navigation
   $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
                       {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
-                      //{'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
+                      {'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
                       {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
-                      {'label' : 'CFP', 'url' : '/cfp', 'style': {} },
+                      //{'label' : 'CFP', 'url' : '/cfp', 'style': {} },
                       //{'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
                       {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {} },
                       {'label' : 'Pratique', 'url' : '/contacts', 'style': {} },
@@ -122,8 +122,10 @@ devfestApp.controller('SessionDetailCtrl',['$scope', function ($scope) {
     return "TBD";
   };
   
-  var speakerId = $scope.session.speaker;
-  $scope.speaker = getSpeaker($scope, speakerId);
+  $scope.sessionSpeakers = [];
+  for (var i = 0; i< $scope.session.speaker.length; i++){
+    $scope.sessionSpeakers.push(getSpeaker($scope, $scope.session.speaker[i]));   
+  }
 
   var timeId = $scope.session.time;
   $scope.time = getAgendaTime($scope, timeId);
@@ -159,19 +161,19 @@ devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) 
           session.speakername = getSpeaker(speakers, session.speaker);
           // Add the session to the corresponding track line
           switch (session.track) {
-            case "android" :
-              line.android = session;
+            case "mobile" :
+              line.mobile = session;
               break;
-            case "html5" :
-              line.html5 = session;
+            case "web" :
+              line.web = session;
               break;
-            case "cloud" :
+            case "cloud&API" :
               line.cloud = session;
               break;
             case "decouverte" :
               line.decouverte = session;
               break;
-            case "codelabs" :
+            case "codelab" :
               line.codelabs = session;
               break;
           }
