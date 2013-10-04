@@ -255,6 +255,12 @@ nav.menu > ul li a:hover, nav.menu > ul li a:focus, nav.menu > ul li a:visited:h
   padding: 5px;
 }
 
+.sessions .speaker-photos{
+
+  padding-right: 20px;
+
+}
+
 /*
 
 Tentative 2 colonnes
@@ -667,6 +673,12 @@ p.sponsor-empty span {
     height:130px;
 }
 
+.sii{
+    background-image: url('../images/sponsors/sii.png');
+    width:200px;
+    height:130px;
+}
+
 .serli{
     background-image: url('../images/sponsors/serli.png');
     margin-top: 18px;
@@ -715,6 +727,85 @@ p.sponsor-empty span {
     background-image: url('../images/sponsors/honore_festif.png');
     width:193px;
     height:100px;
+}
+
+/**
+* Technos
+*/
+
+.techno{
+    width:30px;
+    height:30px;
+    float:left;
+    margin-right:10px;
+}
+
+.agile{
+  background-image: url('../images/technos/agile.png');
+}
+
+.android{
+  background-image: url('../images/technos/android.png');
+}
+
+.angularjs{
+  background-image: url('../images/technos/angularjs.png');
+}
+
+.api_spark{
+  background-image: url('../images/technos/api_spark.png');
+}
+
+.appengine{
+  background-image: url('../images/technos/appengine.png');
+}
+
+.big_query{
+  background-image: url('../images/technos/big_query.png');
+}
+
+.chrome{
+  background-image: url('../images/technos/chrome.png');
+}
+
+.compute_engine{
+  background-image: url('../images/technos/compute_engine.png');
+}
+
+.dart{
+  background-image: url('../images/technos/dart.png');
+}
+
+.drive{
+  background-image: url('../images/technos/drive.png');
+}
+
+.glass{
+  background-image: url('../images/technos/glass.png');
+}
+
+.google_plus{
+  background-image: url('../images/technos/google_plus.png');
+}
+
+.greenit{
+  background-image: url('../images/technos/greenit.png');
+}
+
+.html5{
+  background-image: url('../images/technos/html5.png');
+}
+
+.startup{
+  background-image: url('../images/technos/startup.png');
+}
+
+.tizen{
+  background-image: url('../images/technos/tizen.png');
+}
+
+.ux{
+  background-image: url('../images/technos/ux.png');
 }
 
 /**

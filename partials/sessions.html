@@ -44,7 +44,7 @@
 		<div class="row pad-left pad-top pad-right">
 			<div class="two thirds mobile ">
 				<a name="{{ session.label }}"></a>
-				<h3><img ng-src="{{ session.icon }}" width="20px" height="20px"> {{ session.label }}</h3>
+				<h3><div class="techno {{session.icon}}"></div> {{ session.label }}</h3>
 			</div>
 			<div class="one third mobile align-right">
 				{{ time }}, salle {{ session.room }}<br>
@@ -56,7 +56,9 @@
 		<!-- Session content -->
 		<div class="row padded justify">
             <!-- Speaker photo -->
-            <div ng-repeat="speaker in sessionSpeakers" class="speaker pull-left {{speaker.id}} pad-right" ></div>
+            <div class="pull-left speaker-photos">
+                <div ng-repeat="speaker in sessionSpeakers" class="speaker pull-left {{speaker.id}}" ></div>
+            </div>
 			<div ng-bind-html-unsafe="session.description" class="padded"></div>
 		</div>
 	</div>
