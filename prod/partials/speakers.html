@@ -1,6 +1,6 @@
 
 <!-- CALL FOR PAPER -->
-<div class="row pad-top">
+<!--<div class="row pad-top">
 	<div class="two centered mobile third callout justify">	
 		<h3><i class="icon-group icon-3x pull-left"></i>Ils ont déjà confirmé</h3>
 		<p>
@@ -9,11 +9,11 @@
 		</p>
 	</div>
 </div>
-
+-->
 <!-- Session list builder -->
 <div class="row padded speaker-parent">
 	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
-		<div class="four sixths skip-one sessions speaker-tracker padded" >
+		<div class="four sixths skip-one sessions speaker-tracker padded" ng-show="speaker.visible">
 				<!-- Speaker photo -->
 				<div class="speaker pull-left {{speaker.id}}" ></div>
 				

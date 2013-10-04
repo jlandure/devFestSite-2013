@@ -15,32 +15,83 @@
 
 	"sessions" : [
 		{
-			"label" : "Android ",
-			"track" : "android",
+			"label" : "Getting around with Google Maps android API V2",
+            "visible" : true,
+			"track" : "_mobile",
 			"icon" : "./images/technos/android.png",
-			"speaker" : "elezmy",
-			"lang" : "fr",
-			"level" : "201",
-			"time" : "TBD",
-			"room" : "TBD",
-			"description" : "TBD"		
-		},
-		{
-			"label" : "Android tips",
-			"track" : "android",
-			"icon" : "./images/technos/android.png",
-			"speaker" : "cmottier",
+			"speaker" : ["cmottier"],
 			"lang" : "fr",
 			"level" : "301",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "TBD"
+			"description" : "As part of the Google Play services - a platform that offers a better integration with Google products - Google recently released perhaps one of the most frequently requested upgrade: the Google Maps Android API v2. This new framework allows you to embed standard or customized maps directly in your application. Now Google Maps Android API v2 lets you leverage Google's beautiful new vector based maps.<br><br>In this session, we will learn about the new API and features introduced with Google Maps Android API v2 and how to start visualizing information geographically within your applications."		
 		},
 		{
-			"label" : "Google +",
-			"track" : "html5",
-			"icon" : "./images/technos/google-plus.png",
-			"speaker" : "ashineye",
+			"label" : "Google Glass, a la découverte de l'appareil",
+            "visible" : true,
+			"track" : "_mobile",
+			"icon" : "./images/technos/glass.jpg",
+			"speaker" : ["gcampion"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Cette session aura pour objectif de présenter les fameuses Google glass, de leur usages en passant par leur possibilités. Guillaume reviendra sur son approche de ce nouveau device et présentera un retour d'expérience de ses premiers développements."
+		},
+		{
+			"label" : "Présentation de Tizen",
+            "visible" : true,
+			"track" : "_mobile",
+			"icon" : "./images/technos/tizen.jpg",
+			"speaker" : ["rrozan"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Présentation générale de Tizen.<br>Nous explorerons l'écosystème Tizen et son développement HTML5.<br>Nous reviendrons également sur les retours de la Samsung Developers Conference."
+		},
+		{
+			"label" : "NFC et Android : New Future Communication",
+            "visible" : true,
+			"track" : "_mobile",
+			"icon" : "./images/technos/android.png",
+			"speaker" : ["jgarreau"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Le NFC tout le monde commence à en entendre parler mais que se cache-t-il réellement derrière ces 3 lettres ? Cette technologie envahit petit à petit nos smartphones et nous sommes en droit de nous poser un certain nombre de questions concernant son intégration, son développement... Nous verrons donc dans un premier temps la norme NFC afin de mieux appréhender la technologie et de comprendre ce qu'il y a derrière ce trigramme. Nous étudierons des cas d'usages possibles car il n'y a pas que le paiement qui peut être fait en NFC ;) Nous nous attarderons ensuite sur l'aspect : compatibilité matériel, version Android car dire que l'on fait du NFC ne fait pas tout, il faut savoir ce qu'on peut utiliser. Nous terminerons par une présentation de son implémentation dans le framework Android.<br>Cette présentation sera ponctuée de démos pour rendre la présentation plus interactive."
+		},
+		{
+			"label" : "Play Store bashing, apprendre des erreurs des grands",
+            "visible" : true,
+			"track" : "_mobile",
+			"icon" : "./images/technos/android.png",
+			"speaker" : ["elezmy"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Outlook.com, Facebook Home, ... Tous ces noms vous disent surement quelque chose, ils sont assez célèbres et semblent bien gérés par les multinationales qui les possèdent. Ils n'ont en fait pas vraiment rencontré le succès et la reconnaissance des utilisateurs du Google PlayStore.<br>Durant cette présentation, je vous raconterai les péripéties de plusieurs entreprises sur le Play Store, pour les analyser, comprendre pourquoi elles-n'ont pas réussi a satisfaire leurs utilisateurs, et apprendre de leurs erreurs, pour ne pas vivre la même expérience."
+		},
+		{
+			"label" : "Les Chrome Apps (le retour)",
+            "visible" : true,
+			"track" : "_web",
+			"icon" : "./images/technos/chrome.png",
+			"speaker" : ["fbeaufort"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Les Chrome Apps sont des applications écrites avec des technos web mais avec des capacités plus puissantes que sur le web. Elles s'exécutent dans un environnement sécurisé, ressemblent à s'y méprendre aux applications natives, sont multi-plateformes et fonctionnent hors-ligne par défaut."
+		},
+		{
+			"label" : "Angular JS Mastering ",
+            "visible" : true,
+			"track" : "_web",
+			"icon" : "./images/technos/angularjs.png",
+			"speaker" : ["pkozlowski"],
 			"lang" : "en",
 			"level" : "201",
 			"time" : "TBD",
@@ -48,10 +99,119 @@
 			"description" : "TBD"
 		},
 		{
-			"label" : "HTML5",
-			"track" : "html5",
+			"label" : "Web Components, l'avenir des développeurs web",
+            "visible" : true,
+			"track" : "_web",
 			"icon" : "./images/technos/html5.png",
-			"speaker" : "fbeaufort",
+			"speaker" : ["jvey"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Templating, encapsulation, éléments customs, databinding... Tous les frameworks web modernes proposent actuellement leur propre solution.<br><br>Mais saviez-vous qu’une spécification du W3C proposant de standardiser tout ceci est en cours de rédaction ? Les Web Components.<br>Dans cette présentation, nous prendrons de l’avance ! Nous aborderons les concepts fondamentaux des Web Components : ShadowDOM, Mutation Observers, custom elements, Model-Driven-View, Object.observe()... mais aussi comment les utiliser dès aujourd'hui avec des frameworks tels que AngularJS ou Dart WebUI"
+		},
+		{
+			"label" : "De la maquette à l'application : 'The Dart way'",
+            "visible" : false,
+			"track" : "_web",
+			"icon" : "./images/technos/dart.jpg",
+			"speaker" : ["nfrancois"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Aujourd’hui pour créer une application web dynamique, on a le choix entre une multitude de framework JavaScript, mais aussi une multitude de langage qui compile vers JavaScript. Il est même possible de combiner ces technologies mais parfois avec un certain manque de cohérence.<br>Aujourd’hui, Dart approche de la v1 et propose déjà des solutions pour créer une application web structurée et performante. Le langage s’annonce déjà précurseur en embarquant certains standards du web en cours d’implémentation par les navigateurs modernes.<br>Nous ferons le tour de langage et des frameworks Dart grâce à un live-coding d’une application, fil conducteur de cette présentation."
+		},
+		{
+			"label" : "WebGL & HTML5",
+            "visible" : true,
+			"track" : "_web",
+			"icon" : "./images/technos/html5.png",
+			"speaker" : ["jetienne"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "doyoubuzz + AngularJS : et si doyoubuzz devenait une vraie application",
+            "visible" : true,
+			"track" : "_web",
+			"icon" : "./images/technos/angularjs.png",
+			"speaker" : ["tbelin"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Doyoubuzz, actuellement en version 1, est en pleine refonte (pour une sortie d'ici octobre 2013). <br>Le code (aussi bien back que front) ayant plus de 5 ans, il était nécessaire de repartir d'une page blanche pour refaire entièrement les fondations de doyoubuzz. <br>Pour le front nous avons choisit AngularJS. <br><br>Dans ma conf, je voudrais présenter d'une part ce à quoi ressemblait le code JS de l'application initiale pour ensuite montrer comment AngularJS a pu nous permettre de : <br><ul><li> bien organiser notre code ;</li><li> complètement découpler le code métier de la vue ;</li><li> faire devenir doyoubuzz une vraie application web. </li></ul><br><br>Les problématiques traitées seraient : <br><ul><li> comment faire une partie édition basée sur AngularJS tout en gardant une partie publique complètement indépendante de ce framework ;</li><li> et de façon plus générale les bonnes pratiques Angular (et même JS en général) que nous avons mis en place.</li></ul>"
+		},
+		{
+			"label" : "Compute Engine",
+            "visible" : false,
+			"track" : "_cloud",
+			"icon" : "./images/technos/compute_engine.jpg",
+			"speaker" : ["lchampenois"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "AppEngine: la platforme ideale pour lancer une startup",
+            "visible" : true,
+			"track" : "_cloud",
+			"icon" : "./images/technos/appengine.png",
+			"speaker" : ["jmouton"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "La conférence présentera d'abord les principes et les concepts de la plateforme de Cloud de Google. Ensuite, Jérôme expliquera en quoi ce service est révolutionnaire pour une startup. Enfin, des exemples précis et pratiques en Java seront détaillés pour exposer les bonnes pratiques, les pièges a éviter, etc. "
+		},
+		{
+			"label" : "Mobile Backend Starter avec Cloud Platform",
+            "visible" : false,
+			"track" : "_cloud",
+			"icon" : "./images/technos/appengine.png",
+			"speaker" : ["amoussine"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Une application mobile sans backend digne de ce nom c’est un peu comme un Ferrari avec un moteur de Trabant. Et si vous pouviez, à moindre cout, mettre un turbo sur votre appli Android? ”Mobile Backend Starter” est une technologie annoncée à Google I/O 2013 qui permet de stocker des données utilisateurs d’application mobiles (configuration, données, état partagé entre utilisateurs, scores pour les jeux, …), le tout :<br><ul><li>en éliminant le besoin de coder coté serveur et de gérer des serveurs,</li><li>en offrant des notifications basées sur Google Cloud Messaging</li><li>en évitant toute saisie de mot de passe coté client.</li></ul><br>Cette session détaillera la solution technique et les technologies sous-jacentes comme Google AppEngine, Cloud Endpoints, Cloud Messaging coté serveur et le travail nécessaire coté client Android pour bénéficier de ces fonctionnalités."
+		},
+		{
+			"label" : "Investir sur son API Web : pourquoi et comment ?",
+            "visible" : true,
+			"track" : "_cloud",
+			"icon" : "./images/technos/logo_api_spark.jpg",
+			"speaker" : ["jlouvel"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Nous explorerons dans cette cession les enjeux des API Web. Plus qu'un endpoint REST et qu'un point d'échange d'informations vers des applications mobiles, une API Web représente un enjeu stratégique qui permet de répondre aux enjeux du multi-canal et du cross device. Que vous soyez développeur d'une application, d'un site marchand, ou bien d'un service en ligne, une Web API accompagne ainsi votre stratégie commerciale et requiert une approche technique adaptée en terme de cycle de vie (versions, documentation, exploitation..). Bref, bien concevoir et gérer sa Web API c'est au moins aussi important et bien plus critique que choisir le CMS adapté à son site Web. <br>Les API Web c'est aussi une superbe opportunité pour se placer en tant que dev/ops et architecte, dans une nouvelle posture au sein de son organisation. Nous illustrerons notre propos avec les solutions proposées par la plateforme APISpark bâtie par les développeurs du framework Restlet.<br><br>Agenda :<br><ul><li>Rappels REST : Hébergements Restlet sur AppEngine et Android</li><li>Enjeux du Web et de la mobilité, du multi-canal, multi-device, Importance de l'API Web, Zoom sur APISpark</li></ul>"
+		},
+		{
+			"label" : "Google+ Sign In API",
+            "visible" : false,
+			"track" : "_cloud",
+			"icon" : "./images/technos/google-plus.png",
+			"speaker" : ["ibarber"],
+			"lang" : "en",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "TBD"
+		},
+		{
+			"label" : "Big Query",
+            "visible" : false,
+			"track" : "_cloud",
+			"icon" : "./images/technos/big_query.jpg",
+			"speaker" : ["mgorner"],
 			"lang" : "fr",
 			"level" : "201",
 			"time" : "TBD",
@@ -59,21 +219,107 @@
 			"description" : "TBD"
 		},
 		{
-			"label" : "WebGL",
-			"track" : "html5",
-			"icon" : "./images/technos/html5.png",
-			"speaker" : "cpinson",
+			"label" : "Un peu de fun avec la chrome serial API",
+            "visible" : true,
+			"track" : "_decouverte",
+			"icon" : "./images/technos/chrome.png",
+			"speaker" : ["xseignard"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Communiquer entre un Arduino et Chrome c'est possible! Et cela directement grace à la chrome serial API!<br>Venez assister à la session afin de voir un live coding d'une extension Chrome qui discute directement avec le monde réel grace à Arduino!<br><br>Au programme, un peu d'électronique, du JS et du fun!"
+		},
+		{
+			"label" : "À quoi sert un designer?",
+            "visible" : true,
+			"track" : "_decouverte",
+			"icon" : "./images/technos/ux.jpg",
+			"speaker" : ["hghernati"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Le but de cette session va être d'expliquer le rôle d'un designer dans le processus de développement d'une application mobile.<br>De la réflexion autour du concept de navigation jusqu'à la livraison des éléments graphiques pour l'intégration, l'objectif va être d'expliquer aux développeurs présents les méthodes de design qui rendront leur application encore plus pertinente et aboutie."
+		},
+		{
+			"label" : "Et si la fin du monde était causée par l'obésité du web ?",
+            "visible" : true,
+			"track" : "_decouverte",
+			"icon" : "./images/technos/logo_greenito.jpg",
+			"speaker" : ["ophilippot"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Derrière le nuage, il y a une une infrastructure, des tuyaux, des utilisateurs avec des PC... Rien de virtuel. Constat renforcé par une autre loi que le web respecte : l'entropie. Plus il y a de place et de ressource, plus le contenu web va l'occuper. Les impacts sont énormes : explosion des capacité de stockage, obsolescence du matériel, baisse de performance, consommation des data centers…<br><br>Est-ce que mettre des toits végétalisés et des panneaux solaires sur les data centers suffira ? <br><br>Pourtant des pratiques existent pour limiter ce phénomène : éco-conception des sites, conception green des data centers, meilleures usages par les utilisateurs, amélioration du matériel... <br><br>Alors pourquoi s'en priver ? Et par où commencer ?"
+		},
+		{
+			"label" : "De l'agilité pour mon projet : pour quoi faire ?",
+            "visible" : true,
+			"track" : "_decouverte",
+			"icon" : "./images/technos/agile.gif",
+			"speaker" : ["caddinquy"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Les développeurs ne sont pas tous des individus mal rasés, travaillant la nuit et jonchant leur sillage de boites de soda et d'emballages de pizzas.<br>L'agilité ne se réduit pas à des hurluberlus cherchant à couvrir chaque centimètre carré des murs de post-it multicolores.<br>Et d'ailleurs, l'agilité, qu'est-ce que c'est ? Vraiment !<br>Est-ce une nouvelle mode qu'il me faudra subir et passera à mon grand soulagement ? Ou est-ce une véritable réponse à la sclérose et l'inefficacité qui gangrènent nos projets ?<br><br>Durant cette session de découverte, nous allons découvrir ensemble ce qu'est réellement l'agilité, en quoi il peut vous aider à réaliser des projets qui déchirent tout en y prenant plaisir ! Depuis les principes de base (adaptation aux changements, collaboration et transparence) jusqu'aux pratiques telles que le test-driven développement, le pair-programming, l'intégration continue, etc. nous iront à la rencontre des fondamentaux de l'univers agile.<br>Enfin, nous dérouleront un jour dans la vie du développeur agile pour comprendre comment les choses se passent. Réellement."
+		},
+		{
+			"label" : "Disruption ",
+            "visible" : true,
+			"track" : "_decouverte",
+			"icon" : "./images/technos/startup.png",
+			"speaker" : ["dgirard"],
+			"lang" : "fr",
+			"level" : "101",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Stratégie consistant à briser les conventions établies sur un marché pour  se positionner en acteur incontournable"
+		},
+		{
+			"label" : "AngularJS : intégrer un composant externe dans une directive",
+            "visible" : true,
+			"track" : "_codelab",
+			"icon" : "./images/technos/angularjs.png",
+			"speaker" : ["tchatel", "arichard"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "AngularJS permet de créer très facilement des vues et des formulaires travaillant sur notre modèle de données. Mais comment intégrer des composants externes dans notre application ? C'est justement l'objet de ce code-lab, où l'on va créer une directive AngularJS permettant d'insérer une carte Google Maps.<br><br>Nous y apprendrons :<br><ul><li>à créer une directive utilisable comme attribut ou balise HTML</li><li>à y inclure le code de manipulation de l'API Google Maps</li><li>à établir une liaison bidirectionnelle entre le composant et les données de notre application</li></ul>"
+		},
+		{
+			"label" : "Coder Android pour du intel",
+            "visible" : true,
+			"track" : "_codelab",
+			"icon" : "./images/technos/android.png",
+			"speaker" : ["rrozan"],
 			"lang" : "fr",
 			"level" : "201",
 			"time" : "TBD",
 			"room" : "TBD",
 			"description" : "TBD"
+		},
+		{
+			"label" : "CodeLab de construction d'une API Web ",
+            "visible" : true,
+			"track" : "_codelab",
+			"icon" : "./images/technos/logo_api_spark.jpg",
+			"speaker" : ["ttemplier"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Venez concevoir et implémenter votre première API Web de façon évolutive, en intégrant notamment des données externes en provenance d'un Google SpreadSheet, et en les ré-exposant au travers de la plateforme APISpark."
 		}
 	],
 
 	"speakers" : [
 		{
 			"id" : "cmottier",
+            "visible" : true,
 			"displayName" : "Cyril mottier",
 			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/118417777153109946393/posts",
@@ -83,6 +329,7 @@
 		},
 		{
 			"id" : "jgarreau",
+            "visible" : true,
 			"displayName" : "Jean-François Garreau",
 			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
 			"urlGooglePlus" : "https://plus.google.com/114772056028520115043/posts",
@@ -92,6 +339,7 @@
 		},
 		{
 			"id" : "elezmy",
+            "visible" : true,
 			"displayName" : "Eyal Lezmy",
 			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
 			"urlGooglePlus" : "https://plus.google.com/109290164663410811176/posts",
@@ -100,6 +348,7 @@
 		},
 		{
 			"id" : "ibarber",
+            "visible" : true,
 			"displayName" : "Ian Barber",
 			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
 			"urlGooglePlus" : "https://plus.google.com/+IanBarber/posts",
@@ -108,6 +357,7 @@
 		},
 		{
 			"id" : "ngarnier",
+            "visible" : false,
 			"displayName" : "Nicolas Garnier",
 			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
 			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
@@ -115,12 +365,14 @@
 		},
 		{
 			"id" : "fbeaufort",
+            "visible" : true,
 			"displayName" : "François Beaufort",
 			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
 			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
 		},
 		{
 			"id" : "amoussine",
+            "visible" : false,
 			"displayName" : "Alexis Moussine Pouchkine",
 			"bio" : "Après plus de dix années passées dans les équipes Java de Sun Microsystems et d’Oracle, Alexis est désormais responsable des relations développeur chez Google France.",
 			"urlGooglePlus" : "https://plus.google.com/+AlexisMP/posts",
@@ -129,18 +381,172 @@
 		},
 		{
 			"id" : "tchatel",
+            "visible" : true,
 			"displayName" : "Thierry Chatel",
-			"bio" : "Je suis consultant en architecture logicielle, et formateur AngularJS. J'enseigne les bonnes pratiques de conception, d’architecture et de modélisation qui permettent de bien structurer une application, pour en faciliter la maintenance et les évolutions. <br><br>Ayant découvert AngularJS au cours de l'été 2011, j'ai tout de suite été persuadé que ce framework constitue une véritable révolution dans la création d'applications web, et la plus grande avancée qu'ait connu ce secteur depuis les débuts du web. En fervent enthousiaste, je m'y suis investi à fond, d'abord en simple pratiquant, puis rapidement en animant des conférences, en créant le blog technique francophone FrAngular, et la communauté AngularJS France sur Google+. Et j'anime maintenant en entreprise des sessions de formation à AngularJS.",
+			"bio" : "Thierry est consultant et formateur indépendant.<br>Focalisé sur les bonnes pratiques de conception et développement, il ne pouvait qu'être séduit par les concepts du framework AngularJS, dont il découvrit la version beta dès 2011. <br>Convaincu que ce framework constitue une véritable révolution dans le développement des applications web, il n'a de cesse de communiquer son enthousiasme pour AngularJS en alternant conférences et formations.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/113505929077720042958/posts",
 			"urlTwitter" : "https://twitter.com/thierrychatel/"
 		},
 		{
+			"id" : "arichard",
+            "visible" : true,
+			"displayName" : "Antoine Richard",
+			"bio" : "Antoine est consultant en architecture Web à SQLI Nantes. Il est référent technique sur l'écosystème HTML5/Javascript. <br>Il travaille en ce moment sur la mise en place et l'industrialisation d'une nouvelle stack de développement web moderne pour une grande entreprise française. <br>Passionné par l'écosystème open-source Javascript, Antoine intervient régulièrement en tant que speaker sur ce sujet dans la région.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/103932114865279499816/posts",
+			"urlTwitter" : "https://twitter.com/richard_antoine",
+            "urlGithub"  : "https://github.com/antoine-richard/"
+		},
+		{
 			"id" : "jmouton",
+            "visible" : true,
 			"displayName" : "Jérôme Mouton",
 			"bio" : "Jérôme est le co-fondateur et CTO de SnapEngage, une solution de relation client sur le web hébergée sur Google App Engine. Il gère également le GDG Berlin. Il a aussi optenu depuis peu le presigieu titre de  GDE AppEngine.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/110615325729051596989/posts",
 			"urlTwitter" : "https://twitter.com/jlmouton/",
             "urlWebsite" : "http://snapengage.com/"
+		},
+		{
+			"id" : "gcampion",
+            "visible" : true,
+			"displayName" : "Guillaume Campion",
+			"bio" : "TBD",
+			"urlGooglePlus" : "https://plus.google.com/u/0/109248341696828237778/posts",
+			"urlTwitter" : "http://twitter.com/laumic",
+            "urlWebsite" : "http://ama-studios.com/"
+		},
+		{
+			"id" : "rrozan",
+            "visible" : true,
+			"displayName" : "Romuald Rozan",
+			"bio" : "Développeur Évangéliste Tizen."
+		},
+		{
+			"id" : "pkozlowski",
+            "visible" : true,
+			"displayName" : "Pawel Kozlowski",
+			"bio" : "I'm a big fan of AngularJS and trying to help people using it by contributing to angular-ui, helping on the mailing list and blogging.",
+			"urlGooglePlus" : "https://plus.google.com/115265057550389171925/posts",
+			"urlTwitter" : "https://twitter.com/pkozlowski_os",
+            "urlWebsite" : "http://pkozlowskios.wordpress.com/",
+            "urlGithub"  : "https://github.com/pkozlowski-opensource"
+		},
+		{
+			"id" : "jvey",
+            "visible" : true,
+			"displayName" : "Julien Vey",
+			"bio" : "Julien est développeur Java et passionné par tout ce qui a trait au Web et aux nouveaux outils & langages associés. Julien a grandi dans le monde des RIA, avec Flex puis GWT avant de se tourner vers les frameworks JavaScript. Il s’intéresse tout particulièrement aux standards du Web et aux nouveaux langages alternatifs pour le Web.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/104319090218121337101/posts",
+			"urlTwitter" : "https://twitter.com/julienvey",
+            "urlWebsite" : "http://www.julienvey.com/"
+		},
+		{
+			"id" : "nfrancois",
+            "visible" : true,
+			"displayName" : "Nicolas Francois",
+			"bio" : "Développeur Java pour Sfeir le jour, Dart Knight codeur la nuit. Séduit par le langage, il s'y intéresse depuis plus d'un an en évangélisant les Jug et GDG avec Guillaume. Avec l’aide de Vincent, le trio anime une page Google+ dédiée à Dart.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/106226789128312528511/posts",
+			"urlTwitter" : "http://twitter.com/nicofrancois",
+            "urlWebsite" : "http://injectinto.blogspot.com/",
+            "urlGithub"  : "http://www.github.com/nfrancois"
+		},
+		{
+			"id" : "ggiroux",
+            "visible" : false,
+			"displayName" : "Guillaume Giroux",
+			"bio" : "Depuis plus d’un an, Guillaume Girou suit l’activité de Dart en publiant régulièrement des articles sur la page G+ de la communauté. Fort de cinq ans d’expérience dans le développement, il a un parcours atypique passant du .Net à Java couplé à du GWT et finalement à Dart pour son plaisir ! Avec Nicolas, il a présenté à plusieurs reprises le langage Dart lors de JUG, GDG et CodeLabs.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/115049522200141162219/posts",
+			"urlTwitter" : "http://twitter.com/#!/GirouGuillaume"
+		},
+		{
+			"id" : "jetienne",
+            "visible" : true,
+			"displayName" : "Jerome Etienne",
+			"bio" : "TBD",
+			"urlGooglePlus" : "https://plus.google.com/u/0/102848659911729905069/posts",
+			"urlTwitter" : "http://twitter.com/jerome_etienne",
+            "urlWebsite" : "http://learningthreejs.com/",
+            "urlGithub"  : "https://github.com/jeromeetienne/"
+		},
+		{
+			"id" : "tbelin",
+            "visible" : true,
+			"displayName" : "Thomas Belin",
+			"bio" : "Front End développeur chez DoYouBuzz (mon cv). Je fais la part belle au code. Je crois en la richesse du web. Je m'éclate avec Javascript",
+			"urlGooglePlus" : "https://plus.google.com/118010420630912086698?rel=author",
+			"urlTwitter" : "https://twitter.com/ThomasBelin4",
+            "urlWebsite" : "http://thomasbelin.fr/",
+            "urlGithub"  : "https://github.com/thomasbelin4"
+		},
+		{
+			"id" : "lchampenois",
+            "visible" : true,
+			"displayName" : "Ludovic Champenois",
+			"bio" : "Ludovic Champenois  est ingénieur logiciel travaillant chez Google dans les technologies Cloud à San Francisco. Dans le passé, il a travaillé en tant qu'architecte sur le serveur d'applications Java EE 6 GlassFish.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/114301740068660616000/posts"
+		},
+		{
+			"id" : "ttemplier",
+            "visible" : true,
+			"displayName" : "Thierry Templier",
+			"bio" : "Thierry is an engineer in computer science, telecom and networks, graduate of Esigetel, expert in Java technologies, JavaScript, Modeling and the Web in general, as well as passionate of open source which led him to be interested in the Restlet Framework.<br>He joined the company as an R&D architect in 2011 , taking in charge the development of APISpark and porting Restlet Framework to JavaScript. Thierry is also co-author of several books on JavaScript, Spring as well as the Restlet in Actionbook published by Manning.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/104965615059084011128/posts",
+			"urlTwitter" : "https://twitter.com/templth"
+		},
+		{
+			"id" : "mgorner",
+            "visible" : false,
+			"displayName" : "Martin Gorner",
+			"bio" : "Martin Gorner est Google Outreach Manager pour la France. Il se passionne pour la science, la technologie, l'informatique, les algorithmes et tout ce qui s'en rapproche. Après avoir obtenu son diplôme d'ingénieur aux Mines Paris-Tech, Martin a commencé sa carrière dans le groupe 'omputer architecture' chez ST Microelectronics. Il a ensuite passé les 11 années suivantes dans le domaine naissant des livres électroniques, d'abord avec la start-up mobipocket.com, qui est ensuite devenue la partie logicielle du Kindle d'Amazon et ses versions mobiles. Martin a développé pour toutes les plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/+MartinGorner/posts"
+		},
+		{
+			"id" : "xseignard",
+            "visible" : true,
+			"displayName" : "Xavier Seignard",
+			"bio" : "Développeur et bidouilleur, je suis engagé dans une démarche qui repose sur les valeurs de la culture du Libre, du partage de connaissances et de l’esprit do it yourself. Le fer à souder, le clavier et le pistolet à colle sont mes outils de prédilection !",
+			"urlGooglePlus" : "https://plus.google.com/u/0/111497943375428145134/posts",
+			"urlTwitter" : "https://twitter.com/xavier_seignard",
+            "urlWebsite" : "http://xseignard.github.io/"
+		},
+		{
+			"id" : "hghernati",
+            "visible" : true,
+			"displayName" : "Heidi Ghernati",
+			"bio" : "Major de promotion 2009 à l’École de Design Nantes Atlantique, co-gérant de la société BAKASABLE, Heidi Ghernati est passionné par les expériences interactives qu’autorisent les nouvelles technologies. Il met aujourd’hui son savoir au service de l’utilisateur, poussant de plus en plus loin les scénarios interactifs de navigation.<br>Il est également professeur d’Action Script ainsi qu’intervenant dans les projets des étudiants de L’EDNA tout au long de l’année.",
+			"urlGooglePlus" : "https://plus.google.com/102303162957607274701/posts",
+			"urlTwitter" : "https://twitter.com/hghernati",
+            "urlWebsite" : "http://www.hi-dee.eu/"
+		},
+		{
+			"id" : "caddinquy",
+            "visible" : true,
+			"displayName" : "Christophe Addinquy",
+			"bio" : "Christophe Addinquy est accroc à l'informatique depuis 1980, il en a fait son métier depuis plus de 20 ans. D'abord développeur, il a aussi été consultant, formateur, chef de projet puis directeur de projet pour devenir aujourd'hui coach agile.<br>Durant cette période, il a été un activiste de la programmation orientée objets, des Design Patterns et maintenant de l'agile, à des périodes où ces courants n'étaient pas des acquis. Il s'est intéressé à XP en 2001 et a été moteur dans le virage vers l'agilité de la société de conseil pour laquelle il travaillait alors. Il a rejoint un utilisateur final en 2007 en tant que responsable du Back-Office pour déployer l'approche agile dans les équipes projet. Il a rejoint le Scrum User Group Français depuis ses débuts et en est l'actuel secrétaire.<br>Il aide désormais les organisations et les équipes projet à implémenter et améliorer leurs pratiques agiles à l'aide des pratiques agiles, Scrum, Lean et Lean Startup.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/112152044380559952642/posts",
+			"urlTwitter" : "http://twitter.com/addinquy",
+            "urlWebsite" : "http://addinquy.tumblr.com/"
+		},
+		{
+			"id" : "ophilippot",
+            "visible" : true,
+			"displayName" : "Olivier Philippot",
+			"bio" : "Olivier Philippot is an active member of Green IT community. He's the co-founder of Green Code Lab which aim is to work on eco-design of software. He works with companies and developers on projects to reduce software impact and to increase performance (Evaluation, measure...)",
+			"urlGooglePlus" : "https://plus.google.com/u/0/100212565620476538043/posts"
+		},
+		{
+			"id" : "dgirard",
+            "visible" : true,
+			"displayName" : "Didier Girard",
+			"bio" : "Didier Girard Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir. Il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008",
+			"urlGooglePlus" : "https://plus.google.com/u/0/115263933340916245640/posts",
+			"urlTwitter" : "http://twitter.com/DidierGirard"
+		},
+		{
+			"id" : "jlouvel",
+            "visible" : true,
+			"displayName" : "Jérôme Louvel",
+			"bio" : " Jérôme is an engineer in computer science and management, graduate of Polytech'Montpellier. He started the open source Restlet Framework project back in 2005, as the first RESTful web API framework for Java.<br>He is in charge technical and commercial leadership of the company. Jérôme was also a member of the expert group that defined the standard JAX-RS API, contributor to the RESTful Web Services book published by O'Reilly and co-author of the Restlet in Action book published by Manning.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/105549871383285353581/posts"
 		}
 
 	]
