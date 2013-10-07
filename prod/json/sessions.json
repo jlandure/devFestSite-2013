@@ -36,7 +36,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Cette session aura pour objectif de présenter les fameuses Google glass, de leur usages en passant par leur possibilités. Guillaume reviendra sur son approche de ce nouveau device et présentera un retour d'expérience de ses premiers développements."
+			"description" : "Cette session aura pour objectif de présenter les fameuses Google Glass, de leur usages en passant par leur possibilités. Guillaume reviendra sur son approche et présentera un retour d'expérience de ses premiers développements."
 		},
 		{
 			"label" : "Présentation de Tizen",
@@ -48,7 +48,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Présentation générale de Tizen.<br>Nous explorerons l'écosystème Tizen et son développement HTML5.<br>Nous reviendrons également sur les retours de la Samsung Developers Conference."
+			"description" : "Présentation générale de Tizen, le système d'exploitation co-développé par Intel et Samsung, visant principalement le secteur des appareils mobiles.<br>Nous explorerons l'écosystème Tizen et son développement HTML5, son Store."
 		},
 		{
 			"label" : "NFC et Android : New Future Communication",
@@ -60,7 +60,7 @@
 			"level" : "201",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Le NFC tout le monde commence à en entendre parler mais que se cache-t-il réellement derrière ces 3 lettres ? Cette technologie envahit petit à petit nos smartphones et nous sommes en droit de nous poser un certain nombre de questions concernant son intégration, son développement... Nous verrons donc dans un premier temps la norme NFC afin de mieux appréhender la technologie et de comprendre ce qu'il y a derrière ce trigramme. Nous étudierons des cas d'usages possibles car il n'y a pas que le paiement qui peut être fait en NFC ;) Nous nous attarderons ensuite sur l'aspect : compatibilité matériel, version Android car dire que l'on fait du NFC ne fait pas tout, il faut savoir ce qu'on peut utiliser. Nous terminerons par une présentation de son implémentation dans le framework Android.<br>Cette présentation sera ponctuée de démos pour rendre la présentation plus interactive."
+			"description" : "Le NFC tout le monde commence à en entendre parler mais que se cache-t-il réellement derrière ces 3 lettres ? Cette technologie envahit petit à petit nos smartphones et nous sommes en droit de nous poser un certain nombre de questions concernant son intégration, son développement... Nous verrons donc dans un premier temps la norme NFC afin de mieux appréhender la technologie et de comprendre ce qu'il y a derrière ce trigramme. Nous étudierons des cas d'usages possibles car il n'y a pas que le paiement qui peut être fait en NFC ;) Nous nous attarderons ensuite sur l'aspect : compatibilité matériel, version Android car dire que l'on fait du NFC ne fait pas tout. Nous terminerons par une présentation de son implémentation dans le framework Android.<br>Cette présentation sera ponctuée de démos pour rendre la présentation plus interactive."
 		},
 		{
 			"label" : "Play Store bashing, apprendre des erreurs des grands",
@@ -252,7 +252,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Derrière le nuage, il y a une une infrastructure, des tuyaux, des utilisateurs avec des PC... Rien de virtuel. Constat renforcé par une autre loi que le web respecte : l'entropie. Plus il y a de place et de ressource, plus le contenu web va l'occuper. Les impacts sont énormes : explosion des capacité de stockage, obsolescence du matériel, baisse de performance, consommation des data centers…<br><br>Est-ce que mettre des toits végétalisés et des panneaux solaires sur les data centers suffira ? <br><br>Pourtant des pratiques existent pour limiter ce phénomène : éco-conception des sites, conception green des data centers, meilleures usages par les utilisateurs, amélioration du matériel... <br><br>Alors pourquoi s'en priver ? Et par où commencer ?"
+			"description" : "Derrière le nuage, il y a une une infrastructure, des tuyaux, des utilisateurs avec des PC... Rien de virtuel. Constat renforcé par une autre loi que le web respecte : l'entropie. Plus il y a de place et de ressource, plus le contenu web va l'occuper. Les impacts sont énormes : explosion des capacités de stockage, obsolescence du matériel, baisse de performance, consommation des data centers…<br><br>Est-ce que mettre des toits végétalisés et des panneaux solaires sur les data centers suffira ? <br><br>Pourtant des pratiques existent pour limiter ce phénomène : éco-conception des sites, conception green des data centers, meilleures usages par les utilisateurs, amélioration du matériel... <br><br>Alors pourquoi s'en priver ? Et par où commencer ?"
 		},
 		{
 			"label" : "De l'agilité pour mon projet : pour quoi faire ?",
@@ -264,7 +264,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Les développeurs ne sont pas tous des individus mal rasés, travaillant la nuit et jonchant leur sillage de boites de soda et d'emballages de pizzas.<br>L'agilité ne se réduit pas à des hurluberlus cherchant à couvrir chaque centimètre carré des murs de post-it multicolores.<br>Et d'ailleurs, l'agilité, qu'est-ce que c'est ? Vraiment !<br>Est-ce une nouvelle mode qu'il me faudra subir et passera à mon grand soulagement ? Ou est-ce une véritable réponse à la sclérose et l'inefficacité qui gangrènent nos projets ?<br><br>Durant cette session de découverte, nous allons découvrir ensemble ce qu'est réellement l'agilité, en quoi il peut vous aider à réaliser des projets qui déchirent tout en y prenant plaisir ! Depuis les principes de base (adaptation aux changements, collaboration et transparence) jusqu'aux pratiques telles que le test-driven développement, le pair-programming, l'intégration continue, etc. nous iront à la rencontre des fondamentaux de l'univers agile.<br>Enfin, nous dérouleront un jour dans la vie du développeur agile pour comprendre comment les choses se passent. Réellement."
+			"description" : "Les développeurs ne sont pas tous des individus mal rasés, travaillant la nuit et jonchant leur sillage de boites de soda et d'emballages de pizzas.<br>L'agilité ne se réduit pas à des hurluberlus cherchant à couvrir chaque centimètre carré des murs de post-it multicolores.<br>Et d'ailleurs, l'agilité, qu'est-ce que c'est vraiment ?<br>Est-ce une nouvelle mode qu'il me faudra subir et passera à mon grand soulagement ? Ou est-ce une véritable réponse à la sclérose et l'inefficacité qui gangrènent nos projets ?<br><br>Durant cette session de découverte, nous allons découvrir ensemble ce qu'est réellement l'agilité, en quoi il peut vous aider à réaliser des projets qui déchirent tout en y prenant plaisir ! Depuis les principes de base (adaptation aux changements, collaboration et transparence) jusqu'aux pratiques telles que le test-driven développement, le pair-programming, l'intégration continue, etc. nous iront à la rencontre des fondamentaux de l'univers agile.<br>Enfin, nous dérouleront un jour dans la vie du développeur agile pour comprendre comment les choses se passent. Réellement."
 		},
 		{
 			"label" : "Disruption ",
@@ -291,16 +291,16 @@
 			"description" : "AngularJS permet de créer très facilement des vues et des formulaires travaillant sur notre modèle de données. Mais comment intégrer des composants externes dans notre application ? C'est justement l'objet de ce code-lab, où l'on va créer une directive AngularJS permettant d'insérer une carte Google Maps.<br><br>Nous y apprendrons :<br><ul><li>à créer une directive utilisable comme attribut ou balise HTML</li><li>à y inclure le code de manipulation de l'API Google Maps</li><li>à établir une liaison bidirectionnelle entre le composant et les données de notre application</li></ul>"
 		},
 		{
-			"label" : "Coder Android pour du intel",
+			"label" : "Optimiser votre application Android (pour X86)",
             "visible" : true,
 			"track" : "_codelab",
 			"icon" : "android",
-			"speaker" : ["rrozan"],
+			"speaker" : ["xhallade"],
 			"lang" : "fr",
 			"level" : "201",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "TBD"
+			"description" : "Découvrez comment optimiser votre application android sur X86."
 		},
 		{
 			"label" : "CodeLab de construction d'une API Web ",
@@ -418,7 +418,13 @@
 			"id" : "rrozan",
             "visible" : true,
 			"displayName" : "Romuald Rozan",
-			"bio" : "Développeur Évangéliste Tizen."
+			"bio" : " Romuald est Technical Community Manager (Développeur Évangéliste) chez Intel Corporation"
+		},
+		{
+			"id" : "xhallade",
+            "visible" : true,
+			"displayName" : "Xavier Hallade",
+			"bio" : "Xavier est Technical Marketing Engineer chez Intel Corporation"
 		},
 		{
 			"id" : "pkozlowski",
