@@ -52,10 +52,11 @@
 			</div>
 			<div class="one third mobile align-right">
 				{{ time }}, salle {{ session.room }}<br>
-				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
+				<small>Tracker {{ session.track_lbl }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
 			<hr>            
-			<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>
+			<!--<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>-->
+            <small>Présenté par <span ng-repeat="speaker in sessionSpeakers">{{ speaker.displayName }}&nbsp;&nbsp;</span></small>
 		</div>
 		<!-- Session content -->
 		<div class="row padded justify">
