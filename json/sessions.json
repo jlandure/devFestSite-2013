@@ -87,7 +87,7 @@
 			"description" : "Les Chrome Apps sont des applications écrites avec des technos web mais avec des capacités plus puissantes que sur le web. Elles s'exécutent dans un environnement sécurisé, ressemblent à s'y méprendre aux applications natives, sont multi-plateformes et fonctionnent hors-ligne par défaut."
 		},
 		{
-			"label" : "Angular JS Mastering ",
+			"label" : "AngularJS: making a browser a better development platform",
             "visible" : true,
 			"track" : "_web",
 			"icon" : "angularjs",
@@ -96,7 +96,7 @@
 			"level" : "201",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "TBD"
+			"description" : "This talk will familiarize you with AngularJS JavaScript framework and its revolutionary approach to writing single-page web applications. AngularJS is unique in many ways with its DOM-based, declarative templating, ability to extend HTML vocabulary and strong focus on testing. <br><br> AngularJS will be introduced by contrasting it with traditional approaches and showing benefits of the AngularJS-way (extremely concise yet readable code, testability and most importantly – making web development fun again!). This will be an interactive talk with plenty of code examples."
 		},
 		{
 			"label" : "Web Components, l'avenir des développeurs web",
@@ -123,7 +123,7 @@
 			"description" : "Aujourd’hui pour créer une application web dynamique, on a le choix entre une multitude de framework JavaScript, mais aussi une multitude de langage qui compile vers JavaScript. Il est même possible de combiner ces technologies mais parfois avec un certain manque de cohérence.<br>Aujourd’hui, Dart approche de la v1 et propose déjà des solutions pour créer une application web structurée et performante. Le langage s’annonce déjà précurseur en embarquant certains standards du web en cours d’implémentation par les navigateurs modernes.<br>Nous ferons le tour de langage et des frameworks Dart grâce à un live-coding d’une application, fil conducteur de cette présentation."
 		},
 		{
-			"label" : "WebGL & HTML5",
+			"label" : "Three.js and game",
             "visible" : true,
 			"track" : "_web",
 			"icon" : "html5",
@@ -132,7 +132,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "TBD"
+			"description" : "We will introduce three.js and how to use it easily to produce games. We will put the focus on the game part and i will share my personnal experience on the matter.﻿"
 		},
 		{
 			"label" : "doyoubuzz + AngularJS : et si doyoubuzz devenait une vraie application",
@@ -424,7 +424,7 @@
 			"id" : "pkozlowski",
             "visible" : true,
 			"displayName" : "Pawel Kozlowski",
-			"bio" : "I'm a big fan of AngularJS and trying to help people using it by contributing to angular-ui, helping on the mailing list and blogging.",
+			"bio" : "Pawel Kozlowski enjoys hacking on both back-end and front-end. During his career he was fortunate enough to use multitude of technologies, programming languages and tools but recently focuses on the front-end web development with AngularJS.<br><br>Pawel strongly believes in free, open source software. He is very active in the AngularJS community and last year he was honored with the commiter privilege to the AngularJS project. He also contributes to Angular-UI - the companion suite to the AngularJS framework.<br><br>When not coding Pawel sharpens his writing skills on a book about web application development with AngularJS (http://goo.gl/gKEsIo). You can also find him spreading a good word about AngularJS at various conferences.",
 			"urlGooglePlus" : "https://plus.google.com/115265057550389171925/posts",
 			"urlTwitter" : "https://twitter.com/pkozlowski_os",
             "urlWebsite" : "http://pkozlowskios.wordpress.com/",
@@ -461,7 +461,7 @@
 			"id" : "jetienne",
             "visible" : true,
 			"displayName" : "Jerome Etienne",
-			"bio" : "TBD",
+			"bio" : "Jerome Etienne is a hardcore JavaScript developer. He is CTO of beloola.com, a company doing game in three.js. He is focused on WebGL javaScript, and cool HTML5 game stuff. He organizes various local events to spread the word in local communities. He likes tree.js quite a bit and writelearningthreejs.com blog, trying to make WebGL easier to reach for beginners.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/102848659911729905069/posts",
 			"urlTwitter" : "http://twitter.com/jerome_etienne",
             "urlWebsite" : "http://learningthreejs.com/",
