@@ -4,7 +4,7 @@
 		Tracker
         <select class="unselected" ng-model="trackers">
             <option selected value="">Tous</option>
-            <option value="_mobile">mobile</option>
+            <option value="_mobile">Mobilité</option>
             <option value="_web">Web</option>
             <option value="_cloud">Cloud&amp;API</option>
             <option value="_decouverte">Découvertes</option>
@@ -24,13 +24,17 @@
             <option value="tizen">Tizen</option>
             <option value="chrome">Chrome API</option>
             <option value="google+">Google +</option>
+            <option value="glass">Google Glass</option>
+            <option value="nfc">NFC</option>
+            <option value="designer">UX</option>
+            <option value="agilité">Agilité</option>
         </select>
     </div>
     <div class="one fifth pad-right pad-left ">
     	Difficulté
         <select class="unselected" ng-model="levels">
             <option selected value="">Toutes</option>
-            <option value="101">101 (débutant)</option>
+            <option value="101">101 (Débutant)</option>
             <option value="201">201 (Intermédiaire)</option>
             <option value="301">301 (Confirmé)</option>
         </select>
@@ -48,10 +52,11 @@
 			</div>
 			<div class="one third mobile align-right">
 				{{ time }}, salle {{ session.room }}<br>
-				<small>Tracker {{ session.track }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
+				<small>Tracker {{ session.track_lbl }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
 			<hr>            
-			<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>
+			<!--<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>-->
+            <small>Présenté par <span ng-repeat="speaker in sessionSpeakers">{{ speaker.displayName }}&nbsp;&nbsp;</span></small>
 		</div>
 		<!-- Session content -->
 		<div class="row padded justify">
