@@ -1,6 +1,6 @@
 {
 	"agendaTimes" : [
-		{ "name" : "openning", "start" : "8h30", "end": "8h45" },
+		{ "name" : "openning", "start" : "8h15", "end": "8h45" },
 		{ "name" : "keynote", "start" : "8h45", "end": "9h30" },
 		{ "name" : "S1", "start" : "9h45", "end": "10h45" },
 		{ "name" : "S2", "start" : "10h55", "end": "11h55" },
