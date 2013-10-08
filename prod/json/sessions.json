@@ -120,7 +120,7 @@
 		},
 		{
 			"label" : "De la maquette à l'application : 'The Dart way'",
-            "visible" : false,
+            "visible" : true,
 			"track" : "_web",
 			"track_lbl" : "Web",
 			"icon" : "dart",
@@ -159,7 +159,7 @@
 		},
 		{
 			"label" : "AppEngine rencontre ComputeEngine",
-            "visible" : false,
+            "visible" : true,
 			"track" : "_cloud",
 			"track_lbl" : "Cloud & APIs",
 			"icon" : "compute_engine",
@@ -343,59 +343,6 @@
 
 	"speakers" : [
 		{
-			"id" : "cmottier",
-            "visible" : true,
-			"displayName" : "Cyril Mottier",
-			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/118417777153109946393/posts",
-			"urlTwitter" : "http://www.twitter.com/cyrilmottier",
-			"urlWebsite" : "http://www.cyrilmottier.com",
-			"urlGithub"  : "https://github.com/cyrilmottier"
-		},
-		{
-			"id" : "jgarreau",
-            "visible" : true,
-			"displayName" : "Jean-François Garreau",
-			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
-			"urlGooglePlus" : "https://plus.google.com/114772056028520115043/posts",
-			"urlTwitter" : "http://www.twitter.com/binomed",
-			"urlWebsite" : "http://blog.binomed.fr",
-			"urlGithub"  : "https://github.com/binomed"
-		},
-		{
-			"id" : "elezmy",
-            "visible" : true,
-			"displayName" : "Eyal Lezmy",
-			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
-			"urlGooglePlus" : "https://plus.google.com/109290164663410811176/posts",
-			"urlTwitter" : "https://twitter.com/eyal_lezmy",
-			"urlGithub"  : "https://github.com/eyal-lezmy"
-		},
-		{
-			"id" : "ibarber",
-            "visible" : true,
-			"displayName" : "Ian Barber",
-			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
-			"urlGooglePlus" : "https://plus.google.com/+IanBarber/posts",
-			"urlTwitter" : "https://twitter.com/ianbarber",
-			"urlGithub"  : "https://github.com/ianbarber"
-		},
-		{
-			"id" : "ngarnier",
-            "visible" : false,
-			"displayName" : "Nicolas Garnier",
-			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
-			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
-			"urlTwitter" : "https://twitter.com/nivco"
-		},
-		{
-			"id" : "fbeaufort",
-            "visible" : true,
-			"displayName" : "François Beaufort",
-			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
-			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
-		},
-		{
 			"id" : "amoussine",
             "visible" : false,
 			"displayName" : "Alexis Moussine Pouchkine",
@@ -403,14 +350,6 @@
 			"urlGooglePlus" : "https://plus.google.com/+AlexisMP/posts",
 			"urlTwitter" : "https://twitter.com/alexismp/",
 			"urlWebsite" : "http://alexismp.wordpress.com/"
-		},
-		{
-			"id" : "tchatel",
-            "visible" : true,
-			"displayName" : "Thierry Chatel",
-			"bio" : "Thierry est consultant et formateur indépendant.<br>Focalisé sur les bonnes pratiques de conception et développement, il ne pouvait qu'être séduit par les concepts du framework AngularJS, dont il découvrit la version beta dès 2011. <br>Convaincu que ce framework constitue une véritable révolution dans le développement des applications web, il n'a de cesse de communiquer son enthousiasme pour AngularJS en alternant conférences et formations.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/113505929077720042958/posts",
-			"urlTwitter" : "https://twitter.com/thierrychatel/"
 		},
 		{
 			"id" : "arichard",
@@ -422,13 +361,47 @@
             "urlGithub"  : "https://github.com/antoine-richard/"
 		},
 		{
-			"id" : "jmouton",
+			"id" : "caddinquy",
             "visible" : true,
-			"displayName" : "Jérôme Mouton",
-			"bio" : "Jérôme est le co-fondateur et CTO de SnapEngage, une solution de relation client sur le web hébergée sur Google App Engine. Il gère également le GDG Berlin. Il a aussi optenu depuis peu le presigieu titre de  GDE AppEngine.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/110615325729051596989/posts",
-			"urlTwitter" : "https://twitter.com/jlmouton/",
-            "urlWebsite" : "http://snapengage.com/"
+			"displayName" : "Christophe Addinquy",
+			"bio" : "Christophe Addinquy est accroc à l'informatique depuis 1980, il en a fait son métier depuis plus de 20 ans. D'abord développeur, il a aussi été consultant, formateur, chef de projet puis directeur de projet pour devenir aujourd'hui coach agile.<br>Durant cette période, il a été un activiste de la programmation orientée objets, des Design Patterns et maintenant de l'agile, à des périodes où ces courants n'étaient pas des acquis. Il s'est intéressé à XP en 2001 et a été moteur dans le virage vers l'agilité de la société de conseil pour laquelle il travaillait alors. Il a rejoint un utilisateur final en 2007 en tant que responsable du Back-Office pour déployer l'approche agile dans les équipes projet. Il a rejoint le Scrum User Group Français depuis ses débuts et en est l'actuel secrétaire.<br>Il aide désormais les organisations et les équipes projet à implémenter et améliorer leurs pratiques agiles à l'aide des pratiques agiles, Scrum, Lean et Lean Startup.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/112152044380559952642/posts",
+			"urlTwitter" : "http://twitter.com/addinquy",
+            "urlWebsite" : "http://addinquy.tumblr.com/"
+		},
+		{
+			"id" : "cmottier",
+            "visible" : true,
+			"displayName" : "Cyril Mottier",
+			"bio" : "Cyril mottier est un <a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert</a> dédié aux technologies Google. Passioné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/118417777153109946393/posts",
+			"urlTwitter" : "http://www.twitter.com/cyrilmottier",
+			"urlWebsite" : "http://www.cyrilmottier.com",
+			"urlGithub"  : "https://github.com/cyrilmottier"
+		},
+		{
+			"id" : "dgirard",
+            "visible" : true,
+			"displayName" : "Didier Girard",
+			"bio" : "Didier Girard Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir. Il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008",
+			"urlGooglePlus" : "https://plus.google.com/u/0/115263933340916245640/posts",
+			"urlTwitter" : "http://twitter.com/DidierGirard"
+		},
+		{
+			"id" : "elezmy",
+            "visible" : true,
+			"displayName" : "Eyal Lezmy",
+			"bio" : "<ul><li>Software Engineer chez <a href='http://www.genymobile.com' target='_NEW'>GenyMobile</a>, spécialisé dans Android et le développement web</li> <li>Trésorier du <a href='http://paug.fr' target='_NEW'>Paris Android User Group</a></li><li>Créateur du podcast <a href='http://android-devcast.com' target='_NEW'>Android Devcast</a> pour les professionnels et les développeurs</li><li><a href='https://developers.google.com/experts/' target='_NEW'>Google Developer Expert Android</a></li>",
+			"urlGooglePlus" : "https://plus.google.com/109290164663410811176/posts",
+			"urlTwitter" : "https://twitter.com/eyal_lezmy",
+			"urlGithub"  : "https://github.com/eyal-lezmy"
+		},
+		{
+			"id" : "fbeaufort",
+            "visible" : true,
+			"displayName" : "François Beaufort",
+			"bio" : "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
+			"urlGooglePlus" : "https://plus.google.com/100132233764003563318/posts"
 		},
 		{
 			"id" : "gcampion",
@@ -438,47 +411,6 @@
 			"urlGooglePlus" : "https://plus.google.com/u/0/109248341696828237778/posts",
 			"urlTwitter" : "http://twitter.com/laumic",
             "urlWebsite" : "http://ama-studios.com/"
-		},
-		{
-			"id" : "rrozan",
-            "visible" : true,
-			"displayName" : "Romuald Rozan",
-			"bio" : " Romuald est Technical Community Manager (Développeur Évangéliste) chez Intel Corporation"
-		},
-		{
-			"id" : "xhallade",
-            "visible" : true,
-			"displayName" : "Xavier Hallade",
-			"bio" : "Xavier est Technical Marketing Engineer chez Intel Corporation"
-		},
-		{
-			"id" : "pkozlowski",
-            "visible" : true,
-			"displayName" : "Pawel Kozlowski",
-			"bio" : "Pawel Kozlowski enjoys hacking on both back-end and front-end. During his career he was fortunate enough to use multitude of technologies, programming languages and tools but recently focuses on the front-end web development with AngularJS.<br><br>Pawel strongly believes in free, open source software. He is very active in the AngularJS community and last year he was honored with the commiter privilege to the AngularJS project. He also contributes to Angular-UI - the companion suite to the AngularJS framework.<br><br>When not coding Pawel sharpens his writing skills on a book about web application development with AngularJS (http://goo.gl/gKEsIo). You can also find him spreading a good word about AngularJS at various conferences.",
-			"urlGooglePlus" : "https://plus.google.com/115265057550389171925/posts",
-			"urlTwitter" : "https://twitter.com/pkozlowski_os",
-            "urlWebsite" : "http://pkozlowskios.wordpress.com/",
-            "urlGithub"  : "https://github.com/pkozlowski-opensource"
-		},
-		{
-			"id" : "jvey",
-            "visible" : true,
-			"displayName" : "Julien Vey",
-			"bio" : "Julien est développeur Java et passionné par tout ce qui a trait au Web et aux nouveaux outils & langages associés. Julien a grandi dans le monde des RIA, avec Flex puis GWT avant de se tourner vers les frameworks JavaScript. Il s’intéresse tout particulièrement aux standards du Web et aux nouveaux langages alternatifs pour le Web.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/104319090218121337101/posts",
-			"urlTwitter" : "https://twitter.com/julienvey",
-            "urlWebsite" : "http://www.julienvey.com/"
-		},
-		{
-			"id" : "nfrancois",
-            "visible" : true,
-			"displayName" : "Nicolas Francois",
-			"bio" : "Développeur Java pour Sfeir le jour, Dart Knight codeur la nuit. Séduit par le langage, il s'y intéresse depuis plus d'un an en évangélisant les Jug et GDG avec Guillaume. Avec l’aide de Vincent, le trio anime une page Google+ dédiée à Dart.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/106226789128312528511/posts",
-			"urlTwitter" : "http://twitter.com/nicofrancois",
-            "urlWebsite" : "http://injectinto.blogspot.com/",
-            "urlGithub"  : "http://www.github.com/nfrancois"
 		},
 		{
 			"id" : "ggiroux",
@@ -499,14 +431,48 @@
             "urlGithub"  : "https://github.com/jeromeetienne/"
 		},
 		{
-			"id" : "tbelin",
+			"id" : "jgarreau",
             "visible" : true,
-			"displayName" : "Thomas Belin",
-			"bio" : "Front End développeur chez DoYouBuzz (mon cv). Je fais la part belle au code. Je crois en la richesse du web. Je m'éclate avec Javascript",
-			"urlGooglePlus" : "https://plus.google.com/118010420630912086698?rel=author",
-			"urlTwitter" : "https://twitter.com/ThomasBelin4",
-            "urlWebsite" : "http://thomasbelin.fr/",
-            "urlGithub"  : "https://github.com/thomasbelin4"
+			"displayName" : "Jean-François Garreau",
+			"bio" : "Jean-François Garreau est le co-fondateur du GDG Nantes, organisateur du DevFest Nantes et le créateur de l'application Android CineShowTime. Il est a présent consultant pour la société SQLI.",
+			"urlGooglePlus" : "https://plus.google.com/114772056028520115043/posts",
+			"urlTwitter" : "http://www.twitter.com/binomed",
+			"urlWebsite" : "http://blog.binomed.fr",
+			"urlGithub"  : "https://github.com/binomed"
+		},
+		{
+			"id" : "jlouvel",
+            "visible" : true,
+			"displayName" : "Jérôme Louvel",
+			"bio" : " Jérôme is an engineer in computer science and management, graduate of Polytech'Montpellier. He started the open source Restlet Framework project back in 2005, as the first RESTful web API framework for Java.<br>He is in charge technical and commercial leadership of the company. Jérôme was also a member of the expert group that defined the standard JAX-RS API, contributor to the RESTful Web Services book published by O'Reilly and co-author of the Restlet in Action book published by Manning.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/105549871383285353581/posts"
+		},
+		{
+			"id" : "jmouton",
+            "visible" : true,
+			"displayName" : "Jérôme Mouton",
+			"bio" : "Jérôme est le co-fondateur et CTO de SnapEngage, une solution de relation client sur le web hébergée sur Google App Engine. Il gère également le GDG Berlin. Il a aussi optenu depuis peu le presigieu titre de  GDE AppEngine.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/110615325729051596989/posts",
+			"urlTwitter" : "https://twitter.com/jlmouton/",
+            "urlWebsite" : "http://snapengage.com/"
+		},
+		{
+			"id" : "jvey",
+            "visible" : true,
+			"displayName" : "Julien Vey",
+			"bio" : "Julien est développeur Java et passionné par tout ce qui a trait au Web et aux nouveaux outils & langages associés. Julien a grandi dans le monde des RIA, avec Flex puis GWT avant de se tourner vers les frameworks JavaScript. Il s’intéresse tout particulièrement aux standards du Web et aux nouveaux langages alternatifs pour le Web.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/104319090218121337101/posts",
+			"urlTwitter" : "https://twitter.com/julienvey",
+            "urlWebsite" : "http://www.julienvey.com/"
+		},
+		{
+			"id" : "ibarber",
+            "visible" : true,
+			"displayName" : "Ian Barber",
+			"bio" : "Ian Barber is a Senior Developer Advocate for Google+ who is based in Google's London office. Ian has been developing, and managing development teams, professionally since 2002, primarily dealing with web technologies after a brief stint in casual games. Among other open source interests, Ian is the author of the PHP Support Vector Machine extension and a maintainer of the brokerless messaging library ZeroMQ.",
+			"urlGooglePlus" : "https://plus.google.com/+IanBarber/posts",
+			"urlTwitter" : "https://twitter.com/ianbarber",
+			"urlGithub"  : "https://github.com/ianbarber"
 		},
 		{
 			"id" : "lchampenois",
@@ -516,14 +482,6 @@
 			"urlGooglePlus" : "https://plus.google.com/u/0/114301740068660616000/posts"
 		},
 		{
-			"id" : "ttemplier",
-            "visible" : true,
-			"displayName" : "Thierry Templier",
-			"bio" : "Thierry is an engineer in computer science, telecom and networks, graduate of Esigetel, expert in Java technologies, JavaScript, Modeling and the Web in general, as well as passionate of open source which led him to be interested in the Restlet Framework.<br>He joined the company as an R&D architect in 2011 , taking in charge the development of APISpark and porting Restlet Framework to JavaScript. Thierry is also co-author of several books on JavaScript, Spring as well as the Restlet in Actionbook published by Manning.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/104965615059084011128/posts",
-			"urlTwitter" : "https://twitter.com/templth"
-		},
-		{
 			"id" : "mgorner",
             "visible" : false,
 			"displayName" : "Martin Gorner",
@@ -531,13 +489,22 @@
 			"urlGooglePlus" : "https://plus.google.com/u/0/+MartinGorner/posts"
 		},
 		{
-			"id" : "xseignard",
+			"id" : "nfrancois",
             "visible" : true,
-			"displayName" : "Xavier Seignard",
-			"bio" : "Développeur et bidouilleur, je suis engagé dans une démarche qui repose sur les valeurs de la culture du Libre, du partage de connaissances et de l’esprit do it yourself. Le fer à souder, le clavier et le pistolet à colle sont mes outils de prédilection !",
-			"urlGooglePlus" : "https://plus.google.com/u/0/111497943375428145134/posts",
-			"urlTwitter" : "https://twitter.com/xavier_seignard",
-            "urlWebsite" : "http://xseignard.github.io/"
+			"displayName" : "Nicolas Francois",
+			"bio" : "Développeur Java pour Sfeir le jour, Dart Knight codeur la nuit. Séduit par le langage, il s'y intéresse depuis plus d'un an en évangélisant les Jug et GDG avec Guillaume. Avec l’aide de Vincent, le trio anime une page Google+ dédiée à Dart.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/106226789128312528511/posts",
+			"urlTwitter" : "http://twitter.com/nicofrancois",
+            "urlWebsite" : "http://injectinto.blogspot.com/",
+            "urlGithub"  : "http://www.github.com/nfrancois"
+		},
+		{
+			"id" : "ngarnier",
+            "visible" : false,
+			"displayName" : "Nicolas Garnier",
+			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
+			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
+			"urlTwitter" : "https://twitter.com/nivco"
 		},
 		{
 			"id" : "hghernati",
@@ -549,15 +516,6 @@
             "urlWebsite" : "http://www.hi-dee.eu/"
 		},
 		{
-			"id" : "caddinquy",
-            "visible" : true,
-			"displayName" : "Christophe Addinquy",
-			"bio" : "Christophe Addinquy est accroc à l'informatique depuis 1980, il en a fait son métier depuis plus de 20 ans. D'abord développeur, il a aussi été consultant, formateur, chef de projet puis directeur de projet pour devenir aujourd'hui coach agile.<br>Durant cette période, il a été un activiste de la programmation orientée objets, des Design Patterns et maintenant de l'agile, à des périodes où ces courants n'étaient pas des acquis. Il s'est intéressé à XP en 2001 et a été moteur dans le virage vers l'agilité de la société de conseil pour laquelle il travaillait alors. Il a rejoint un utilisateur final en 2007 en tant que responsable du Back-Office pour déployer l'approche agile dans les équipes projet. Il a rejoint le Scrum User Group Français depuis ses débuts et en est l'actuel secrétaire.<br>Il aide désormais les organisations et les équipes projet à implémenter et améliorer leurs pratiques agiles à l'aide des pratiques agiles, Scrum, Lean et Lean Startup.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/112152044380559952642/posts",
-			"urlTwitter" : "http://twitter.com/addinquy",
-            "urlWebsite" : "http://addinquy.tumblr.com/"
-		},
-		{
 			"id" : "ophilippot",
             "visible" : true,
 			"displayName" : "Olivier Philippot",
@@ -565,19 +523,61 @@
 			"urlGooglePlus" : "https://plus.google.com/u/0/100212565620476538043/posts"
 		},
 		{
-			"id" : "dgirard",
+			"id" : "pkozlowski",
             "visible" : true,
-			"displayName" : "Didier Girard",
-			"bio" : "Didier Girard Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir. Il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008",
-			"urlGooglePlus" : "https://plus.google.com/u/0/115263933340916245640/posts",
-			"urlTwitter" : "http://twitter.com/DidierGirard"
+			"displayName" : "Pawel Kozlowski",
+			"bio" : "Pawel Kozlowski enjoys hacking on both back-end and front-end. During his career he was fortunate enough to use multitude of technologies, programming languages and tools but recently focuses on the front-end web development with AngularJS.<br><br>Pawel strongly believes in free, open source software. He is very active in the AngularJS community and last year he was honored with the commiter privilege to the AngularJS project. He also contributes to Angular-UI - the companion suite to the AngularJS framework.<br><br>When not coding Pawel sharpens his writing skills on a book about web application development with AngularJS (http://goo.gl/gKEsIo). You can also find him spreading a good word about AngularJS at various conferences.",
+			"urlGooglePlus" : "https://plus.google.com/115265057550389171925/posts",
+			"urlTwitter" : "https://twitter.com/pkozlowski_os",
+            "urlWebsite" : "http://pkozlowskios.wordpress.com/",
+            "urlGithub"  : "https://github.com/pkozlowski-opensource"
 		},
 		{
-			"id" : "jlouvel",
+			"id" : "tbelin",
             "visible" : true,
-			"displayName" : "Jérôme Louvel",
-			"bio" : " Jérôme is an engineer in computer science and management, graduate of Polytech'Montpellier. He started the open source Restlet Framework project back in 2005, as the first RESTful web API framework for Java.<br>He is in charge technical and commercial leadership of the company. Jérôme was also a member of the expert group that defined the standard JAX-RS API, contributor to the RESTful Web Services book published by O'Reilly and co-author of the Restlet in Action book published by Manning.",
-			"urlGooglePlus" : "https://plus.google.com/u/0/105549871383285353581/posts"
+			"displayName" : "Thomas Belin",
+			"bio" : "Front End développeur chez DoYouBuzz (mon cv). Je fais la part belle au code. Je crois en la richesse du web. Je m'éclate avec Javascript",
+			"urlGooglePlus" : "https://plus.google.com/118010420630912086698?rel=author",
+			"urlTwitter" : "https://twitter.com/ThomasBelin4",
+            "urlWebsite" : "http://thomasbelin.fr/",
+            "urlGithub"  : "https://github.com/thomasbelin4"
+		},
+		{
+			"id" : "tchatel",
+            "visible" : true,
+			"displayName" : "Thierry Chatel",
+			"bio" : "Thierry est consultant et formateur indépendant.<br>Focalisé sur les bonnes pratiques de conception et développement, il ne pouvait qu'être séduit par les concepts du framework AngularJS, dont il découvrit la version beta dès 2011. <br>Convaincu que ce framework constitue une véritable révolution dans le développement des applications web, il n'a de cesse de communiquer son enthousiasme pour AngularJS en alternant conférences et formations.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/113505929077720042958/posts",
+			"urlTwitter" : "https://twitter.com/thierrychatel/"
+		},
+		{
+			"id" : "ttemplier",
+            "visible" : true,
+			"displayName" : "Thierry Templier",
+			"bio" : "Thierry is an engineer in computer science, telecom and networks, graduate of Esigetel, expert in Java technologies, JavaScript, Modeling and the Web in general, as well as passionate of open source which led him to be interested in the Restlet Framework.<br>He joined the company as an R&D architect in 2011 , taking in charge the development of APISpark and porting Restlet Framework to JavaScript. Thierry is also co-author of several books on JavaScript, Spring as well as the Restlet in Actionbook published by Manning.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/104965615059084011128/posts",
+			"urlTwitter" : "https://twitter.com/templth"
+		},
+		{
+			"id" : "rrozan",
+            "visible" : true,
+			"displayName" : "Romuald Rozan",
+			"bio" : " Romuald est Technical Community Manager (Développeur Évangéliste) chez Intel Corporation"
+		},
+		{
+			"id" : "xhallade",
+            "visible" : true,
+			"displayName" : "Xavier Hallade",
+			"bio" : "Xavier est Technical Marketing Engineer chez Intel Corporation"
+		},
+		{
+			"id" : "xseignard",
+            "visible" : true,
+			"displayName" : "Xavier Seignard",
+			"bio" : "Développeur et bidouilleur, je suis engagé dans une démarche qui repose sur les valeurs de la culture du Libre, du partage de connaissances et de l’esprit do it yourself. Le fer à souder, le clavier et le pistolet à colle sont mes outils de prédilection !",
+			"urlGooglePlus" : "https://plus.google.com/u/0/111497943375428145134/posts",
+			"urlTwitter" : "https://twitter.com/xavier_seignard",
+            "urlWebsite" : "http://xseignard.github.io/"
 		}
 
 	]
