@@ -236,6 +236,32 @@
 			"description" : "TBD"
 		},
 		{
+			"label" : "Go & AppEngine",
+            "visible" : true,
+			"track" : "_cloud",
+			"track_lbl" : "Cloud & APIs",
+			"icon" : "appengine",
+			"speaker" : ["jlandure"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Présentation des possibilités du langage Go sur la plateforme de Google."
+		},
+		{
+			"label" : "Google Drive Real Time API",
+            "visible" : true,
+			"track" : "_cloud",
+			"track_lbl" : "Cloud & APIs",
+			"icon" : "drive",
+			"speaker" : ["ngarnier"],
+			"lang" : "fr",
+			"level" : "201",
+			"time" : "TBD",
+			"room" : "TBD",
+			"description" : "Cette session sera l'occasion de présenter cette API qui permet à vos utilisateurs d'uiliser la puissance d'une collaboration à la Google Docs le tout en javascript et sans serveur !"
+		},
+		{
 			"label" : "Un peu de fun avec la chrome serial API",
             "visible" : true,
 			"track" : "_decouverte",
@@ -414,7 +440,7 @@
 		},
 		{
 			"id" : "ggiroux",
-            "visible" : false,
+            "visible" : true,
 			"displayName" : "Guillaume Giroux",
 			"bio" : "Depuis plus d’un an, Guillaume Girou suit l’activité de Dart en publiant régulièrement des articles sur la page G+ de la communauté. Fort de cinq ans d’expérience dans le développement, il a un parcours atypique passant du .Net à Java couplé à du GWT et finalement à Dart pour son plaisir ! Avec Nicolas, il a présenté à plusieurs reprises le langage Dart lors de JUG, GDG et CodeLabs.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/115049522200141162219/posts",
@@ -439,6 +465,13 @@
 			"urlTwitter" : "http://www.twitter.com/binomed",
 			"urlWebsite" : "http://blog.binomed.fr",
 			"urlGithub"  : "https://github.com/binomed"
+		},
+		{
+			"id" : "jlandure",
+            "visible" : true,
+			"displayName" : "Julien Landuré",
+			"bio" : " Diplômé en 2003 de l'IUT de Nantes puis en 2006 de l'Université de Nantes, Julien a côtoyé plusieurs SSII avant d'intégrer Zenika. Aujourd'hui consultant, il navigue entre des missions de formation et d'architecture. Issu de la génération Google, il a co-fondé en Janvier 2011 le GDG Nantes et participent depuis 3 ans au Google I/O et à maintenir une communauté de développeurs de techno Google. Le GDG Nantes est une association de développeurs qui organise un évènement par mois et qui a aussi organisé le DevFest 2012 réunissant 200 personnes à la fois étudiants et professionnels.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/117376595460352045696/posts"
 		},
 		{
 			"id" : "jlouvel",
@@ -500,7 +533,7 @@
 		},
 		{
 			"id" : "ngarnier",
-            "visible" : false,
+            "visible" : true,
 			"displayName" : "Nicolas Garnier",
 			"bio" : "Nicolas Garnier est un développeur advocate Google pour l'équipe Google Drive",
 			"urlGooglePlus" : "https://plus.google.com/+NicolasGarnier/posts",
