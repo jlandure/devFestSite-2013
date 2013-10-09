@@ -240,7 +240,7 @@
             "visible" : true,
 			"track" : "_cloud",
 			"track_lbl" : "Cloud & APIs",
-			"icon" : "appengine",
+			"icon" : "go",
 			"speaker" : ["jlandure"],
 			"lang" : "fr",
 			"level" : "201",

@@ -743,6 +743,19 @@ p.sponsor-empty span {
     height:100px;
 }
 
+.ibis{
+    background-image: url('../images/sponsors/ibis.png');
+    width:100px;
+    height:100px;
+}
+
+.jukeboard{
+    background-image: url('../images/sponsors/jukeboard.png');
+    margin-top: 14px;
+    width:200px;
+    height:72px;
+}
+
 /**
 * Technos
 */
@@ -797,6 +810,11 @@ p.sponsor-empty span {
 .glass{
   background-image: url('../images/technos/glass.png');
 }
+
+.go{
+  background-image: url('../images/technos/go.png');
+}
+
 
 .google_plus{
   background-image: url('../images/technos/google_plus.png');
