@@ -350,8 +350,18 @@ Tentative 2 colonnes
   font-size: 0.9em;
 }
 
+.calendar-header-android h5, 
+.calendar-header-html5 h5,
+.calendar-header-cloud h5,
+.calendar-header-ux h5,
+.calendar-header-codelab h5{
+  color : white;
+
+} 
+
 .calendar-header-android {
    background-color: #99cc00;
+   color:white;
    border-radius: 5px 0px 0px 5px;
    -webkit-border-radius: 5px 0px 0px 5px;
    -moz-border-radius: 5px 0px 0px 5px;
@@ -362,21 +372,25 @@ Tentative 2 colonnes
 
 .calendar-header-html5 {
   background-color: #ffbb33;
+  color:white;
   text-align: center;
 }
 
 .calendar-header-cloud {
   background-color: #33b5e5;
+  color:white;
   text-align: center;
 }
 
 .calendar-header-ux {
   background-color: #BF0404;
+  color:white;
   text-align: center;
 }
 
 .calendar-header-codelab {
   background-color: #aa66cc;
+  color:white;
    border-radius: 0px 5px 5px 0px;
    -webkit-border-radius: 0px 5px 5px 0px;
    -moz-border-radius: 0px 5px 5px 0px;
@@ -870,6 +884,10 @@ p.sponsor-empty span {
 
 .jetienne{
     background-image: url('../images/speakers/jetienne.png');  
+}
+
+.jlandure{
+    background-image: url('../images/speakers/jlandure.png');  
 }
 
 .jlouvel{
