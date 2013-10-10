@@ -124,7 +124,7 @@
 			"track" : "_web",
 			"track_lbl" : "Web",
 			"icon" : "dart",
-			"speaker" : ["nfrancois, ggiroux"],
+			"speaker" : ["nfrancois", "ggiroux"],
 			"lang" : "fr",
 			"level" : "201",
 			"time" : "TBD",
@@ -243,10 +243,10 @@
 			"icon" : "go",
 			"speaker" : ["jlandure"],
 			"lang" : "fr",
-			"level" : "201",
+			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Présentation des possibilités du langage Go sur la plateforme de Google."
+			"description" : "Cette session est une session découverte sur le langage Go, un des quatre langages supportés sur la plateforme (avec python, java et php)<br>L'idée est de présenter le langage, de montrer ses possibilité et son déploiement sur AppEngine.<br>Après un tour des 'features' disponibles pour ce langage sur AppEngine, nous aborderons en quoi Go est un langage parfait pour développer sur AppEngine (voir même le langage de référence du cloud)."
 		},
 		{
 			"label" : "Google Drive Real Time API",
@@ -306,7 +306,7 @@
 			"track" : "_decouverte",
 			"track_lbl" : "Découverte",
 			"icon" : "agile",
-			"speaker" : ["caddinquy"],
+			"speaker" : ["caddinquy", "mmouterde"],
 			"lang" : "fr",
 			"level" : "101",
 			"time" : "TBD",
@@ -520,6 +520,13 @@
 			"displayName" : "Martin Gorner",
 			"bio" : "Martin Gorner est Google Outreach Manager pour la France. Il se passionne pour la science, la technologie, l'informatique, les algorithmes et tout ce qui s'en rapproche. Après avoir obtenu son diplôme d'ingénieur aux Mines Paris-Tech, Martin a commencé sa carrière dans le groupe 'omputer architecture' chez ST Microelectronics. Il a ensuite passé les 11 années suivantes dans le domaine naissant des livres électroniques, d'abord avec la start-up mobipocket.com, qui est ensuite devenue la partie logicielle du Kindle d'Amazon et ses versions mobiles. Martin a développé pour toutes les plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/+MartinGorner/posts"
+		},
+		{
+			"id" : "mmouterde",
+            "visible" : true,
+			"displayName" : "Martin Mouterde",
+			"bio" : "Martin est un développeur Java/Flex et Scrum Master certifié. Mis à part les sujets techniques, il est particulièrement intéressé par l'agilité.<br>Référent Agilité de Zenika dans l'Ouest, il veille et pousse dès qu'il le peut les bonnes pratiques issues des méthodes Scrum, Kanban ou de l'XP.<br>Il tente de rendre accessible l'agilité à tous par une approche plus pragmatique que dogmatique.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/108827481301918871059/posts"
 		},
 		{
 			"id" : "nfrancois",
