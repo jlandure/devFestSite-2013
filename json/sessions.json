@@ -145,7 +145,7 @@
 			"description" : "We will introduce three.js and how to use it easily to produce games. We will put the focus on the game part and i will share my personnal experience on the matter.﻿"
 		},
 		{
-			"label" : "doyoubuzz + AngularJS : et si doyoubuzz devenait une vraie application",
+			"label" : "DoYouBuzz + AngularJS : de $(document).ready() à angular.module('doyoubuzz', [])",
             "visible" : true,
 			"track" : "_web",
 			"track_lbl" : "Web",
@@ -155,7 +155,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Doyoubuzz, actuellement en version 1, est en pleine refonte (pour une sortie d'ici octobre 2013). <br>Le code (aussi bien back que front) ayant plus de 5 ans, il était nécessaire de repartir d'une page blanche pour refaire entièrement les fondations de doyoubuzz. <br>Pour le front nous avons choisit AngularJS. <br><br>Dans ma conf, je voudrais présenter d'une part ce à quoi ressemblait le code JS de l'application initiale pour ensuite montrer comment AngularJS a pu nous permettre de : <br><ul><li> bien organiser notre code ;</li><li> complètement découpler le code métier de la vue ;</li><li> faire devenir doyoubuzz une vraie application web. </li></ul><br><br>Les problématiques traitées seraient : <br><ul><li> comment faire une partie édition basée sur AngularJS tout en gardant une partie publique complètement indépendante de ce framework ;</li><li> et de façon plus générale les bonnes pratiques Angular (et même JS en général) que nous avons mis en place.</li></ul>"
+			"description" : "Si le front de doyoubuzz a largement fait ses preuves depuis plus de 5 ans, il était grand temps de lui offrir une seconde jeunesse. C'est l'un des objectifs de la refonte complète de l'application qui a lieu en ce moment même.<br>Ce talk expliquera donc comment DoYouBuzz est passé d'un front basé uniquement sur jQuery à une véritable application MVC grâce à AngularJS."
 		},
 		{
 			"label" : "AppEngine rencontre ComputeEngine",
