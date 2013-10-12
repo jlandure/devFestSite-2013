@@ -124,7 +124,7 @@
 			"track" : "_web",
 			"track_lbl" : "Web",
 			"icon" : "dart",
-			"speaker" : ["nfrancois"],
+			"speaker" : ["nfrancois", "ggiroux"],
 			"lang" : "fr",
 			"level" : "201",
 			"time" : "TBD",
@@ -145,7 +145,7 @@
 			"description" : "We will introduce three.js and how to use it easily to produce games. We will put the focus on the game part and i will share my personnal experience on the matter.﻿"
 		},
 		{
-			"label" : "doyoubuzz + AngularJS : et si doyoubuzz devenait une vraie application",
+			"label" : "DoYouBuzz + AngularJS : de $(document).ready() à angular.module('doyoubuzz', [])",
             "visible" : true,
 			"track" : "_web",
 			"track_lbl" : "Web",
@@ -155,7 +155,7 @@
 			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Doyoubuzz, actuellement en version 1, est en pleine refonte (pour une sortie d'ici octobre 2013). <br>Le code (aussi bien back que front) ayant plus de 5 ans, il était nécessaire de repartir d'une page blanche pour refaire entièrement les fondations de doyoubuzz. <br>Pour le front nous avons choisit AngularJS. <br><br>Dans ma conf, je voudrais présenter d'une part ce à quoi ressemblait le code JS de l'application initiale pour ensuite montrer comment AngularJS a pu nous permettre de : <br><ul><li> bien organiser notre code ;</li><li> complètement découpler le code métier de la vue ;</li><li> faire devenir doyoubuzz une vraie application web. </li></ul><br><br>Les problématiques traitées seraient : <br><ul><li> comment faire une partie édition basée sur AngularJS tout en gardant une partie publique complètement indépendante de ce framework ;</li><li> et de façon plus générale les bonnes pratiques Angular (et même JS en général) que nous avons mis en place.</li></ul>"
+			"description" : "Si le front de doyoubuzz a largement fait ses preuves depuis plus de 5 ans, il était grand temps de lui offrir une seconde jeunesse. C'est l'un des objectifs de la refonte complète de l'application qui a lieu en ce moment même.<br>Ce talk expliquera donc comment DoYouBuzz est passé d'un front basé uniquement sur jQuery à une véritable application MVC grâce à AngularJS."
 		},
 		{
 			"label" : "AppEngine rencontre ComputeEngine",
@@ -243,10 +243,10 @@
 			"icon" : "go",
 			"speaker" : ["jlandure"],
 			"lang" : "fr",
-			"level" : "201",
+			"level" : "101",
 			"time" : "TBD",
 			"room" : "TBD",
-			"description" : "Présentation des possibilités du langage Go sur la plateforme de Google."
+			"description" : "Cette session est une session découverte sur le langage Go, un des quatre langages supportés sur la plateforme (avec python, java et php)<br>L'idée est de présenter le langage, de montrer ses possibilité et son déploiement sur AppEngine.<br>Après un tour des 'features' disponibles pour ce langage sur AppEngine, nous aborderons en quoi Go est un langage parfait pour développer sur AppEngine (voir même le langage de référence du cloud)."
 		},
 		{
 			"label" : "Google Drive Real Time API",
@@ -306,7 +306,7 @@
 			"track" : "_decouverte",
 			"track_lbl" : "Découverte",
 			"icon" : "agile",
-			"speaker" : ["caddinquy"],
+			"speaker" : ["caddinquy", "mmouterde"],
 			"lang" : "fr",
 			"level" : "101",
 			"time" : "TBD",
@@ -520,6 +520,13 @@
 			"displayName" : "Martin Gorner",
 			"bio" : "Martin Gorner est Google Outreach Manager pour la France. Il se passionne pour la science, la technologie, l'informatique, les algorithmes et tout ce qui s'en rapproche. Après avoir obtenu son diplôme d'ingénieur aux Mines Paris-Tech, Martin a commencé sa carrière dans le groupe 'omputer architecture' chez ST Microelectronics. Il a ensuite passé les 11 années suivantes dans le domaine naissant des livres électroniques, d'abord avec la start-up mobipocket.com, qui est ensuite devenue la partie logicielle du Kindle d'Amazon et ses versions mobiles. Martin a développé pour toutes les plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web.",
 			"urlGooglePlus" : "https://plus.google.com/u/0/+MartinGorner/posts"
+		},
+		{
+			"id" : "mmouterde",
+            "visible" : true,
+			"displayName" : "Martin Mouterde",
+			"bio" : "Martin est un développeur Java/Flex et Scrum Master certifié. Mis à part les sujets techniques, il est particulièrement intéressé par l'agilité.<br>Référent Agilité de Zenika dans l'Ouest, il veille et pousse dès qu'il le peut les bonnes pratiques issues des méthodes Scrum, Kanban ou de l'XP.<br>Il tente de rendre accessible l'agilité à tous par une approche plus pragmatique que dogmatique.",
+			"urlGooglePlus" : "https://plus.google.com/u/0/108827481301918871059/posts"
 		},
 		{
 			"id" : "nfrancois",
