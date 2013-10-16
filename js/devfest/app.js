@@ -31,6 +31,18 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   var DEFAULT = null;
   var ACTIVE = 'active';
     
+  $scope.$on('$routeChangeSuccess', function(event, current, previous) { 
+    if ((current.templateUrl === 'partials/sessions.html'
+      || current.templateUrl === 'partials/speakers.html')
+      && Object.keys(current.params).length > 0){
+      for (var i = 0; i < $rootScope.navItems.length; i++){
+        if ($rootScope.navItems[i].template === current.templateUrl){
+          $rootScope.select($rootScope.navItems[i]);
+        }
+      }
+    }
+  });
+
   $scope.isIE = navigator.userAgent && navigator.userAgent.indexOf('MSIE') != -1;
   
   function getLocationItem(navItems, location) {
@@ -47,16 +59,16 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
   $rootScope.urlDocPresse = "http://drive.google.com/uc?export=download&id=0Bx5mRU2mXdx0YWRRUkVOb3o1Tk0";
 
   // Manage the navigation
-  $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {} }, 
-                      {'label' : 'Inscription', 'url' : '/subscribe', 'style': {} }, 
-                      {'label' : 'Sessions', 'url' : '/sessions', 'style': {} },
-                      {'label' : 'Speakers', 'url' : '/speakers', 'style': {} },
+  $rootScope.navItems = [ {'label' : 'Accueil', 'url' : '/homepage', 'style': {}, 'template' : 'partials/homepage.html'  }, 
+                      {'label' : 'Inscription', 'url' : '/subscribe', 'style': {}, 'template' : 'partials/subscribe.html' }, 
+                      {'label' : 'Sessions', 'url' : '/sessions', 'style': {}, 'template' : 'partials/sessions.html' },
+                      {'label' : 'Speakers', 'url' : '/speakers', 'style': {}, 'template' : 'partials/speakers.html' },
                       //{'label' : 'CFP', 'url' : '/cfp', 'style': {} },
-                      {'label' : 'Agenda', 'url' : '/agenda', 'style': {} },
-                      {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {} },
-                      {'label' : 'Pratique', 'url' : '/contacts', 'style': {} },
+                      {'label' : 'Agenda', 'url' : '/agenda', 'style': {}, 'template' : 'partials/agenda.html' },
+                      {'label' : 'Sponsors', 'url' : '/sponsors', 'style': {}, 'template' : 'partials/sponsors.html' },
+                      {'label' : 'Pratique', 'url' : '/contacts', 'style': {}, 'template' : 'partials/contacts.html' },
                       //{'label' : 'After Party', 'url' : '/afterparty', 'style': {} },
-                      {'label' : 'Presse', 'url' : '/presse', 'style': {}} ];
+                      {'label' : 'Presse', 'url' : '/presse', 'style': {}, 'template' : 'partials/presse.html'} ];
   
   $rootScope.selected = getLocationItem($rootScope.navItems, $location.path());
 
@@ -81,20 +93,39 @@ devfestApp.controller('NavigationCtrl', ['$scope', '$rootScope', '$location', fu
 /** 
  * Speakers controller 
  */
-devfestApp.controller('SpeakersCtrl', ['$scope', '$http', function ($scope, $http) {
+devfestApp.controller('SpeakersCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
   $http.get('json/sessions.json').success(function(data) {
-    $scope.speakers = data.speakers;
+    if ($location.search().speakerId){
+      $scope.speakers = [];
+      for (var i=0; i < data.speakers.length; i++){
+        if (data.speakers[i].id === $location.search().speakerId){
+          $scope.speakers.push(data.speakers[i]);
+        }
+      }
+    }else{
+      $scope.speakers = data.speakers;
+    }
   });
 }]);
 
 /** 
  * Sessions controller 
  */
-devfestApp.controller('SessionsCtrl', ['$scope', '$http', function ($scope, $http) {
+devfestApp.controller('SessionsCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 	$http.get('json/sessions.json').success(function(data) {
-    $scope.sessions = data.sessions;
     $scope.speakers = data.speakers;
     $scope.agendaTimes = data.agendaTimes;
+    $scope.hideFilters = $location.search().sessionId;
+    if ($location.search().sessionId){
+      $scope.sessions = [];
+      for (var i=0; i < data.sessions.length; i++){
+        if (data.sessions[i].id === +$location.search().sessionId){
+          $scope.sessions.push(data.sessions[i]);
+        }
+      }
+    }else{
+      $scope.sessions = data.sessions;
+    }
   });
 }]);
 

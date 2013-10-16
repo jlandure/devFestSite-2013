@@ -1,5 +1,5 @@
 <!-- FILTERS -->
-<div class="row padded" >
+<div class="row padded" ng-hide="hideFilters" >
 	<div class="one fifth pad-right pad-left skip-one">
 		Tracker
         <select class="unselected" ng-model="trackers">
@@ -43,7 +43,7 @@
 
 <!-- Session list builder -->
 <div class="row pad-bottom" ng-repeat="session in sessions | filter:trackers | filter:technos | filter:levels">	
-	<div class="four sixths skip-one sessions {{ session.track }}-tracker" ng-controller="SessionDetailCtrl" ng-show="session.visible" >
+	<div id="{{session.id}}" class="four sixths skip-one sessions {{ session.track }}-tracker" ng-controller="SessionDetailCtrl" ng-show="session.visible" >
 		<!-- Session header -->
 		<div class="row pad-left pad-top pad-right">
 			<div class="two thirds mobile ">
@@ -55,7 +55,7 @@
 				<small>Tracker {{ session.track_lbl }} - Difficulté {{ session.level }} - <img ng-src="./images/langs/{{ session.lang }}.png" /></small>
 			</div>
 			<hr>            
-			<!--<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?{{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>-->
+			<small>Présenté par <a ng-repeat="speaker in sessionSpeakers" href="index.html#/speakers?speakerId={{ speaker.id }}">{{ speaker.displayName }}&nbsp;&nbsp;</a></small>
             <small>Présenté par <span ng-repeat="speaker in sessionSpeakers">{{ speaker.displayName }}&nbsp;&nbsp;</span></small>
 		</div>
 		<!-- Session content -->

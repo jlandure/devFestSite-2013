@@ -12,10 +12,10 @@
 -->
 <!-- Session list builder -->
 <div class="row padded speaker-parent">
-	<div class="row pad-bottom" ng-repeat="speaker in speakers">	
+	<div name="{{speaker.id}}" class="row pad-bottom" ng-repeat="speaker in speakers">	
 		<div class="four sixths skip-one sessions speaker-tracker padded" ng-show="speaker.visible">
 				<!-- Speaker photo -->
-				<div class="speaker pull-left {{speaker.id}}" ></div>
+				<div class="speaker pull-left {{speaker.id}}" ></div> 
 				
 				<!-- Speaker links description -->
 				<a href="{{ speaker.urlGooglePlus }}" ng-show="speaker.urlGooglePlus" target="_NEW"><i class="icon-google-plus-sign icon-2x pull-right"></i></a>
