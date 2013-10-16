@@ -218,24 +218,32 @@
 					<h5>{{ times[9].start }} -  {{ times[9].end }}</h5>
 				</div>
 				<div class="one fifth calendar-android calendar-one-block">
+					<div ng-hide="times[9].android.hide">
 					<h5><a href="#">{{ times[9].android.label }}</a></h5>
-					<small>Par {{ times[9].android.speakername }}</small><br>
+					<small  >Par {{ times[9].android.speakername }}</small><br>
 					<small>Salle "{{ times[9].android.room }}"</small>
+					</div>
 				</div>
 				<div class="one fifth calendar-html5 calendar-one-block">
+				<div ng-hide="times[9].html5.hide">
 					<h5><a href="#">{{ times[9].html5.label }}</a></h5>
 					<small>Par {{ times[9].html5.speakername }}</small><br>
 					<small>Salle "{{ times[9].html5.room }}"</small>
+					</div>
 				</div>
-				<div class="one fifth calendar-cloud calendar-one-block">
+				<div class="one fifth calendar-cloud calendar-one-block" >
+				<div ng-hide="times[9].cloud.hide">
 					<h5><a href="#">{{ times[9].cloud.label }}</a></h5>
 					<small>Par {{ times[9].cloud.speakername }}</small><br>
 					<small>Salle "{{ times[9].cloud.room }}"</small>
+					</div>
 				</div>
-				<div class="one fifth calendar-ux calendar-one-block">
+				<div class="one fifth calendar-ux calendar-one-block" >
+					<div ng-hide="times[9].decouverte.hide">
 					<h5><a href="#">{{ times[9].decouverte.label }}</a></h5>
 					<small>Par {{ times[9].decouverte.speakername }}</small><br>
 					<small>Salle "{{ times[9].decouverte.room }}"</small>
+					</div>
 				</div>
 			</div>
 		</div>

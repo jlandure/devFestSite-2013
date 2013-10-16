@@ -137,11 +137,18 @@ devfestApp.controller('SessionDetailCtrl',['$scope', function ($scope) {
 devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) {
   
   function getSpeaker(speakers, speakerId) {
+    var speakersName = "";
     for (var i=0; i<speakers.length; i++) {
-      if (speakers[i].id == speakerId) {
-        return speakers[i].displayName;
+      for (var j = 0; j < speakerId.length; j++){
+        if (speakers[i].id === speakerId[j]) {
+          if (speakersName != ""){
+            speakersName += ", ";
+          }
+          speakersName += speakers[i].displayName;
+        }
       }
     }
+    return speakersName;
   };
 
   $http.get('json/sessions.json').success(function(data) {
@@ -161,19 +168,19 @@ devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) 
           session.speakername = getSpeaker(speakers, session.speaker);
           // Add the session to the corresponding track line
           switch (session.track) {
-            case "mobile" :
-              line.mobile = session;
+            case "_mobile" :
+              line.android = session;
               break;
-            case "web" :
-              line.web = session;
+            case "_web" :
+              line.html5 = session;
               break;
-            case "cloud&API" :
+            case "_cloud" :
               line.cloud = session;
               break;
-            case "decouverte" :
+            case "_decouverte" :
               line.decouverte = session;
               break;
-            case "codelab" :
+            case "_codelab" :
               line.codelabs = session;
               break;
           }
@@ -182,7 +189,7 @@ devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) 
       }
     }
     // Add TBD times
-    var tbd = {"label":"[A définir]", "speakername" : "XXX", "room" : "A définir"};
+    var tbd = {"label":"", "speakername" : "", "room" : ""};
     for (var j=0; j<agendaTimes.length; j++) {
       // Get the timeline
       var line = agendaTimes[j];
@@ -202,6 +209,7 @@ devfestApp.controller('AgendaCtrl',['$scope', '$http', function ($scope, $http) 
         line.codelabs = tbd;
       }
     }
+    tbd.hide = true;
     // Add agenda times & sessions to the scope view
     $scope.times = agendaTimes;
   });

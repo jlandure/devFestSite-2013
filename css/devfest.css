@@ -334,6 +334,10 @@ Tentative 2 colonnes
    color: #333;
   font-family: 'RobotoCondensed', Arial, sans-serif;
   font-size: 1.2em;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
 
 .calendar a {
