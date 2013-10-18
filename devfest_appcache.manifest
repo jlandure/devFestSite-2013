@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#revision 1   <== A incrementer pour forcer le rechargement des ressources mises en cache
+#revision {timestamp}   <== A incrementer pour forcer le rechargement des ressources mises en cache
 
 CACHE:
 
@@ -131,3 +131,12 @@ js/app.js
 
 NETWORK:
 *
+
+FALLBACK:
+css/app.css css/app.css?ver={timestamp}
+js/app.js js/app.js?ver={timestamp}
+images/sprites/devfest-sprite.png images/sprites/devfest-sprite.png?ver={timestamp}
+images/sprites/speakers-sprite.png images/sprites/speakers-sprite.png?ver={timestamp}
+images/sprites/team-sprite.png images/sprites/team-sprite.png?ver={timestamp}
+images/sprites/technos-sprite.png images/sprites/technos-sprite.png?ver={timestamp}
+images/sprites/sponsors-sprite.png images/sprites/sponsors-sprite.png?ver={timestamp}
