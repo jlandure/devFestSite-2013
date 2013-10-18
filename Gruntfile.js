@@ -170,6 +170,17 @@ module.exports = function (grunt) {
                     replacement: 'js/app.js?ver=<%= config.timestamp %>'
                 }]
               }
+          },
+          manifest: {
+              files: {
+                  'prod/devfest_appcache.manifest': 'prod/devfest_appcache.manifest'
+              },
+              options: {
+                replacements: [{
+                    pattern: /{timestamp}/g,
+                    replacement: '<%= config.timestamp %>'
+                }]
+              }
           }
     },
       
@@ -314,7 +325,7 @@ module.exports = function (grunt) {
 
   // Déclaration des taches
   /*grunt.registerTask('lint',    ['jshint', 'csslint']);*/
-  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace:sprites', 'cssmin', 'usemin', 'string-replace:app']);
+  grunt.registerTask('prod',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'oversprite', 'string-replace:sprites', 'cssmin', 'usemin', 'string-replace:app', 'string-replace:manifest']);
   grunt.registerTask('default', ['prod']);
 
 };

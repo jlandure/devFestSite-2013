@@ -285,17 +285,17 @@
 		},
 		{
 			"id" : 20,
-			"label" : "À quoi sert un designer?",
+			"label" : "Disruption ",
             "visible" : true,
 			"track" : "_decouverte",
 			"track_lbl" : "Découverte",
-			"icon" : "ux",
-			"speaker" : ["hghernati"],
+			"icon" : "startup",
+			"speaker" : ["dgirard"],
 			"lang" : "fr",
 			"level" : "101",
 			"time" : "S3",
 			"room" : "TBD",
-			"description" : "Le but de cette session va être d'expliquer le rôle d'un designer dans le processus de développement d'une application mobile.<br>De la réflexion autour du concept de navigation jusqu'à la livraison des éléments graphiques pour l'intégration, l'objectif va être d'expliquer aux développeurs présents les méthodes de design qui rendront leur application encore plus pertinente et aboutie."
+			"description" : "Stratégie consistant à briser les conventions établies sur un marché pour  se positionner en acteur incontournable"
 		},
 		{
 			"id" : 21,
@@ -313,17 +313,17 @@
 		},
 		{
 			"id" : 22,
-			"label" : "Disruption ",
+			"label" : "À quoi sert un designer?",
             "visible" : true,
 			"track" : "_decouverte",
 			"track_lbl" : "Découverte",
-			"icon" : "startup",
-			"speaker" : ["dgirard"],
+			"icon" : "ux",
+			"speaker" : ["hghernati"],
 			"lang" : "fr",
 			"level" : "101",
 			"time" : "S5",
 			"room" : "TBD",
-			"description" : "Stratégie consistant à briser les conventions établies sur un marché pour  se positionner en acteur incontournable"
+			"description" : "Le but de cette session va être d'expliquer le rôle d'un designer dans le processus de développement d'une application mobile.<br>De la réflexion autour du concept de navigation jusqu'à la livraison des éléments graphiques pour l'intégration, l'objectif va être d'expliquer aux développeurs présents les méthodes de design qui rendront leur application encore plus pertinente et aboutie."
 		},
 		{
 			"id" : 23,

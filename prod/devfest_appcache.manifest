@@ -1,11 +1,11 @@
 CACHE MANIFEST
-#revision 1   <== A incrementer pour forcer le rechargement des ressources mises en cache
+#revision 1382108335638   <== A incrementer pour forcer le rechargement des ressources mises en cache
 
 CACHE:
 
 #images
 #images/favicon.ico
-images/devfest/no-sprite/2013_11_08_devFest.png
+images/devfest/no-sprite/affiche_A1_2_V2.png
 images/devfest/no-sprite/banniere_160x400.png
 images/devfest/no-sprite/banniere_300x125.png
 images/devfest/no-sprite/banniere_300x250.png
@@ -131,3 +131,12 @@ js/app.js
 
 NETWORK:
 *
+
+FALLBACK:
+css/app.css css/app.css?ver=1382108335638
+js/app.js js/app.js?ver=1382108335638
+images/sprites/devfest-sprite.png images/sprites/devfest-sprite.png?ver=1382108335638
+images/sprites/speakers-sprite.png images/sprites/speakers-sprite.png?ver=1382108335638
+images/sprites/team-sprite.png images/sprites/team-sprite.png?ver=1382108335638
+images/sprites/technos-sprite.png images/sprites/technos-sprite.png?ver=1382108335638
+images/sprites/sponsors-sprite.png images/sprites/sponsors-sprite.png?ver=1382108335638
