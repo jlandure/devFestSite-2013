@@ -1,4 +1,4 @@
-application: devfestnantes
+application: devfest2013-pagespeed
 version: 2013-1
 runtime: python27
 api_version: 1
@@ -24,3 +24,14 @@ handlers:
 - url: /(.*)
   static_files: \1
   upload: (.*)
+  
+pagespeed:
+  domains_to_rewrite:
+  
+  url_blacklist:
+  
+  enabled_rewriters:
+  - MinifyCss
+  - RemoveComments
+  disabled_rewriters:
+  - ImageStripColorProfile
